@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.25BETA2 scan initiated Sun Apr  2 09:08:33 2017 as: nmap -A -oX results.xml 192.168.42.53,55,67,161 -->
+<nmaprun scanner="nmap" args="nmap -A -oX results.xml 192.168.42.53,55,67,161" start="1491138513" startstr="Sun Apr  2 09:08:33 2017" version="7.25BETA2" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1491138513" endtime="1491138656"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.42.53" addrtype="ipv4"/>
+<address addr="00:50:56:89:50:2E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ftp" hostname="Wellcome" servicefp="SF-Port21-TCP:V=7.25BETA2%I=7%D=4/2%Time=58E0F7DD%P=x86_64-pc-linux-gnu%r(NULL,35,&quot;220-Wellcome\x20to\x20Home\x20Ftp\x20Server!\r\n220\x20Server\x20ready\.\r\n&quot;)%r(GenericLines,79,&quot;220-Wellcome\x20to\x20Home\x20Ftp\x20Server!\r\n220\x20Server\x20ready\.\r\n500\x20&apos;\r&apos;:\x20command\x20not\x20understood\.\r\n500\x20&apos;\r&apos;:\x20command\x20not\x20understood\.\r\n&quot;)%r(Help,5A,&quot;220-Wellcome\x20to\x20Home\x20Ftp\x20Server!\r\n220\x20Server\x20ready\.\r\n500\x20&apos;HELP&apos;:\x20command\x20not\x20understood\.\r\n&quot;)%r(SMBProgNeg,35,&quot;220-Wellcome\x20to\x20Home\x20Ftp\x20Server!\r\n220\x20Server\x20ready\.\r\n&quot;);" method="probed" conf="10"/><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;drw-rw-rw-   1 ftp      ftp            0 Dec 28  2015 . [NSE: writeable]&#xa;drw-rw-rw-   1 ftp      ftp            0 Dec 28  2015 .. [NSE: writeable]"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="mysql" product="MySQL" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql</cpe></service></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" product="Microsoft Terminal Service" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=admin-PC&#xa;Not valid before: 2017-04-01T01:07:59&#xa;Not valid after:  2017-10-01T01:07:59"><table key="subject">
+<elem key="commonName">admin-PC</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">admin-PC</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">userdata: 0x27fef78</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048.0</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2017-10-01T01:07:59</elem>
+<elem key="notBefore">2017-04-01T01:07:59</elem>
+</table>
+<elem key="md5">bc8413c0f3f8685dfe819f618337122b</elem>
+<elem key="sha1">e98935217a6846a85434eda364349743dc1c59af</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC1DCCAbygAwIBAgIQQZMyB9b2catPUaYNm+hSsjANBgkqhkiG9w0BAQUFADAT&#xa;MREwDwYDVQQDEwhhZG1pbi1QQzAeFw0xNzA0MDEwMTA3NTlaFw0xNzEwMDEwMTA3&#xa;NTlaMBMxETAPBgNVBAMTCGFkbWluLVBDMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A&#xa;MIIBCgKCAQEAzH0X1B5ielv/zqOUdzNyFYEAdDZxTs33B6GuhtOU7m/ro4ZGvGWn&#xa;+9Yj8lJK4d4INezaUlCziF/cR1kMwIGZ/AHtL0UsouA4Ck/3KEaxz9xh+cPzWg15&#xa;sFiSbWgJgT/QQW9Wn7GKTopTRGm6NqmpdnaiyxrckBjA+OJTwXQSwuUy8ulfgMuW&#xa;nhTPyOrqIxy2BDx+3QE2yDCZn6zk2nsWm6GF5jfTbCSrIcUTA3ptRO7wfoU5+Xhj&#xa;fIItFUQWf/uus7NYKnaBUtr7ebYzxu1O2fXPD1IkoAiCkPwc0eYAZNceoC6Yx1c4&#xa;+edpdRiakkwikDZwNBPrsM1wZiz3f3rdKwIDAQABoyQwIjATBgNVHSUEDDAKBggr&#xa;BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQEFBQADggEBALHV/OvQZguu&#xa;2EGJRgU+oUXqf8jfiNuh3OS9r9hKdH4iX2Ad62FjIuPI/pMvaG8DbopHFoDFYVU5&#xa;lYQ1TaYa6dHSJiNc1isDdHAK3kNlWNAISxrE4GaFY/Hki9qmMJQlBohQGKSZlPHK&#xa;Nu9HAiQcLMVOygT2eAkDT6iEBkvYD5IH6aW9kqJG1Q50SgMfAVD69uRIf1I4qA+y&#xa;uC0g6ig/H5geXSnzMzXe9cO4NnYuz5wZrJMPYndJsAQoSJmZQAkMAzVJSmmaWwNc&#xa;c8VlSEtGqXvYSapbVCFniR/GdsJXZhtWKk8Bm48tCmJXlby16wRYFHgn2T5Noj6b&#xa;rt78DZtOfU8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2017-04-02T03:28:57+00:00; -9h41m21s from scanner time."><elem key="date">2017-04-02T03:28:57+00:00</elem>
+<elem key="delta">-34881.0</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<osmatch name="Microsoft Windows Server 2008" accuracy="90" line="67980">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="90"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2" accuracy="90" line="68324">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="90"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 or Windows 8" accuracy="90" line="68342">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="90"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="90"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1" accuracy="90" line="70271">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="90"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 8.1 Update 1" accuracy="90" line="71023">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="90"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Phone 7.5 or 8.0" accuracy="90" line="72250">
+<osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="90"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 or 2008 Beta 3" accuracy="89" line="68017">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008::beta3</cpe><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 or Windows 8.1" accuracy="89" line="68362">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="89"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1" accuracy="89" line="68436">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1 or Windows 8" accuracy="89" line="68528">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="89"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="8847" lastboot="Sun Apr  2 06:43:29 2017"/>
+<distance value="1"/>
+<tcpsequence index="264" difficulty="Good luck!" values="CD0533D9,C595BBF0,2575469E,7F069231,E7D9D379,EB310AC1"/>
+<ipidsequence class="Incremental" values="74F,750,751,752,753,754"/>
+<tcptssequence class="100HZ" values="D6C62,D6C6D,D6C78,D6C81,D6C8B,D6C96"/>
+<hostscript><script id="clock-skew" output="mean: -9h41m21s, deviation: 0s, median: -9h41m21s"><elem key="median">-34881.024071</elem>
+<elem key="stddev">-nan</elem>
+<elem key="mean">-34881.024071</elem>
+</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.42.53" rtt="48.14"/>
+</trace>
+<times srtt="48142" rttvar="8491" to="100000"/>
+</host>
+<host starttime="1491138513" endtime="1491138656"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.42.55" addrtype="ipv4"/>
+<address addr="00:50:56:89:5B:4A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="982">
+<extrareasons reason="no-responses" count="982"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="landesk-rc" product="LANDesk remote management" method="probed" conf="10"><cpe>cpe:/a:landesk:landesk_management_suite</cpe></service></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="telnet" product="Microsoft Windows XP telnetd" ostype="Windows XP" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows_xp</cpe></service><script id="telnet-ntlm-info" output="&#xa;  Target_Name: LOOKAROUNDYOU&#xa;  NetBIOS_Domain_Name: LOOKAROUNDYOU&#xa;  NetBIOS_Computer_Name: LOOKAROUNDYOU&#xa;  DNS_Domain_Name: LookAroundYou&#xa;  DNS_Computer_Name: LookAroundYou&#xa;  Product_Version: 6.1.7600"><elem key="Target_Name">LOOKAROUNDYOU</elem>
+<elem key="NetBIOS_Domain_Name">LOOKAROUNDYOU</elem>
+<elem key="NetBIOS_Computer_Name">LOOKAROUNDYOU</elem>
+<elem key="DNS_Domain_Name">LookAroundYou</elem>
+<elem key="DNS_Computer_Name">LookAroundYou</elem>
+<elem key="Product_Version">6.1.7600</elem>
+</script></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="domain" product="Microsoft DNS" version="6.1.7600" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:dns</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: Microsoft DNS 6.1.7600 (1DB04228)"><elem key="bind.version">Microsoft DNS 6.1.7600 (1DB04228)</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version   port/proto  service&#xa;  100000  2,3,4        111/tcp  rpcbind&#xa;  100000  2,3,4        111/udp  rpcbind&#xa;  100003  2,3         2049/tcp  nfs&#xa;  100003  2,3         2049/udp  nfs&#xa;  100005  1,2,3       1048/tcp  mountd&#xa;  100005  1,2,3       1048/udp  mountd&#xa;  100021  1,2,3,4     1047/tcp  nlockmgr&#xa;  100021  1,2,3,4     1047/udp  nlockmgr&#xa;  100024  1           1039/tcp  status&#xa;  100024  1           1039/udp  status&#xa;"><table key="100021">
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">1047</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">1047</elem>
+</table>
+</table>
+<table key="100024">
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">1039</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">1039</elem>
+</table>
+</table>
+<table key="100005">
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">1048</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">1048</elem>
+</table>
+</table>
+<table key="100003">
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100000">
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" product="Windows Server 2008 R2 Standard 7600 microsoft-ds" ostype="Windows Server 2008 R2 - 2012" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="1039"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="1047"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="nlockmgr" version="1-4" extrainfo="RPC #100021" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="1048"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="mountd" version="1-3" extrainfo="RPC #100005" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="nfs" version="2-3" extrainfo="RPC #100003" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" product="Microsoft Terminal Service" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=LookAroundYou&#xa;Not valid before: 2016-01-01T03:40:44&#xa;Not valid after:  2016-07-02T03:40:44"><table key="subject">
+<elem key="commonName">LookAroundYou</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">LookAroundYou</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">userdata: 0x49ba938</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048.0</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2016-07-02T03:40:44</elem>
+<elem key="notBefore">2016-01-01T03:40:44</elem>
+</table>
+<elem key="md5">b2ff3cd930c5c22efb87b8811302690a</elem>
+<elem key="sha1">db5e6dec2879b886b4a06b7c3e6822483c0d38ad</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC3jCCAcagAwIBAgIQJNYfQJSQgJBNoq+BfCyC/DANBgkqhkiG9w0BAQUFADAY&#xa;MRYwFAYDVQQDEw1Mb29rQXJvdW5kWW91MB4XDTE2MDEwMTAzNDA0NFoXDTE2MDcw&#xa;MjAzNDA0NFowGDEWMBQGA1UEAxMNTG9va0Fyb3VuZFlvdTCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAMWyKCwUXl3HgEZpgbPYMhaSAAPGoEruz4AgK15M&#xa;w9qx7uuK0onUZ2b4UMK4f3Mwlvz/d9canc2kHzKCOn07geeLhG4bj1pwsOpeOTjk&#xa;3Kd8vX5xKr760ysYLeZyWQfVbqUOFvZt2ohdgT9O/tZPr4chqbBox9rlQslFb9Fo&#xa;ycUwl7pLj8RHLWgTtix0EYkknFci7LT65n+uVcQyc/HWLZZMJpug7jCAzyN9tirz&#xa;Y2Hh/17l4PYqUH7RoJR5LJvCzz1HzkhX5Q/T5iGyOCjcQBb0vXL1xmG5yCIzaM49&#xa;5IEPyN6mxzeB65ScIOxSo6XJNr8XK2hRNyxRXJMO1Zx5T4kCAwEAAaMkMCIwEwYD&#xa;VR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBBQUAA4IB&#xa;AQBPuXcvZjEFyFlre0khyUqoGWuXgH6aFCgvcz0JvCjJs4u7ep5WdaicBTYSoos/&#xa;92dI9qVvCq/IwjuyUpWQ2IDLC/KU5I3cMI9eKN8wvkGvqbH9NGDUerera2XBdcQ8&#xa;agvAdf2aFhOXEVWCJmhY7d8VyJoSOBu2M3H05OX71iQrAVqkV7efRUcp65mtyDzp&#xa;kWuv6g4CBpAC8GGg9ODagPi1Ba/Hf7qiO7n9JfAtzMoEbk+HkFOo9k4GOHyUp5tQ&#xa;1tAdrGm+y53PNc1DSl33oxXI61p2GwJ7oQSqQ8e3QxNyQpgeCThcjLH4f5P5Wlk8&#xa;CWEk4hwUo3xRSj9kjlk0zfZG&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2016-01-02T05:07:16+00:00; -1y90d08h03m03s from scanner time."><elem key="date">2016-01-02T05:07:16+00:00</elem>
+<elem key="delta">-39427383.0</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft IIS httpd" version="7.5" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:7.5</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="http-server-header" output="Microsoft-IIS/7.5"><elem>Microsoft-IIS/7.5</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=utf-8)."><elem key="title"></elem>
+</script></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49175"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<osmatch name="Microsoft Windows 8.1 Update 1" accuracy="92" line="71023">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="92"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Phone 7.5 or 8.0" accuracy="92" line="72250">
+<osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="92"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2" accuracy="91" line="68090">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 or Windows 8.1" accuracy="91" line="68362">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="91"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1 or Windows 8" accuracy="91" line="68528">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="91"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="91" line="69546">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 Professional or Windows 8" accuracy="91" line="70025">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7::-:professional</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="91"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 R2" accuracy="91" line="70652">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="91" line="72916">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="91"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP2" accuracy="91" line="73145">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="91"><cpe>cpe:/o:microsoft:windows_vista::sp2</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="8839" lastboot="Sun Apr  2 06:43:37 2017"/>
+<distance value="1"/>
+<tcpsequence index="260" difficulty="Good luck!" values="B218D37A,A0680D63,8B674095,F319316D,CE49783,C9D28B88"/>
+<ipidsequence class="Incremental" values="9ED,9EE,9EF,9F0,9F1,9F2"/>
+<tcptssequence class="100HZ" values="D693A,D6944,D6950,D6958,D6962,D696D"/>
+<hostscript><script id="clock-skew" output="mean: -456d08h03m03s, deviation: 0s, median: -456d08h03m03s"><elem key="median">-39427383.024081</elem>
+<elem key="stddev">0.0</elem>
+<elem key="mean">-39427383.024081</elem>
+</script><script id="ms-sql-info" output="&#xa;  Windows server name: LOOKAROUNDYOU&#xa;  192.168.42.55\SQLEXPRESS: &#xa;    Instance name: SQLEXPRESS&#xa;    Version: &#xa;      Product: Microsoft SQL Server 2008 R2&#xa;      name: Microsoft SQL Server 2008 R2 SP3&#xa;      Service pack level: SP3&#xa;    Clustered: false"><elem key="Windows server name">LOOKAROUNDYOU</elem>
+<table key="192.168.42.55\SQLEXPRESS">
+<elem key="Instance name">SQLEXPRESS</elem>
+<table key="Version">
+<elem key="Product">Microsoft SQL Server 2008 R2</elem>
+<elem key="name">Microsoft SQL Server 2008 R2 SP3</elem>
+<elem key="Service pack level">SP3</elem>
+</table>
+<elem key="Clustered">false</elem>
+</table>
+</script><script id="nbstat" output="NetBIOS name: LOOKAROUNDYOU, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:50:56:89:5b:4a (VMware)"><elem key="user">&lt;unknown&gt;</elem>
+<table key="mac">
+<elem key="address">00:50:56:89:5b:4a</elem>
+<elem key="manuf">VMware</elem>
+</table>
+<table key="names">
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">0</elem>
+<elem key="name">LOOKAROUNDYOU</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="suffix">0</elem>
+<elem key="name">THINC.LOCAL</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">32</elem>
+<elem key="name">LOOKAROUNDYOU</elem>
+</table>
+</table>
+<elem key="server_name">LOOKAROUNDYOU</elem>
+<table key="statistics">
+<elem>00 50 56 89 5b 4a 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+</table>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows Server 2008 R2 Standard 7600 (Windows Server 2008 R2 Standard 6.1)&#xa;  OS CPE: cpe:/o:microsoft:windows_server_2008::-&#xa;  Computer name: LookAroundYou&#xa;  NetBIOS computer name: LOOKAROUNDYOU&#xa;  Workgroup: THINC.LOCAL&#xa;  System time: 2016-01-02T05:07:14+00:00&#xa;"><elem key="os">Windows Server 2008 R2 Standard 7600</elem>
+<elem key="lanmanager">Windows Server 2008 R2 Standard 6.1</elem>
+<elem key="server">LOOKAROUNDYOU\x00</elem>
+<elem key="date">2016-01-02T05:07:14+00:00</elem>
+<elem key="fqdn">LookAroundYou</elem>
+<elem key="domain_dns">LookAroundYou</elem>
+<elem key="workgroup">THINC.LOCAL\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_server_2008::-</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smbv2-enabled" output="Server supports SMBv2 protocol">true</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.42.55" rtt="48.16"/>
+</trace>
+<times srtt="48163" rttvar="5998" to="100000"/>
+</host>
+<host starttime="1491138513" endtime="1491138656"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.42.67" addrtype="ipv4"/>
+<address addr="00:50:56:89:43:36" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="995">
+<extrareasons reason="resets" count="995"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="6.7p1 Debian 5+deb8u3" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 b6:8d:1e:f3:80:64:3f:8a:96:52:92:7a:9f:b1:be:67 (DSA)&#xa;  2048 72:c4:06:a7:2f:71:1b:6a:6b:57:fe:cf:ad:3f:9c:16 (RSA)&#xa;  256 6b:c6:6e:fb:ba:06:dc:23:f9:3e:01:a6:2a:87:48:1a (ECDSA)"><table>
+<elem key="bits">1024.0</elem>
+<elem key="fingerprint">b68d1ef380643f8a9652927a9fb1be67</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAKOqKCoxsGRCrpzMUAgIujWPKFBws9ApAvnnn6DQ8GO4GzpSylXDDa6EPNlNRUGJ/DO0XHysjZe4D5cDMvpt/5TVfBm/GPu2cxEIBjAwDMPLhJxwnQIzKueiLX27u63bk0iFcIvPuCFsnsNYADXa1NRgbpQRurujFZsP+OrhAYT1AAAAFQDT/5tCY5KTvJ35FwFf2wsBOM3vEwAAAIBqbVQhGPs4NZ3QcOqC7uglCPwSlldhrsziWlKqenvPoDtYSHNCVdU/snRiIB/4/Fxpy0DxNH/4MRVXf0ZNflHn6KqHlRKWahrqRdp26wnMboZmx1Sb0MG6vkJn0sLQOjAkURj1OWSaYu20xzfLKFOI9DxKJTnhqIGl7S2FmjRlqwAAAIAYeu1nUj/8kKSPu9jKvRiFjnrrTRgYNrHb8FR6jFFuDfR/xDBfdB86jIaO31ZTU46sG6HKBlhPEiv96syacF4JDH/J33DtJKRyiwZzSzCyk0qHMuupGp7fWJTXks0KVuv3Lx1CRV+LO4pCsNx7WbFjQZYkN34SNOEHoMYV3yLriA==</elem>
+<elem key="type">ssh-dss</elem>
+</table>
+<table>
+<elem key="bits">2048.0</elem>
+<elem key="fingerprint">72c406a72f711b6a6b57fecfad3f9c16</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQD3mNozgt43qPiwvP667f/13IvfmhMiEKKpbkfFYTOi7NWkwTt7ZL8kRVI4rnZqIjsYRI8bRqX9MH7+kMI43SdKm31/OjMuwKxC5E8yBXr2/FrRupkFCKJpHZRg13inwdNbxCDSh//Z8O9uJItxA+J6Oh7M3LBDUAQFx7TZ87dLASJCnjl+OHxA4QB5T8Ri9dlViQpSs++7GhBYz5dhB+lYtrBo69Iag49jbTZiDooGX/MEW3Qp0eM29hUXsRXx8VH7vM86m9FvCuZZEU7xAhw1xrNtmGZgZoHPhdR3wcvydb6MCEmGRKLQWEWCoalwExxYZStSUj5jr8/bnI5poj67</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">6bc66efbba06dc23f93e01a62a87481a</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIcrN2N6CzFzFe9n+SWzgkcbBGGcG/z1NScwCmXKV9sJgy12LiiJlASKc75p4G6zQX5SXjtMyAloIT+T2VRCRYo=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" product="Postfix smtpd" hostname=" mail.local" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="smtp-commands" output="mail.local, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, "/><script id="ssl-cert" output="Subject: commonName=localhost.localdomain&#xa;Not valid before: 2013-05-05T06:42:26&#xa;Not valid after:  2023-05-03T06:42:26"><table key="subject">
+<elem key="commonName">localhost.localdomain</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost.localdomain</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">userdata: 0x40b4468</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048.0</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2023-05-03T06:42:26</elem>
+<elem key="notBefore">2013-05-05T06:42:26</elem>
+</table>
+<elem key="md5">2c35f35e5952898d73e2e771e525cd99</elem>
+<elem key="sha1">95881649542b983758d27e2e2645676a9822d3a6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC0DCCAbigAwIBAgIJAICqgo+MWpfUMA0GCSqGSIb3DQEBBQUAMCAxHjAcBgNV&#xa;BAMTFWxvY2FsaG9zdC5sb2NhbGRvbWFpbjAeFw0xMzA1MDUwNjQyMjZaFw0yMzA1&#xa;MDMwNjQyMjZaMCAxHjAcBgNVBAMTFWxvY2FsaG9zdC5sb2NhbGRvbWFpbjCCASIw&#xa;DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPqM3C90tDptCUJc1sstub8sjbO9&#xa;w3b/vWNRhc1AgJbJRsOLamg791PIHoOWiPSsGSwbvanGzhrmQ5ZDi5r4/OiDNc+d&#xa;1XyHWPrJULPxwZu1fxbMgJ8eIhZmqVCq3r+FswYwxkq/UARfq/E1AW4RyANxsLS0&#xa;uYo9wEp+D7dZhyR2qcS9JxmDOJzHxlSWGsPRmZlPXosfXEqn0/gjVwSPxhQlZzE5&#xa;iFws1/xrbO4h/367PSqEMIrKjPPCxSm8DG7c2hkh4RIXv5WS2Tpn88FBX+BoA2uk&#xa;f0Cf+6RS6M1nrRWHgB20px9vdZjlYi8qYEAywOzSgThF95aF3uWznmowar8CAwEA&#xa;AaMNMAswCQYDVR0TBAIwADANBgkqhkiG9w0BAQUFAAOCAQEAiT5k/qA/XLDEF4Hk&#xa;EqIYXxuuk18aRhnI23Pl/6C9BSv5SGU+XLwk2AoFyR5JWvwxIpEJ/kq1S5qCNhEi&#xa;93T29QBkk0cuEXKOESp8taIu+og3QRxdAu7vB5y9tE62ftxCi31axnp8oo8kivCw&#xa;BGCyG8SEj0cKa0mBYzYipb0sPd+j8AFPN/XGuK/H27/hcKHhTPEAoSZ2XdAk2XRj&#xa;W5mRKAZ4xb/VOGIpLYwxj+CbuYmyNYoB9ON1aCn2xLS5n8NMCs50UeopmN3BGQ7Q&#xa;Hm51bRlJs0wsWGuJ5smwXWMZJcdaJIykZrktiPVoqJkkaNmW2hTrhcBX+Aru2qzj&#xa;UAydaQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version   port/proto  service&#xa;  100000  2,3,4        111/tcp  rpcbind&#xa;  100000  2,3,4        111/udp  rpcbind&#xa;"><table key="100000">
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: SECURITY" hostname="MAIL" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="4.2.10-Debian" extrainfo="workgroup: SECURITY" hostname="MAIL" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="42616"/>
+<osmatch name="Linux 3.11 - 4.1" accuracy="95" line="59212">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="92" line="59361">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="92" line="59696">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="91" line="62380">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="91" line="51631">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 3.8" accuracy="91" line="60525">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.8" accuracy="91" line="61438">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.8</cpe></osclass>
+</osmatch>
+<osmatch name="WatchGuard Fireware 11.8" accuracy="91" line="95882">
+<osclass type="firewall" vendor="WatchGuard" osfamily="Fireware" osgen="11.X" accuracy="91"><cpe>cpe:/o:watchguard:fireware:11.8</cpe></osclass>
+</osmatch>
+<osmatch name="IPFire 2.11 firewall (Linux 2.6.32)" accuracy="91" line="43522">
+<osclass type="firewall" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="firewall" vendor="IPFire" osfamily="IPFire" osgen="2.X" accuracy="91"><cpe>cpe:/o:ipfire:ipfire:2.11</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 3.12" accuracy="90" line="58981">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.25BETA2%E=4%D=4/2%OT=22%CT=1%CU=42616%PV=Y%DS=1%DC=D%G=Y%M=0050&#xa;OS:56%TM=58E0F860%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=108%TI=Z%II=I%&#xa;OS:TS=8)OPS(O1=M529ST11NW7%O2=M529ST11NW7%O3=M529NNT11NW7%O4=M529ST11NW7%O5&#xa;OS:=M529ST11NW7%O6=M529ST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=&#xa;OS:7120)ECN(R=Y%DF=Y%T=40%W=7210%O=M529NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%&#xa;OS:A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=A&#xa;OS:R%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RI&#xa;OS:PCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="8410" lastboot="Sun Apr  2 06:50:46 2017"/>
+<distance value="1"/>
+<tcpsequence index="258" difficulty="Good luck!" values="D4794D08,BE87C7EB,EB0261BE,26195B56,8820839B,A2652D0E"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="20908F,2090A9,2090C1,2090DB,2090F4,20910F"/>
+<hostscript><script id="clock-skew" output="mean: -8h53m52s, deviation: 0s, median: -8h53m52s"><elem key="median">-32032.0206625</elem>
+<elem key="stddev">-nan</elem>
+<elem key="mean">-32032.0206625</elem>
+</script><script id="nbstat" output="NetBIOS name: MAIL, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)"><elem key="user">&lt;unknown&gt;</elem>
+<table key="mac">
+<elem key="address">&lt;unknown&gt;</elem>
+<elem key="manuf">unknown</elem>
+</table>
+<table key="names">
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">0</elem>
+<elem key="name">MAIL</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">3</elem>
+<elem key="name">MAIL</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">32</elem>
+<elem key="name">MAIL</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="suffix">1</elem>
+<elem key="name">\x01\x02__MSBROWSE__\x02</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="suffix">0</elem>
+<elem key="name">SECURITY</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">29</elem>
+<elem key="name">SECURITY</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="suffix">30</elem>
+<elem key="name">SECURITY</elem>
+</table>
+</table>
+<elem key="server_name">MAIL</elem>
+<table key="statistics">
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+</table>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.2.10-Debian)&#xa;  Computer name: mail&#xa;  NetBIOS computer name: MAIL&#xa;  Domain name: local&#xa;  FQDN: mail.local&#xa;  System time: 2017-04-02T00:16:26-04:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.2.10-Debian</elem>
+<elem key="server">MAIL\x00</elem>
+<elem key="date">2017-04-02T00:16:26-04:00</elem>
+<elem key="fqdn">mail.local</elem>
+<elem key="domain_dns">local</elem>
+<elem key="workgroup">SECURITY\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smbv2-enabled" output="Server supports SMBv2 protocol">true</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.42.67" rtt="41.33"/>
+</trace>
+<times srtt="41325" rttvar="2274" to="100000"/>
+</host>
+<host starttime="1491138513" endtime="1491138656"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.42.161" addrtype="ipv4"/>
+<address addr="00:50:56:89:4A:2D" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="988">
+<extrareasons reason="resets" count="988"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="iWeb" servicefp="SF-Port80-TCP:V=7.25BETA2%I=7%D=4/2%Time=58E0F7E3%P=x86_64-pc-linux-gnu%r(GetRequest,32B,&quot;HTTP/1\.1\x20200\x20OK\r\nLastModified:\x2010/3/2015\x205:28:33\x20AM\r\nServer:\x20iWeb\r\nContent-Type:\x20text/html\r\nContent-Length:\x20696\r\n\r\n&lt;!DOCTYPE\x20html&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n\t&lt;title&gt;HTML5\x20Login&lt;/title&gt;\r\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;normalize\.css\&quot;&gt;\r\n\t&lt;link\x20rel=\&quot;stylesheet\&quot;\x20href=\&quot;style\.css\&quot;&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n\t&lt;section\x20class=\&quot;loginform\x20cf\&quot;&gt;\r\n\t\t&lt;form\x20name=\&quot;login\&quot;\x20action=\&quot;index_submit\.html\&quot;\x20method=\&quot;get\&quot;\x20accept-charset=\&quot;utf-8\&quot;&gt;\r\n\t\t\t&lt;ul&gt;\r\n\t\t\t\t&lt;li&gt;\r\n\t\t\t\t\t&lt;label\x20for=\&quot;usermail\&quot;&gt;Email&lt;/label&gt;\r\n\t\t\t\t\t&lt;input\x20type=\&quot;email\&quot;\x20name=\&quot;usermail\&quot;\x20placeholder=\&quot;yourname@email\.com\&quot;\x20required&gt;\r\n\t\t\t\t&lt;/li&gt;\r\n\t\t\t\t&lt;li&gt;\r\n\t\t\t\t\t&lt;label\x20for=\&quot;password\&quot;&gt;Password&lt;/label&gt;\r\n\t\t\t\t\t&lt;input\x20type=\&quot;password\&quot;\x20name=\&quot;password\&quot;\x20placeholder=\&quot;password\&quot;\x20required&gt;&lt;/li&gt;\r\n\t\t\t\t&lt;li&gt;\r\n\t\t\t\t\t&lt;input\x20type=\&quot;submit\&quot;\x20value=\&quot;Login\&quot;&gt;\r\n\t\t\t\t&lt;/li&gt;\r\n\t\t\t&lt;/ul&gt;\r\n\t\t&lt;/form&gt;\r\n\t&lt;/section&gt;\r\n&lt;/body&gt;\r\n&lt;/html&gt;&quot;)%r(FourOhFourRequest,898,&quot;HTTP/1\.1\x20404\x20Not\x20Found\r\nServer:\x20iWeb\r\nContent-Type:\x20text/html\r\nContent-Length:\x202113\r\n\r\n&lt;html&gt;\r\n\r\n&lt;head&gt;\r\n&lt;meta\x20http-equiv=\&quot;Content-Type\&quot;\x20content=\&quot;text/html;\x20charset=windows-1252\&quot;&gt;\r\n&lt;title&gt;iWeb\x20Server\x20Error&lt;/title&gt;\r\n&lt;style&gt;\r\n&lt;!-&#45;\r\n\x20\x20\x20\x20p,\x20body,\x20td,\x20th,\x20a,\x20input,\x20select,\x20input\x20{font-family:\x20Tahoma,\x20Verdana,\x20Arial,\x20Helvetica,\x20sans-serif;\x20font-size:\x2011pt}\r\n\x20\x20\x20\x20p,\x20body,\x20td,\x20a,\x20th\x20{color:black\x20}\x20\x20\x20\x20\r\n\x20\x20\x20\x20H1\x20{\x20font-size:\x2018pt;\x20color:\x20#6699CC\x20}\r\n\x20\x20\x20\x20H2\x20{\x20font-size:\x2016pt;\x20color:\x20#6699CC\x20}\r\n\x20\x20\x20\x20H3\x20{\x20font-size:\x2014pt;\x20color:\x20black\x20}\r\n\x20\x20\x20\x20a\x20{color:#0000CC;\x20text-decoration:\x20none\x20}\r\n\x20\x20\x20\x20a:link\x20{color:#0033CC;\x20text-decoration:\x20none\x20}\r\n\x20\x20\x20\x20a:visited\x20{color:#0000AA;\x20text-decoration:\x20none\x20}\r\n\x20\x20\x20\x20a:hover\x20{color:#6666FF;\x20text-decoration:\x20underline;\x20cursor:\x20hand\x20}\r\n\t\ta:active\x20{color:#6666FF;\x20text-decoration:\x20underline\x20}\r\n\x20\x20\x20\.copyright\x20{\x20font-size:\x208pt}\r\n-&#45;&gt;\r\n&lt;/style&gt;\r\n&lt;/head&gt;\r\n\r\n&lt;body\x20topmargin=\&quot;0\&quot;\x20leftmargin=&quot;);" method="probed" conf="10"/><script id="http-robots.txt" output="1 disallowed entry &#xa;/powershell_dev_scripts/"/><script id="http-server-header" output="iWeb"><elem>iWeb</elem>
+</script><script id="http-title" output="HTML5 Login"><elem key="title">HTML5 Login</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" product="Windows Server (R) 2008 Standard 6002 Service Pack 2 microsoft-ds" extrainfo="workgroup: WORKGROUP" hostname="WIN-PAQJG3GR43J" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" product="Microsoft Terminal Service" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=WIN-PAQJG3GR43J&#xa;Not valid before: 2017-01-11T21:14:39&#xa;Not valid after:  2017-07-13T21:14:39"><table key="subject">
+<elem key="commonName">WIN-PAQJG3GR43J</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">WIN-PAQJG3GR43J</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">userdata: 0x3244dd8</elem>
+<elem key="type">rsa</elem>
+<elem key="bits">2048.0</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2017-07-13T21:14:39</elem>
+<elem key="notBefore">2017-01-11T21:14:39</elem>
+</table>
+<elem key="md5">0fe17c8ab9e8778d05efd63cd4e90ecc</elem>
+<elem key="sha1">44bf1ee05c85436cb2a587de14cc24785c8093b7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC4jCCAcqgAwIBAgIQPfvSOZseUKZIubHshIhO+zANBgkqhkiG9w0BAQUFADAa&#xa;MRgwFgYDVQQDEw9XSU4tUEFRSkczR1I0M0owHhcNMTcwMTExMjExNDM5WhcNMTcw&#xa;NzEzMjExNDM5WjAaMRgwFgYDVQQDEw9XSU4tUEFRSkczR1I0M0owggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC62BMNLmPZas4tKw4wHJL22iWwy6uCIye6&#xa;fFGpvlRS6NK9p8n2Bs5tOzC/gxcrZ13KdO/meyiOvWBmTdbxNT66gY97WIblGz4y&#xa;mpacWGGjHvkUXw3qA5dk2QKKo2fAEvnXJsm1hMVVSaxYAUC2KAqilWK0iwNka8mR&#xa;gFpKdyRHNKe+wuXw3NmbprDRGnF02oXQmguWE2H0R0pTB8W2tNWh/euKWWZiXRxD&#xa;sppTIoY0g6x88+oqIfN/ObYzgubDa1R8xq4Y6Die75uKQTAhF8GU7FjehgkZd59U&#xa;1XJ999FEuipDuA525V92TijZbtlD4Cf3mv9d7icrjcV0yKnYG/A3AgMBAAGjJDAi&#xa;MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQUF&#xa;AAOCAQEApw70Bkww7dUdDZ1ZnCZ9cson05buh1bXnVIh7Nh+3GvFUZVJ7AY6OpdR&#xa;zMsBE7OhJKNG4oSsf9a3FdpFXYnZtqGlutdpGOnW7Dn0fd4CoTbuUS7D+Kv3JU/V&#xa;TDK7t4WmVcCSMVK+fzewTpcniRxn1AUZTRXcv3ZXUjIKCquMhvxtIzkpaNs6dJ2E&#xa;9F8LdoieaUEUuvJCGCVI/AcCZnFym9UASYXSJTDn7rT8e0CKj39iW0egZxgFOAyC&#xa;Lr7PJHRDSles/mkuIe8rtJWlOiuxvCzd+5MWavt3wDkSw7O0tVX/fOImuPxxEKiu&#xa;Zs4567ju9jn1ztIFkSY3IiUn7hdoMQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2017-04-02T19:24:31+00:00; +6h14m12s from scanner time."><elem key="date">2017-04-02T19:24:31+00:00</elem>
+<elem key="delta">22452.0</elem>
+</script></port>
+<port protocol="tcp" portid="5357"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Service Unavailable"><elem key="title">Service Unavailable</elem>
+</script></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49156"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="39430"/>
+<osmatch name="Microsoft Windows Server 2008 R2" accuracy="95" line="68090">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="95"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1" accuracy="95" line="70719">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="95"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="95"><cpe>cpe:/o:microsoft:windows_server_2008::sp2</cpe><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="95" line="72916">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="95"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="95"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="95"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP2" accuracy="95" line="73145">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="95"><cpe>cpe:/o:microsoft:windows_vista::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008" accuracy="94" line="73188">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="94"><cpe>cpe:/o:microsoft:windows_vista::sp2</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="94"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="94"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1 or Windows 8" accuracy="94" line="68528">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="94"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="94"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="94" line="69546">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="94"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 Professional or Windows 8" accuracy="94" line="70025">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="94"><cpe>cpe:/o:microsoft:windows_7::-:professional</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8" accuracy="94"><cpe>cpe:/o:microsoft:windows_8</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7 SP1 or Windows Server 2008 R2" accuracy="94" line="70652">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="94"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="94"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2 SP1" accuracy="93" line="68436">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="93"><cpe>cpe:/o:microsoft:windows_server_2008:r2:sp1</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.25BETA2%E=4%D=4/2%OT=80%CT=1%CU=39430%PV=Y%DS=1%DC=D%G=Y%M=0050&#xa;OS:56%TM=58E0F860%P=x86_64-pc-linux-gnu)SEQ(SP=FC%GCD=1%ISR=109%TI=I%II=I%S&#xa;OS:S=S%TS=7)OPS(O1=M529NW8ST11%O2=M529NW8ST11%O3=M529NW8NNT11%O4=M529NW8ST1&#xa;OS:1%O5=M529NW8ST11%O6=M529ST11)WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000&#xa;OS:%W6=2000)ECN(R=Y%DF=Y%T=80%W=2000%O=M529NW8NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%&#xa;OS:S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+&#xa;OS:%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=&#xa;OS:G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=Z)&#xa;"/>
+</os>
+<uptime seconds="8831" lastboot="Sun Apr  2 06:43:45 2017"/>
+<distance value="1"/>
+<tcpsequence index="252" difficulty="Good luck!" values="56493DBD,88844C0E,30F86951,3A34907,3AC7FB31,63F3F4A2"/>
+<ipidsequence class="Incremental" values="2BD2,2BD3,2BD4,2BD5,2BD6,2BD7"/>
+<tcptssequence class="100HZ" values="D69A4,D69AE,D69B8,D69C2,D69CC,D69D7"/>
+<hostscript><script id="clock-skew" output="mean: 6h14m12s, deviation: 0s, median: 6h14m12s"><elem key="median">22451.979085</elem>
+<elem key="stddev">0.0</elem>
+<elem key="mean">22451.979085</elem>
+</script><script id="nbstat" output="NetBIOS name: WIN-PAQJG3GR43J, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:50:56:89:4a:2d (VMware)"><elem key="user">&lt;unknown&gt;</elem>
+<table key="mac">
+<elem key="address">00:50:56:89:4a:2d</elem>
+<elem key="manuf">VMware</elem>
+</table>
+<table key="names">
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">0</elem>
+<elem key="name">WIN-PAQJG3GR43J</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="suffix">0</elem>
+<elem key="name">WORKGROUP</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">32</elem>
+<elem key="name">WIN-PAQJG3GR43J</elem>
+</table>
+</table>
+<elem key="server_name">WIN-PAQJG3GR43J</elem>
+<table key="statistics">
+<elem>00 50 56 89 4a 2d 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+</table>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows Server (R) 2008 Standard 6002 Service Pack 2 (Windows Server (R) 2008 Standard 6.0)&#xa;  OS CPE: cpe:/o:microsoft:windows_server_2008::sp2&#xa;  Computer name: WIN-PAQJG3GR43J&#xa;  NetBIOS computer name: WIN-PAQJG3GR43J&#xa;  Workgroup: WORKGROUP&#xa;  System time: 2017-04-02T12:24:30-07:00&#xa;"><elem key="os">Windows Server (R) 2008 Standard 6002 Service Pack 2</elem>
+<elem key="lanmanager">Windows Server (R) 2008 Standard 6.0</elem>
+<elem key="server">WIN-PAQJG3GR43J\x00</elem>
+<elem key="date">2017-04-02T12:24:30-07:00</elem>
+<elem key="fqdn">WIN-PAQJG3GR43J</elem>
+<elem key="domain_dns">WIN-PAQJG3GR43J</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_server_2008::sp2</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smbv2-enabled" output="Server supports SMBv2 protocol">true</script></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.42.161" rtt="41.83"/>
+</trace>
+<times srtt="41830" rttvar="1976" to="100000"/>
+</host>
+<runstats><finished time="1491138656" timestr="Sun Apr  2 09:10:56 2017" elapsed="143.86" summary="Nmap done at Sun Apr  2 09:10:56 2017; 4 IP addresses (4 hosts up) scanned in 143.86 seconds" exit="success"/><hosts up="4" down="0" total="4"/>
+</runstats>
+</nmaprun>

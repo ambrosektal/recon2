@@ -1,0 +1,38 @@
+# Nmap 7.60 scan initiated Thu Mar  1 08:53:00 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.218U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.218U_nmap_scan_import.xml 10.11.1.218
+Nmap scan report for 10.11.1.218
+Host is up, received arp-response (0.044s latency).
+Scanned at 2018-03-01 08:53:13 EST for 750s
+Not shown: 199 open|filtered ports
+Reason: 199 no-responses
+PORT    STATE SERVICE    REASON               VERSION
+137/udp open  netbios-ns udp-response ttl 128 Microsoft Windows netbios-ns (workgroup: THINC)
+MAC Address: 00:50:56:89:53:4B (VMware)
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A9808B7%P=x86_64-pc-linux-gnu)
+SEQ(II=I)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=Z)
+
+Network Distance: 1 hop
+Service Info: Host: OBSERVER; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| nbstat: NetBIOS name: OBSERVER, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:89:53:4b (VMware)
+| Names:
+|   OBSERVER<00>         Flags: <unique><active>
+|   THINC<00>            Flags: <group><active>
+|   OBSERVER<20>         Flags: <unique><active>
+|   THINC<1e>            Flags: <group><active>
+| Statistics:
+|   00 50 56 89 53 4b 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   44.38 ms 10.11.1.218
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar  1 09:05:43 2018 -- 1 IP address (1 host up) scanned in 770.39 seconds

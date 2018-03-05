@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Wed Feb 28 20:36:48 2018 as: nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.125U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.125U_nmap_scan_import.xml 10.11.1.125 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.125U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.125U_nmap_scan_import.xml 10.11.1.125" start="1519868208" startstr="Wed Feb 28 20:36:48 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="200" services="7,9,13,17,19,21-23,37,42,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,192,199,389,407,427,443,445,464,497,500,514-515,517-518,520,593,623,626,631,664,683,800,989-990,996-999,1001,1008,1019,1021-1034,1036,1038-1039,1041,1043-1045,1049,1068,1419,1433-1434,1645-1646,1701,1718-1719,1782,1812-1813,1885,1900,2000,2002,2048-2049,2148,2222-2223,2967,3052,3130,3283,3389,3456,3659,3703,4000,4045,4444,4500,4672,5000-5001,5060,5093,5351,5353,5355,5500,5632,6000-6001,6346,7938,9200,9876,10000,10080,11487,16680,17185,19283,19682,20031,22986,27892,30718,31337,32768-32773,32815,33281,33354,34555,34861-34862,37444,39213,41524,44968,49152-49154,49156,49158-49159,49162-49163,49165-49166,49168,49171-49172,49179-49182,49184-49196,49199-49202,49205,49208-49211,58002,65024"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1519868217"/>
+<taskend task="NSE" time="1519868217"/>
+<taskbegin task="NSE" time="1519868217"/>
+<taskend task="NSE" time="1519868217"/>
+<taskbegin task="ARP Ping Scan" time="1519868218"/>
+<taskend task="ARP Ping Scan" time="1519868218" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1519868218"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1519868219"/>
+<taskbegin task="UDP Scan" time="1519868219"/>
+<taskend task="UDP Scan" time="1519868225" extrainfo="200 total ports"/>
+<taskbegin task="Service scan" time="1519868225"/>
+<taskprogress task="Service scan" time="1519868420" percent="15.50" remaining="1064" etc="1519869483"/>
+<taskprogress task="Service scan" time="1519868518" percent="30.50" remaining="668" etc="1519869186"/>
+<taskprogress task="Service scan" time="1519868616" percent="45.50" remaining="469" etc="1519869084"/>
+<taskprogress task="Service scan" time="1519868713" percent="60.50" remaining="319" etc="1519869032"/>
+<taskprogress task="Service scan" time="1519868811" percent="75.50" remaining="191" etc="1519869001"/>
+<taskprogress task="Service scan" time="1519868908" percent="90.50" remaining="72" etc="1519868980"/>
+<taskend task="Service scan" time="1519868913" extrainfo="200 services on 1 host"/>
+<taskbegin task="NSE" time="1519868916"/>
+<taskprogress task="NSE" time="1519868947" percent="99.99" remaining="1" etc="1519868947"/>
+<taskend task="NSE" time="1519868950"/>
+<taskbegin task="NSE" time="1519868950"/>
+<taskend task="NSE" time="1519868960"/>
+<host starttime="1519868218" endtime="1519868960"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.125" addrtype="ipv4"/>
+<address addr="00:50:56:89:10:3F" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="200">
+<extrareasons reason="no-responses" count="200"/>
+</extraports>
+</ports>
+<os><osfingerprint fingerprint="SCAN(V=7.60%E=4%D=2/28%OT=%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A975C20%P=x86_64-pc-linux-gnu)&#xa;U1(R=N)&#xa;IE(R=N)&#xa;"/>
+</os>
+<distance value="1"/>
+<trace>
+<hop ttl="1" ipaddr="10.11.1.125" rtt="1.09"/>
+</trace>
+<times srtt="1087" rttvar="5000" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1519868960"/>
+<taskend task="NSE" time="1519868960"/>
+<taskbegin task="NSE" time="1519868960"/>
+<taskend task="NSE" time="1519868960"/>
+<runstats><finished time="1519868960" timestr="Wed Feb 28 20:49:20 2018" elapsed="758.81" summary="Nmap done at Wed Feb 28 20:49:20 2018; 1 IP address (1 host up) scanned in 758.81 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

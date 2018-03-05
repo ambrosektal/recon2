@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Thu Mar  1 07:43:34 2018 as: nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.155U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.155U_nmap_scan_import.xml 10.11.1.155 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.155U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.155U_nmap_scan_import.xml 10.11.1.155" start="1519908214" startstr="Thu Mar  1 07:43:34 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="200" services="7,9,13,17,19,21-23,37,42,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,192,199,389,407,427,443,445,464,497,500,514-515,517-518,520,593,623,626,631,664,683,800,989-990,996-999,1001,1008,1019,1021-1034,1036,1038-1039,1041,1043-1045,1049,1068,1419,1433-1434,1645-1646,1701,1718-1719,1782,1812-1813,1885,1900,2000,2002,2048-2049,2148,2222-2223,2967,3052,3130,3283,3389,3456,3659,3703,4000,4045,4444,4500,4672,5000-5001,5060,5093,5351,5353,5355,5500,5632,6000-6001,6346,7938,9200,9876,10000,10080,11487,16680,17185,19283,19682,20031,22986,27892,30718,31337,32768-32773,32815,33281,33354,34555,34861-34862,37444,39213,41524,44968,49152-49154,49156,49158-49159,49162-49163,49165-49166,49168,49171-49172,49179-49182,49184-49196,49199-49202,49205,49208-49211,58002,65024"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1519908223"/>
+<taskend task="NSE" time="1519908223"/>
+<taskbegin task="NSE" time="1519908223"/>
+<taskend task="NSE" time="1519908223"/>
+<taskbegin task="ARP Ping Scan" time="1519908224"/>
+<taskend task="ARP Ping Scan" time="1519908224" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.11.1.155" addrtype="ipv4"/>
+</host>
+<taskbegin task="NSE" time="1519908224"/>
+<taskend task="NSE" time="1519908224"/>
+<taskbegin task="NSE" time="1519908224"/>
+<taskend task="NSE" time="1519908224"/>
+<runstats><finished time="1519908224" timestr="Thu Mar  1 07:43:44 2018" elapsed="17.63" summary="Nmap done at Thu Mar  1 07:43:44 2018; 1 IP address (0 hosts up) scanned in 17.63 seconds" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

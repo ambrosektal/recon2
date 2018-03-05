@@ -1,0 +1,322 @@
+# Nmap 7.60 scan initiated Thu Mar  1 08:53:00 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.227U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.227U_nmap_scan_import.xml 10.11.1.227
+Increasing send delay for 10.11.1.227 from 0 to 50 due to 23 out of 56 dropped probes since last increase.
+adjust_timeouts2: packet supposedly had rtt of -1432457 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -1432457 microseconds.  Ignoring time.
+Nmap scan report for 10.11.1.227
+Host is up, received arp-response (0.055s latency).
+Scanned at 2018-03-01 08:53:13 EST for 146s
+Not shown: 191 closed ports
+Reason: 191 port-unreaches
+PORT     STATE         SERVICE       REASON               VERSION
+135/udp  open          msrpc         udp-response         Microsoft RPC
+137/udp  open          netbios-ns    udp-response ttl 128 Microsoft Windows netbios-ssn (workgroup: WORKGROUP)
+138/udp  open|filtered netbios-dgm   no-response
+161/udp  open          snmp          udp-response         SNMPv1 server (public)
+| snmp-interfaces: 
+|   MS TCP Loopback interface\x00
+|     IP address: 127.0.0.1  Netmask: 255.0.0.0
+|     Type: softwareLoopback  Speed: 10 Mbps
+|     Status: up
+|     Traffic stats: 119.36 Kb sent, 119.36 Kb received
+|   VMware Accelerated AMD PCNet Adapter\x00
+|     IP address: 10.11.1.227  Netmask: 255.255.0.0
+|     MAC address: 00:50:56:89:33:b2 (VMware)
+|     Type: ethernetCsmacd  Speed: 1 Gbps
+|     Status: up
+|_    Traffic stats: 4.09 Mb sent, 8.12 Mb received
+| snmp-netstat: 
+|   TCP  0.0.0.0:21           0.0.0.0:26658
+|   TCP  0.0.0.0:25           0.0.0.0:59596
+|   TCP  0.0.0.0:80           0.0.0.0:59418
+|   TCP  0.0.0.0:135          0.0.0.0:59564
+|   TCP  0.0.0.0:443          0.0.0.0:10244
+|   TCP  0.0.0.0:445          0.0.0.0:59563
+|   TCP  0.0.0.0:1025         0.0.0.0:10313
+|   TCP  0.0.0.0:1026         0.0.0.0:2249
+|   TCP  0.0.0.0:1028         0.0.0.0:2156
+|   TCP  0.0.0.0:1031         0.0.0.0:18494
+|   TCP  0.0.0.0:3372         0.0.0.0:34950
+|   TCP  0.0.0.0:5800         0.0.0.0:26712
+|   TCP  0.0.0.0:5900         0.0.0.0:51368
+|   TCP  0.0.0.0:6532         0.0.0.0:2064
+|   TCP  10.11.1.227:21       10.11.0.31:44086
+|   TCP  10.11.1.227:21       10.11.0.154:738
+|   TCP  10.11.1.227:21       10.11.0.154:36854
+|   TCP  10.11.1.227:21       10.11.0.154:36946
+|   TCP  10.11.1.227:21       10.11.0.154:39254
+|   TCP  10.11.1.227:21       10.11.0.154:40582
+|   TCP  10.11.1.227:21       10.11.0.154:41892
+|   TCP  10.11.1.227:21       10.11.0.154:43226
+|   TCP  10.11.1.227:21       10.11.0.154:44544
+|   TCP  10.11.1.227:21       10.11.0.154:45840
+|   TCP  10.11.1.227:21       10.11.0.154:46934
+|   TCP  10.11.1.227:21       10.11.0.154:47622
+|   TCP  10.11.1.227:21       10.11.0.154:48186
+|   TCP  10.11.1.227:21       10.11.0.154:49186
+|   TCP  10.11.1.227:21       10.11.0.154:49708
+|   TCP  10.11.1.227:21       10.11.0.154:49984
+|   TCP  10.11.1.227:21       10.11.0.154:50898
+|   TCP  10.11.1.227:21       10.11.0.154:52100
+|   TCP  10.11.1.227:21       10.11.0.154:53294
+|   TCP  10.11.1.227:21       10.11.0.154:53666
+|   TCP  10.11.1.227:21       10.11.0.154:54386
+|   TCP  10.11.1.227:21       10.11.0.154:55074
+|   TCP  10.11.1.227:21       10.11.0.154:55924
+|   TCP  10.11.1.227:139      0.0.0.0:59577
+|   TCP  10.11.1.227:1036     0.0.0.0:43047
+|   TCP  10.11.1.227:1036     10.11.0.31:34744
+|   TCP  10.11.1.227:1263     10.11.1.229:139
+|   TCP  10.11.1.227:27900    0.0.0.0:18599
+|   TCP  127.0.0.1:1258       127.0.0.1:445
+|   TCP  127.0.0.1:27900      0.0.0.0:34890
+|   UDP  0.0.0.0:135          *:*
+|   UDP  0.0.0.0:161          *:*
+|   UDP  0.0.0.0:445          *:*
+|   UDP  0.0.0.0:1029         *:*
+|   UDP  0.0.0.0:1434         *:*
+|   UDP  0.0.0.0:3456         *:*
+|   UDP  10.11.1.227:137      *:*
+|   UDP  10.11.1.227:138      *:*
+|_  UDP  10.11.1.227:500      *:*
+| snmp-processes: 
+|   1: 
+|     Name: System Idle Process
+|   8: 
+|     Name: System
+|   152: 
+|     Name: sqlmangr.exe
+|   180: 
+|     Name: smss.exe
+|   200: 
+|     Name: csrss.exe
+|   220: 
+|     Name: WINLOGON.EXE
+|   248: 
+|     Name: services.exe
+|   260: 
+|     Name: LSASS.EXE
+|   380: 
+|     Name: vmtoolsd.exe
+|   452: 
+|     Name: svchost.exe
+|   484: 
+|     Name: SPOOLSV.EXE
+|   516: 
+|     Name: msdtc.exe
+|   620: 
+|     Name: svchost.exe
+|   640: 
+|     Name: LLSSRV.EXE
+|   692: 
+|     Name: sqlservr.exe
+|   760: 
+|     Name: regsvc.exe
+|   788: 
+|     Name: mstask.exe
+|   816: 
+|     Name: snmp.exe
+|   848: 
+|     Name: vmtoolsd.exe
+|   856: 
+|     Name: CMD.EXE
+|   936: 
+|     Name: winmgmt.exe
+|   948: 
+|     Name: winvnc4.exe
+|   960: 
+|     Name: svchost.exe
+|   980: 
+|     Name: inetinfo.exe
+|   1020: 
+|     Name: mssearch.exe
+|   1176: 
+|     Name: dfssvc.exe
+|   1244: 
+|     Name: netstat.exe
+|   1356: 
+|     Name: sqlagent.exe
+|   1584: 
+|     Name: explorer.exe
+|   1592: 
+|_    Name: svchost.exe
+| snmp-sysdescr: Hardware: x86 Family 6 Model 12 Stepping 2 AT/AT COMPATIBLE - Software: Windows 2000 Version 5.0 (Build 2195 Uniprocessor Free)
+|_  System uptime: 118d18h26m46.26s (1026160626 timeticks)
+| snmp-win32-services: 
+|   Alerter
+|   Automatic Updates
+|   COM+ Event System
+|   Computer Browser
+|   DHCP Client
+|   DNS Client
+|   Distributed File System
+|   Distributed Link Tracking Client
+|   Distributed Transaction Coordinator
+|   Event Log
+|   FTP Publishing Service
+|   IIS Admin Service
+|   IPSEC Policy Agent
+|   License Logging Service
+|   Logical Disk Manager
+|   MSSQLSERVER
+|   Messenger
+|   Microsoft Search
+|   NT LM Security Support Provider
+|   Network Connections
+|   Plug and Play
+|   Print Spooler
+|   Protected Storage
+|   Remote Procedure Call (RPC)
+|   Remote Registry Service
+|   Removable Storage
+|   RunAs Service
+|   SNMP Service
+|   SQLSERVERAGENT
+|   Security Accounts Manager
+|   Server
+|   Simple Mail Transport Protocol (SMTP)
+|   System Event Notification
+|   TCP/IP NetBIOS Helper Service
+|   Task Scheduler
+|   Telephony
+|   VMTools
+|   VNC Server Version 4
+|   Windows Management Instrumentation
+|   Windows Management Instrumentation Driver Extensions
+|   Workstation
+|_  World Wide Web Publishing Service
+| snmp-win32-shares: 
+|_  share: C:\share
+| snmp-win32-software: 
+|   ActiveState ActivePython 2.4.3; 2006-12-22T21:02:44
+|   Microsoft Data Access Components KB870669; 2007-01-11T12:38:24
+|   Microsoft SQL Server 2000; 2003-06-07T12:54:46
+|   Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148; 2012-08-08T11:02:20
+|   VMware Tools; 2015-02-28T02:30:08
+|   VNC Free Edition 4.1.1; 2007-01-11T18:15:58
+|   WebFldrs; 2003-06-03T07:19:26
+|   WinRAR archiver; 2006-12-22T20:57:38
+|   Windows 2000 Hotfix (Pre-SP4) Q329170; 2007-01-11T12:35:16
+|   Windows 2000 Hotfix (Pre-SP4) Q810833; 2007-01-11T12:39:24
+|   Windows 2000 Hotfix (Pre-SP4) [See Q326830 for more information]; 2007-01-11T12:35:40
+|   Windows 2000 Hotfix (Pre-SP4) [See Q326886 for more information]; 2007-01-11T12:36:06
+|   Windows 2000 Hotfix (Pre-SP4) [See Q329115 for more information]; 2007-01-11T12:36:00
+|   Windows 2000 Hotfix (Pre-SP4) [See Q329834 for more information]; 2007-01-11T12:35:52
+|   Windows 2000 Hotfix (Pre-SP4) [See q323172 for more information]; 2007-01-11T12:38:26
+|   Windows 2000 Hotfix (SP4) KB810217; 2007-01-11T12:37:20
+|   Windows 2000 Hotfix (SP4) KB817606; 2007-01-11T12:35:32
+|   Windows 2000 Hotfix (SP4) Q329553; 2007-01-11T12:36:16
+|   Windows 2000 Hotfix (SP4) Q811114; 2007-01-11T12:36:20
+|   Windows 2000 Hotfix (SP4) Q814033; 2007-01-11T12:36:50
+|   Windows 2000 Hotfix - KB819696; 2007-01-11T12:37:36
+|   Windows 2000 Hotfix - KB823182; 2007-01-11T12:36:10
+|   Windows 2000 Hotfix - KB823559; 2007-01-11T12:38:12
+|   Windows 2000 Hotfix - KB824105; 2007-01-11T12:38:50
+|   Windows 2000 Hotfix - KB824151; 2007-01-11T12:38:46
+|   Windows 2000 Hotfix - KB826232; 2007-01-11T12:37:40
+|   Windows 2000 Hotfix - KB828035; 2007-01-11T12:35:36
+|   Windows 2000 Hotfix - KB828741; 2007-01-11T12:37:30
+|   Windows 2000 Hotfix - KB828749; 2007-01-11T12:38:20
+|   Windows 2000 Hotfix - KB835732; 2007-01-11T12:39:14
+|   Windows 2000 Hotfix - KB837001; 2007-01-11T12:38:36
+|   Windows 2000 Hotfix - KB839643; 2007-01-11T12:39:20
+|   Windows 2000 Hotfix - KB839645; 2007-01-11T12:35:42
+|   Windows 2000 Hotfix - KB840987; 2007-01-11T12:38:56
+|   Windows 2000 Hotfix - KB841356; 2007-01-11T12:37:16
+|   Windows 2000 Hotfix - KB841533; 2007-01-11T12:37:54
+|   Windows 2000 Hotfix - KB841872; 2007-01-11T12:35:20
+|   Windows 2000 Hotfix - KB841873; 2007-01-11T12:39:18
+|   Windows 2000 Hotfix - KB842526; 2007-01-11T12:38:16
+|   Windows 2000 Hotfix - KB842773; 2007-01-11T03:55:22
+|   Windows 2000 Hotfix - KB871250; 2007-01-11T12:35:44
+|   Windows 2000 Hotfix - KB873333; 2007-01-11T12:35:26
+|   Windows 2000 Hotfix - KB873339; 2007-01-11T12:37:50
+|   Windows 2000 Hotfix - KB883939; 2007-01-11T12:36:14
+|   Windows 2000 Hotfix - KB885250; 2007-01-11T12:35:24
+|   Windows 2000 Hotfix - KB885834; 2007-01-11T12:35:28
+|   Windows 2000 Hotfix - KB885835; 2007-01-11T12:39:02
+|   Windows 2000 Hotfix - KB885836; 2007-01-11T12:38:52
+|   Windows 2000 Hotfix - KB888113; 2007-01-11T12:38:58
+|   Windows 2000 Hotfix - KB890046; 2007-01-11T12:35:10
+|   Windows 2000 Hotfix - KB890859; 2007-01-11T12:37:08
+|   Windows 2000 Hotfix - KB891781; 2007-01-11T12:37:48
+|   Windows 2000 Hotfix - KB893066; 2007-01-11T12:37:34
+|   Windows 2000 Hotfix - KB893086; 2007-01-11T12:39:28
+|   Windows 2000 Hotfix - KB894320; 2007-01-11T12:38:24
+|   Windows 2000 Hotfix - KB896358; 2007-01-11T12:38:44
+|   Windows 2000 Hotfix - KB896422; 2007-01-11T12:37:46
+|   Windows 2000 Hotfix - KB897715; 2007-01-11T12:38:04
+|   Windows Installer 3.1 (KB893803); 2007-01-11T03:55:28
+|_  Windows Media Player Hotfix [See Q828026 for more information]; 2007-01-11T12:38:08
+| snmp-win32-users: 
+|   Administrator
+|   Guest
+|   IUSR_SRV2
+|   IWAM_SRV2
+|   TsInternetUser
+|   admin
+|   backup
+|   david
+|   gary
+|   homer
+|   john
+|   lee
+|   lisa
+|   mark
+|   ned
+|   nick
+|   simon
+|   sqlusr
+|   sura
+|_  todd
+445/udp  open|filtered microsoft-ds  no-response
+500/udp  open|filtered isakmp        no-response
+1029/udp open          msrpc         udp-response         Microsoft RPC
+1434/udp open          ms-sql-m      udp-response         Microsoft SQL Server 8.00.194 (ServerName: JD; TCPPort: 27900)
+3456/udp open|filtered IISrpc-or-vat no-response
+MAC Address: 00:50:56:89:33:B2 (VMware)
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A98065B%P=x86_64-pc-linux-gnu)
+SEQ(II=I)
+T5(R=Y%DF=N%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=S%T=80%CD=Z)
+
+Network Distance: 1 hop
+Service Info: Host: JD; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| ms-sql-info: 
+|   Windows server name: JD
+|   10.11.1.227\MSSQLSERVER: 
+|     Instance name: MSSQLSERVER
+|     Version: 
+|       name: Microsoft SQL Server 2000 RTM
+|       number: 8.00.194.00
+|       Product: Microsoft SQL Server 2000
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|     TCP port: 27900
+|     Named pipe: \\10.11.1.227\pipe\sql\query
+|_    Clustered: false
+| nbstat: NetBIOS name: JD, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:89:33:b2 (VMware)
+| Names:
+|   JD<00>               Flags: <unique><active>
+|   JD<20>               Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   INet~Services<1c>    Flags: <group><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+|   JD<03>               Flags: <unique><active>
+|   IS~JD\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00<00>  Flags: <unique><active>
+| Statistics:
+|   00 50 56 89 33 b2 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   54.95 ms 10.11.1.227
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar  1 08:55:39 2018 -- 1 IP address (1 host up) scanned in 166.68 seconds

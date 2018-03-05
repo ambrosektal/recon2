@@ -1,0 +1,39 @@
+# Nmap 7.60 scan initiated Thu Mar  1 08:56:16 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.221U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.221U_nmap_scan_import.xml 10.11.1.221
+Nmap scan report for 10.11.1.221
+Host is up, received arp-response (0.043s latency).
+Scanned at 2018-03-01 08:56:18 EST for 730s
+Not shown: 198 open|filtered ports
+Reason: 198 no-responses
+PORT    STATE SERVICE    REASON               VERSION
+53/udp  open  domain     udp-response         Microsoft DNS 6.0.6001 (17714650)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.0.6001 (17714650)
+137/udp open  netbios-ns udp-response ttl 128 Microsoft Windows netbios-ns (workgroup: THINC)
+MAC Address: 00:50:56:89:5C:73 (VMware)
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A98095C%P=x86_64-pc-linux-gnu)
+U1(R=N)
+IE(R=N)
+
+Network Distance: 1 hop
+Service Info: Host: SLAVE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| nbstat: NetBIOS name: SLAVE, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:89:5c:73 (VMware)
+| Names:
+|   SLAVE<00>            Flags: <unique><active>
+|   THINC<00>            Flags: <group><active>
+|   SLAVE<20>            Flags: <unique><active>
+| Statistics:
+|   00 50 56 89 5c 73 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   43.04 ms 10.11.1.221
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar  1 09:08:28 2018 -- 1 IP address (1 host up) scanned in 732.76 seconds

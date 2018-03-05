@@ -1,0 +1,48 @@
+# Nmap 7.60 scan initiated Thu Mar  1 08:53:00 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.238U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.238U_nmap_scan_import.xml 10.11.1.238
+Warning: 10.11.1.238 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.11.1.238 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.238 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.238 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.11.1.238
+Host is up, received arp-response (0.039s latency).
+Scanned at 2018-03-01 08:53:13 EST for 316s
+Not shown: 192 closed ports
+Reason: 192 port-unreaches
+PORT      STATE         SERVICE         REASON               VERSION
+111/udp   open          rpcbind         udp-response ttl 64  2-4 (RPC #100000)
+| rpcinfo: 
+|   program version   port/proto  service
+|   100000  2,3,4        111/tcp  rpcbind
+|   100000  2,3,4        111/udp  rpcbind
+|   100024  1          41158/tcp  status
+|_  100024  1          45170/udp  status
+407/udp   open|filtered timbuktu        no-response
+1900/udp  open|filtered upnp            no-response
+3389/udp  open|filtered ms-wbt-server   no-response
+5353/udp  open          mdns            udp-response ttl 255 DNS-based service discovery
+| dns-service-discovery: 
+|   9/tcp workstation
+|     Address=10.11.1.238 fe80:0:0:0:250:56ff:fe89:366c
+|   22/tcp udisks-ssh
+|_    Address=10.11.1.238 fe80:0:0:0:250:56ff:fe89:366c
+7938/udp  open|filtered unknown         no-response
+20031/udp open|filtered bakbonenetvault no-response
+65024/udp open|filtered unknown         no-response
+MAC Address: 00:50:56:89:36:6C (VMware)
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A980703%P=x86_64-pc-linux-gnu)
+SEQ(II=I)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   38.96 ms 10.11.1.238
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar  1 08:58:27 2018 -- 1 IP address (1 host up) scanned in 335.07 seconds

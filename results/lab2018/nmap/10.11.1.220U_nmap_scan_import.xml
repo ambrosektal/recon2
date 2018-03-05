@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Thu Mar  1 09:07:54 2018 as: nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.220U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.220U_nmap_scan_import.xml 10.11.1.220 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.220U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.220U_nmap_scan_import.xml 10.11.1.220" start="1519913274" startstr="Thu Mar  1 09:07:54 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="200" services="7,9,13,17,19,21-23,37,42,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,192,199,389,407,427,443,445,464,497,500,514-515,517-518,520,593,623,626,631,664,683,800,989-990,996-999,1001,1008,1019,1021-1034,1036,1038-1039,1041,1043-1045,1049,1068,1419,1433-1434,1645-1646,1701,1718-1719,1782,1812-1813,1885,1900,2000,2002,2048-2049,2148,2222-2223,2967,3052,3130,3283,3389,3456,3659,3703,4000,4045,4444,4500,4672,5000-5001,5060,5093,5351,5353,5355,5500,5632,6000-6001,6346,7938,9200,9876,10000,10080,11487,16680,17185,19283,19682,20031,22986,27892,30718,31337,32768-32773,32815,33281,33354,34555,34861-34862,37444,39213,41524,44968,49152-49154,49156,49158-49159,49162-49163,49165-49166,49168,49171-49172,49179-49182,49184-49196,49199-49202,49205,49208-49211,58002,65024"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1519913275"/>
+<taskend task="NSE" time="1519913275"/>
+<taskbegin task="NSE" time="1519913275"/>
+<taskend task="NSE" time="1519913275"/>
+<taskbegin task="ARP Ping Scan" time="1519913275"/>
+<taskend task="ARP Ping Scan" time="1519913275" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1519913275"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1519913275"/>
+<taskbegin task="UDP Scan" time="1519913275"/>
+<taskprogress task="UDP Scan" time="1519913306" percent="27.64" remaining="82" etc="1519913387"/>
+<taskprogress task="UDP Scan" time="1519913388" percent="62.64" remaining="68" etc="1519913455"/>
+<taskprogress task="UDP Scan" time="1519913445" percent="77.14" remaining="51" etc="1519913495"/>
+<taskend task="UDP Scan" time="1519913515" extrainfo="200 total ports"/>
+<taskbegin task="Service scan" time="1519913515"/>
+<taskprogress task="Service scan" time="1519913576" percent="18.18" remaining="275" etc="1519913851"/>
+<taskprogress task="Service scan" time="1519913608" percent="40.91" remaining="135" etc="1519913742"/>
+<taskend task="Service scan" time="1519913618" extrainfo="22 services on 1 host"/>
+<taskbegin task="NSE" time="1519913620"/>
+<taskend task="NSE" time="1519913628"/>
+<taskbegin task="NSE" time="1519913628"/>
+<taskend task="NSE" time="1519913629"/>
+<host starttime="1519913275" endtime="1519913629"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.220" addrtype="ipv4"/>
+<address addr="00:50:56:89:04:B7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="178">
+<extrareasons reason="port-unreaches" count="178"/>
+</extraports>
+<port protocol="udp" portid="53"><state state="open" reason="udp-response" reason_ttl="128"/><service name="domain" product="Microsoft DNS" version="6.1.7601 (1DB1446A)" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:dns</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)"><elem key="bind.version">Microsoft DNS 6.1.7601 (1DB1446A)</elem>
+</script></port>
+<port protocol="udp" portid="88"><state state="open" reason="udp-response" reason_ttl="0"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2013-12-28 07:37:02Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="udp" portid="120"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="cfdptkt" method="table" conf="3"/></port>
+<port protocol="udp" portid="137"><state state="open" reason="udp-response" reason_ttl="128"/><service name="netbios-ns" product="Microsoft Windows netbios-ns" extrainfo="Domain controller: THINC" hostname="MASTER" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="udp" portid="138"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="udp" portid="199"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="smux" method="table" conf="3"/></port>
+<port protocol="udp" portid="389"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ldap" method="table" conf="3"/></port>
+<port protocol="udp" portid="443"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="udp" portid="464"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="999"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="applix" method="table" conf="3"/></port>
+<port protocol="udp" portid="1419"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="timbuktu-srv3" method="table" conf="3"/></port>
+<port protocol="udp" portid="2222"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="msantipiracy" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="5355"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="llmnr" method="table" conf="3"/></port>
+<port protocol="udp" portid="19283"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="keysrvr" method="table" conf="3"/></port>
+<port protocol="udp" portid="34555"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="41524"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="44968"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49172"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49185"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49209"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><portused state="closed" proto="udp" portid="7"/>
+<osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A980A9D%P=x86_64-pc-linux-gnu)&#xa;SEQ(II=I)&#xa;T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=80%CD=Z)&#xa;"/>
+</os>
+<distance value="1"/>
+<hostscript><script id="nbstat" output="NetBIOS name: MASTER, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:50:56:89:04:b7 (VMware)&#xa;Names:&#xa;  MASTER&lt;00&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;00&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  THINC&lt;1c&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  MASTER&lt;20&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;1b&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00 50 56 89 04 b7 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00"><table key="mac">
+<elem key="address">00:50:56:89:04:b7</elem>
+<elem key="manuf">VMware</elem>
+</table>
+<elem key="server_name">MASTER</elem>
+<elem key="user">&lt;unknown&gt;</elem>
+<table key="names">
+<table>
+<elem key="name">MASTER</elem>
+<elem key="flags">1024</elem>
+<elem key="suffix">0</elem>
+</table>
+<table>
+<elem key="name">THINC</elem>
+<elem key="flags">33792</elem>
+<elem key="suffix">0</elem>
+</table>
+<table>
+<elem key="name">THINC</elem>
+<elem key="flags">33792</elem>
+<elem key="suffix">28</elem>
+</table>
+<table>
+<elem key="name">MASTER</elem>
+<elem key="flags">1024</elem>
+<elem key="suffix">32</elem>
+</table>
+<table>
+<elem key="name">THINC</elem>
+<elem key="flags">1024</elem>
+<elem key="suffix">27</elem>
+</table>
+</table>
+<table key="statistics">
+<elem>00 50 56 89 04 b7 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+</table>
+</script></hostscript><trace>
+<hop ttl="1" ipaddr="10.11.1.220" rtt="40.66"/>
+</trace>
+<times srtt="40660" rttvar="2237" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1519913629"/>
+<taskend task="NSE" time="1519913629"/>
+<taskbegin task="NSE" time="1519913629"/>
+<taskend task="NSE" time="1519913629"/>
+<runstats><finished time="1519913629" timestr="Thu Mar  1 09:13:49 2018" elapsed="354.33" summary="Nmap done at Thu Mar  1 09:13:49 2018; 1 IP address (1 host up) scanned in 354.33 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

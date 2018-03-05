@@ -1,0 +1,68 @@
+# Nmap 7.60 scan initiated Thu Mar  1 09:07:54 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.220U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.220U_nmap_scan_import.xml 10.11.1.220
+Warning: 10.11.1.220 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.11.1.220 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.220 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.220 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.220 from 800 to 1000 due to 11 out of 24 dropped probes since last increase.
+Nmap scan report for 10.11.1.220
+Host is up, received arp-response (0.041s latency).
+Scanned at 2018-03-01 09:07:55 EST for 354s
+Not shown: 178 closed ports
+Reason: 178 port-unreaches
+PORT      STATE         SERVICE       REASON               VERSION
+53/udp    open          domain        udp-response ttl 128 Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+88/udp    open          kerberos-sec  udp-response         Microsoft Windows Kerberos (server time: 2013-12-28 07:37:02Z)
+120/udp   open|filtered cfdptkt       no-response
+137/udp   open          netbios-ns    udp-response ttl 128 Microsoft Windows netbios-ns (Domain controller: THINC)
+138/udp   open|filtered netbios-dgm   no-response
+199/udp   open|filtered smux          no-response
+389/udp   open|filtered ldap          no-response
+443/udp   open|filtered https         no-response
+464/udp   open|filtered kpasswd5      no-response
+500/udp   open|filtered isakmp        no-response
+999/udp   open|filtered applix        no-response
+1419/udp  open|filtered timbuktu-srv3 no-response
+2222/udp  open|filtered msantipiracy  no-response
+4500/udp  open|filtered nat-t-ike     no-response
+5355/udp  open|filtered llmnr         no-response
+19283/udp open|filtered keysrvr       no-response
+34555/udp open|filtered unknown       no-response
+41524/udp open|filtered unknown       no-response
+44968/udp open|filtered unknown       no-response
+49172/udp open|filtered unknown       no-response
+49185/udp open|filtered unknown       no-response
+49209/udp open|filtered unknown       no-response
+MAC Address: 00:50:56:89:04:B7 (VMware)
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A980A9D%P=x86_64-pc-linux-gnu)
+SEQ(II=I)
+T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=80%CD=Z)
+
+Network Distance: 1 hop
+Service Info: Host: MASTER; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| nbstat: NetBIOS name: MASTER, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:89:04:b7 (VMware)
+| Names:
+|   MASTER<00>           Flags: <unique><active>
+|   THINC<00>            Flags: <group><active>
+|   THINC<1c>            Flags: <group><active>
+|   MASTER<20>           Flags: <unique><active>
+|   THINC<1b>            Flags: <unique><active>
+| Statistics:
+|   00 50 56 89 04 b7 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   40.66 ms 10.11.1.220
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar  1 09:13:49 2018 -- 1 IP address (1 host up) scanned in 354.33 seconds

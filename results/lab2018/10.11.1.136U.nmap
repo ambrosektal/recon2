@@ -1,0 +1,63 @@
+# Nmap 7.60 scan initiated Wed Feb 28 20:36:48 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.136U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.136U_nmap_scan_import.xml 10.11.1.136
+Warning: 10.11.1.136 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.11.1.136 from 100 to 200 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.11.1.136 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.136 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.11.1.136
+Host is up, received arp-response (0.040s latency).
+Scanned at 2018-02-28 20:36:58 EST for 289s
+Not shown: 182 closed ports
+Reason: 182 port-unreaches
+PORT      STATE         SERVICE           REASON              VERSION
+21/udp    open|filtered ftp               no-response
+69/udp    open|filtered tftp              no-response
+137/udp   open          netbios-ns        udp-response ttl 64 Microsoft Windows netbios-ns (workgroup: LOCAL)
+138/udp   open|filtered netbios-dgm       no-response
+139/udp   open|filtered netbios-ssn       no-response
+990/udp   open|filtered ftps              no-response
+1033/udp  open|filtered netinfo-local     no-response
+1034/udp  open|filtered activesync-notify no-response
+1043/udp  open|filtered boinc             no-response
+1068/udp  open|filtered instl_bootc       no-response
+1645/udp  open|filtered radius            no-response
+3130/udp  open|filtered squid-ipc         no-response
+4672/udp  open|filtered rfa               no-response
+5060/udp  open|filtered sip               no-response
+49154/udp open|filtered unknown           no-response
+49165/udp open|filtered unknown           no-response
+49210/udp open|filtered unknown           no-response
+65024/udp open|filtered unknown           no-response
+MAC Address: 00:50:56:89:23:14 (VMware)
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=2/28%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A975A5B%P=x86_64-pc-linux-gnu)
+SEQ(II=I)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+Service Info: Host: SUFFERANCE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| nbstat: NetBIOS name: SUFFERANCE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   SUFFERANCE<00>       Flags: <unique><active>
+|   SUFFERANCE<03>       Flags: <unique><active>
+|   SUFFERANCE<20>       Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   THINC.LOCAL<1d>      Flags: <unique><active>
+|   THINC.LOCAL<1e>      Flags: <group><active>
+|   THINC.LOCAL<00>      Flags: <group><active>
+| Statistics:
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   40.42 ms 10.11.1.136
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Feb 28 20:41:47 2018 -- 1 IP address (1 host up) scanned in 305.48 seconds

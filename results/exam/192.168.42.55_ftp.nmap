@@ -1,0 +1,44 @@
+# Nmap 7.25BETA2 scan initiated Sun Apr  2 08:42:48 2017 as: nmap -sV -Pn -vv -p 21 --script=ftp-anon,ftp-bounce,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221 -oN /root/scripts/recon_enum/results/exam/192.168.42.55_ftp.nmap 192.168.42.55
+Nmap scan report for 192.168.42.55
+Host is up, received arp-response (0.041s latency).
+Scanned at 2017-04-02 08:42:49 EDT for 165s
+PORT   STATE SERVICE REASON          VERSION
+21/tcp open  ftp?    syn-ack ttl 128
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port21-TCP:V=7.25BETA2%I=7%D=4/2%Time=58E0F1CF%P=x86_64-pc-linux-gnu%r(
+SF:NULL,B,"220\x20Hello\r\n")%r(GenericLines,5B,"220\x20Hello\r\n500-'\r\n
+SF:500\x20\x20':\x20command\x20not\x20understood\.\r\n500-'\r\n500\x20\x20
+SF:':\x20command\x20not\x20understood\.\r\n")%r(Help,2B0,"220\x20Hello\r\n
+SF:214-The\x20following\x20commands\x20are\x20recognized\x20\(\*\x20==>'s\
+SF:x20unimplemented\)\.\r\n\x20\x20\x20\x20ABOR\x20\r\n\x20\x20\x20\x20ACC
+SF:T\x20\r\n\x20\x20\x20\x20ADAT\x20\*\r\n\x20\x20\x20\x20ALLO\x20\r\n\x20
+SF:\x20\x20\x20APPE\x20\r\n\x20\x20\x20\x20AUTH\x20\r\n\x20\x20\x20\x20CCC
+SF:\x20\r\n\x20\x20\x20\x20CDUP\x20\r\n\x20\x20\x20\x20CWD\x20\r\n\x20\x20
+SF:\x20\x20DELE\x20\r\n\x20\x20\x20\x20ENC\x20\*\r\n\x20\x20\x20\x20EPRT\x
+SF:20\r\n\x20\x20\x20\x20EPSV\x20\r\n\x20\x20\x20\x20FEAT\x20\r\n\x20\x20\
+SF:x20\x20HELP\x20\r\n\x20\x20\x20\x20HOST\x20\r\n\x20\x20\x20\x20LANG\x20
+SF:\r\n\x20\x20\x20\x20LIST\x20\r\n\x20\x20\x20\x20MDTM\x20\r\n\x20\x20\x2
+SF:0\x20MIC\x20\*\r\n\x20\x20\x20\x20MKD\x20\r\n\x20\x20\x20\x20MODE\x20\r
+SF:\n\x20\x20\x20\x20NLST\x20\r\n\x20\x20\x20\x20NOOP\x20\r\n\x20\x20\x20\
+SF:x20OPTS\x20\r\n\x20\x20\x20\x20PASS\x20\r\n\x20\x20\x20\x20PASV\x20\r\n
+SF:\x20\x20\x20\x20PBSZ\x20\r\n\x20\x20\x20\x20PORT\x20\r\n\x20\x20\x20\x2
+SF:0PROT\x20\r\n\x20\x20\x20\x20PWD\x20\r\n\x20\x20\x20\x20QUIT\x20\r\n\x2
+SF:0\x20\x20\x20REIN\x20\r\n\x20\x20\x20\x20REST\x20\r\n\x20\x20\x20\x20RE
+SF:TR\x20\r\n\x20\x20\x20\x20RMD\x20\r\n\x20\x20\x20\x20RNFR\x20\r\n\x20\x
+SF:20\x20\x20RNTO\x20\r\n\x20\x20\x20\x20SITE\x20\r\n\x20\x20\x20\x20SIZE\
+SF:x20\r\n\x20\x20\x20\x20SMNT\x20\r\n\x20\x20\x20\x20STAT\x20\r\n\x20\x20
+SF:\x20\x20STOR\x20\r\n\x20\x20\x20\x20STOU\x20\r\n\x20\x20\x20\x20STRU\x2
+SF:0\r\n\x20\x20\x20\x20SYST\x20\r\n\x20\x20\x20\x20TYPE\x20\r\n\x20\x20\x
+SF:20\x20USER\x20\r\n\x20\x20\x20\x20XCUP\x20\r\n\x20\x20\x20\x20XCWD\x20\
+SF:r\n\x20\x20\x20\x20XMKD\x20\r\n\x20\x20\x20\x20XPWD\x20\r\n\x20\x20\x20
+SF:\x20XRMD\x20\r\n214\x20HELP\x20command\x20successful\.\r\n")%r(GetReque
+SF:st,62,"220\x20Hello\r\n500\x20'GET\x20/\x20HTTP/1\.0':\x20command\x20no
+SF:t\x20understood\.\r\n500-'\r\n500\x20\x20':\x20command\x20not\x20unders
+SF:tood\.\r\n")%r(HTTPOptions,66,"220\x20Hello\r\n500\x20'OPTIONS\x20/\x20
+SF:HTTP/1\.0':\x20command\x20not\x20understood\.\r\n500-'\r\n500\x20\x20':
+SF:\x20command\x20not\x20understood\.\r\n");
+MAC Address: 00:50:56:89:5B:4A (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr  2 08:45:34 2017 -- 1 IP address (1 host up) scanned in 165.76 seconds

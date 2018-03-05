@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sun Mar  4 21:23:37 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.232.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.232_nmap_scan_import.xml 10.11.1.232 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.232.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.232_nmap_scan_import.xml 10.11.1.232" start="1520216617" startstr="Sun Mar  4 21:23:37 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1520216620"/>
+<taskend task="NSE" time="1520216620"/>
+<taskbegin task="NSE" time="1520216620"/>
+<taskend task="NSE" time="1520216620"/>
+<taskbegin task="ARP Ping Scan" time="1520216620"/>
+<taskend task="ARP Ping Scan" time="1520216620" extrainfo="1 total hosts"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="10.11.1.232" addrtype="ipv4"/>
+</host>
+<taskbegin task="NSE" time="1520216620"/>
+<taskend task="NSE" time="1520216620"/>
+<taskbegin task="NSE" time="1520216620"/>
+<taskend task="NSE" time="1520216620"/>
+<runstats><finished time="1520216620" timestr="Sun Mar  4 21:23:40 2018" elapsed="7.04" summary="Nmap done at Sun Mar  4 21:23:40 2018; 1 IP address (0 hosts up) scanned in 7.04 seconds" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>
