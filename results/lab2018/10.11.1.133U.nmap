@@ -1,4 +1,0 @@
-# Nmap 7.60 scan initiated Mon Mar 19 15:56:07 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.133U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.133U_nmap_scan_import.xml 10.11.1.133
-Nmap scan report for 10.11.1.133 [host down, received no-response]
-Read data files from: /usr/bin/../share/nmap
-# Nmap done at Mon Mar 19 15:56:08 2018 -- 1 IP address (0 hosts up) scanned in 1.67 seconds

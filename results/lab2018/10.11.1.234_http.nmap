@@ -1,3 +1,0 @@
-# Nmap 7.60 scan initiated Tue Mar  6 12:19:59 2018 as: nmap -sV -Pn -vv -p 10443 --script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.234_http.nmap 10.11.1.2NmaNmap scan report for 10.11.1.234 [host down, received no-response]
-Read data files from: /usr/bin/../share/nmap
-# Nmap done at Tue Mar  6 12:20:00 2018 -- 1 IP address (0 hosts up) scanned in 0.87 seconds
