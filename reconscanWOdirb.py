@@ -20,11 +20,10 @@
 ## worth anything anyway :)
 ###############################################################################################################
 
-import subprocess
 import multiprocessing
-from multiprocessing import Process, Queue
-import os
-import time 
+import subprocess
+import time
+
 
 def multProc(targetin, scanip, port):
     jobs = []
@@ -121,7 +120,7 @@ def nmapScan(ip_address):
 	 port = line.split(" ")[0] # grab the port/proto
          if service in serv_dict:
 	    ports = serv_dict[service] # if the service is already in the dict, grab the port list
-	 
+
          ports.append(port) 
 	 serv_dict[service] = ports # add service to the dictionary along with the associated port(2)
    
@@ -168,18 +167,56 @@ def nmapScan(ip_address):
    print "INFO: TCP/UDP Nmap scans completed for " + ip_address 
    return
 
+def target_file():
+    f = open('/root/scripts/recon/recon_enum/results/targets.txt',
+             'r')  # CHANGE THIS!! grab the alive hosts from the discovery scan for enum
+    for scanip in f:
+        iplist.append(str.strip(scanip))
+    f.close()
+
+
+def scanning_job():
+    nmapScan(iplist[0])
+    # print(iplist[0], "scanning_job")
+    iplist.remove(iplist[0])
+    with print_lock:
+        print(threading.current_thread().name, worker)  # prevents the print from printing until unlocked
+
+
+def threader():  # Actually performing the threading operation
+    while True:
+        worker = q.get()  # getting the worker from the queue and putting the worker to work.
+        scanning_job()
+        q.task_done()
+
+
+# def starting_jobs():
+#   t = threading.Thread(target=threader)
+#   t.daemon = True #will die when the main thread dies
+#   t.start()
+#   print(iplist[0], "starting_jobs")
+
 # grab the discover scan results and start scanning up hosts
 print "############################################################"
 print "####                      RECON SCAN                    ####"
 print "####            A multi-process service scanner         ####"
 print "####        http, ftp, dns, ssh, snmp, smtp, ms-sql     ####"
 print "############################################################"
- 
-if __name__=='__main__':
-   f = open('/root/scripts/recon/recon_enum/results/targets.txt', 'r') # CHANGE THIS!! grab the alive hosts from the discovery scan for enum
-   for scanip in f:
-       jobs = []
-       p = multiprocessing.Process(target=nmapScan, args=(scanip,))
-       jobs.append(p)
-       p.start()
-   f.close() 
+if __name__ == '__main__':
+    target_file()
+
+    for x in range(20):
+        t = threading.Thread(target=threader)
+        t.daemon = True  # will die when the main thread dies
+        t.start()
+
+    start = time.time()
+
+    for worker in range(260):  ##20 instances of workers / how many total jobs to run.
+        q.put(worker)  # putting worker to work
+
+    q.join()  # waits till thread terminates
+
+    print("Entire job took: ", time.time() - start)
+
+    print("")

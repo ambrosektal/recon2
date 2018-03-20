@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import socket
 import sys
-import subprocess
 
 if len(sys.argv) != 2:
     print "Usage: smtprecon.py <ip address>"
@@ -10,7 +9,7 @@ if len(sys.argv) != 2:
 #SMTPSCAN = "nmap -vv -sV -Pn -p 25,465,587 --script=smtp-vuln* %s" % (sys.argv[1])
 #results = subprocess.check_output(SMTPSCAN, shell=True)
 
-#f = open("results/smtpnmapresults.txt", "a")
+#f = open("/root/scripts/recon/recon_enum/results/smtpnmapresults.txt", "a")
 #f.write(results)
 #f.close
 
