@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0621a7e-3d90-4083-b497-4fc54770ab1c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/reconscan_threaded_dirb_only.py" afterPath="$PROJECT_DIR$/reconscan_threaded_dirb_only.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/targets1.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/targets101.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/targets151.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/targets200.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/targets51.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wordlists/offsecpass.gz" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wordlists/userlist.gz" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +23,8 @@
       <file leaf-file-name="reconscan_threaded_dirb_only.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/reconscan_threaded_dirb_only.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="134" column="21" lean-forward="true" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
+            <state relative-caret-position="620">
+              <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding>
                 <element signature="e#1613#1635#0" expanded="true" />
               </folding>
@@ -215,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/reconscan_threaded_dirb_only.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="134" column="21" lean-forward="true" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
+        <state relative-caret-position="620">
+          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding>
             <element signature="e#1613#1635#0" expanded="true" />
           </folding>
