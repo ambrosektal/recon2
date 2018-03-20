@@ -1,31 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Wed Feb 28 09:13:31 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.22.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.22_nmap_scan_import.xml 10.11.1.22 -->
-<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.22.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.22_nmap_scan_import.xml 10.11.1.22" start="1519827211" startstr="Wed Feb 28 09:13:31 2018" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Sun Mar 18 12:48:29 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.22.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.22_nmap_scan_import.xml 10.11.1.22 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.22.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.22_nmap_scan_import.xml 10.11.1.22" start="1521391709" startstr="Sun Mar 18 12:48:29 2018" version="7.60" xmloutputversion="1.04">
 <scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="2"/>
 <debugging level="0"/>
-<taskbegin task="NSE" time="1519827273"/>
-<taskend task="NSE" time="1519827282"/>
-<taskbegin task="NSE" time="1519827282"/>
-<taskend task="NSE" time="1519827282"/>
-<taskbegin task="ARP Ping Scan" time="1519827283"/>
-<taskend task="ARP Ping Scan" time="1519827286" extrainfo="1 total hosts"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1519827290"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1519827290"/>
-<taskbegin task="SYN Stealth Scan" time="1519827290"/>
-<taskprogress task="SYN Stealth Scan" time="1519827367" percent="23.14" remaining="256" etc="1519827623"/>
-<taskprogress task="SYN Stealth Scan" time="1519827397" percent="56.41" remaining="83" etc="1519827480"/>
-<taskprogress task="SYN Stealth Scan" time="1519827445" percent="61.23" remaining="99" etc="1519827543"/>
-<taskprogress task="SYN Stealth Scan" time="1519827513" percent="62.21" remaining="136" etc="1519827648"/>
-<taskprogress task="SYN Stealth Scan" time="1519827543" percent="62.27" remaining="154" etc="1519827696"/>
-<taskprogress task="SYN Stealth Scan" time="1519827579" percent="62.34" remaining="175" etc="1519827754"/>
-<taskprogress task="SYN Stealth Scan" time="1519827621" percent="62.42" remaining="200" etc="1519827820"/>
-<taskprogress task="SYN Stealth Scan" time="1519827666" percent="62.50" remaining="226" etc="1519827892"/>
-<taskprogress task="SYN Stealth Scan" time="1519827722" percent="62.56" remaining="259" etc="1519827981"/>
-<taskprogress task="SYN Stealth Scan" time="1519827785" percent="62.66" remaining="295" etc="1519828080"/>
-<taskprogress task="SYN Stealth Scan" time="1519827857" percent="62.81" remaining="336" etc="1519828193"/>
-<taskprogress task="SYN Stealth Scan" time="1519827938" percent="62.96" remaining="382" etc="1519828319"/>
-<taskprogress task="SYN Stealth Scan" time="1519828032" percent="63.14" remaining="434" etc="1519828465"/>
-<taskprogress task="SYN Stealth Scan" time="1519828140" percent="63.33" remaining="493" etc="1519828632"/>
+<taskbegin task="NSE" time="1521391711"/>
+<taskend task="NSE" time="1521391711"/>
+<taskbegin task="NSE" time="1521391711"/>
+<taskend task="NSE" time="1521391711"/>
+<taskbegin task="ARP Ping Scan" time="1521391712"/>
+<taskend task="ARP Ping Scan" time="1521391712" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1521391712"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1521391712"/>
+<taskbegin task="SYN Stealth Scan" time="1521391712"/>
+<taskprogress task="SYN Stealth Scan" time="1521391743" percent="2.73" remaining="1104" etc="1521392846"/>
+<taskprogress task="SYN Stealth Scan" time="1521391773" percent="5.90" remaining="974" etc="1521392746"/>
+<taskprogress task="SYN Stealth Scan" time="1521391803" percent="8.10" remaining="1033" etc="1521392835"/>
+<taskprogress task="SYN Stealth Scan" time="1521391860" percent="13.22" remaining="972" etc="1521392832"/>
+<taskprogress task="SYN Stealth Scan" time="1521391905" percent="17.45" remaining="913" etc="1521392818"/>
+<taskprogress task="SYN Stealth Scan" time="1521391935" percent="21.92" remaining="795" etc="1521392729"/>
+<taskprogress task="SYN Stealth Scan" time="1521391965" percent="26.42" remaining="705" etc="1521392670"/>
+<taskprogress task="SYN Stealth Scan" time="1521391995" percent="30.93" remaining="632" etc="1521392627"/>
+<taskprogress task="SYN Stealth Scan" time="1521392025" percent="35.45" remaining="570" etc="1521392595"/>
+<taskprogress task="SYN Stealth Scan" time="1521392055" percent="39.98" remaining="516" etc="1521392570"/>
+<taskprogress task="SYN Stealth Scan" time="1521392085" percent="44.49" remaining="466" etc="1521392550"/>
+<taskprogress task="SYN Stealth Scan" time="1521392115" percent="48.99" remaining="420" etc="1521392535"/>
+<taskprogress task="SYN Stealth Scan" time="1521392145" percent="53.51" remaining="377" etc="1521392521"/>
+<taskprogress task="SYN Stealth Scan" time="1521392175" percent="58.04" remaining="335" etc="1521392510"/>
+<taskprogress task="SYN Stealth Scan" time="1521392205" percent="62.56" remaining="296" etc="1521392500"/>
+<taskprogress task="SYN Stealth Scan" time="1521392238" percent="67.53" remaining="253" etc="1521392491"/>
+<taskprogress task="SYN Stealth Scan" time="1521392271" percent="72.51" remaining="212" etc="1521392483"/>
+<taskprogress task="SYN Stealth Scan" time="1521392304" percent="77.48" remaining="173" etc="1521392476"/>
+<taskprogress task="SYN Stealth Scan" time="1521392337" percent="82.46" remaining="133" etc="1521392470"/>
+<taskprogress task="SYN Stealth Scan" time="1521392370" percent="87.44" remaining="95" etc="1521392465"/>
+<taskprogress task="SYN Stealth Scan" time="1521392403" percent="92.42" remaining="57" etc="1521392460"/>
+<taskend task="SYN Stealth Scan" time="1521392456" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1521392456"/>
+<taskprogress task="Service scan" time="1521392596" percent="75.00" remaining="47" etc="1521392643"/>
+<taskend task="Service scan" time="1521392611" extrainfo="12 services on 1 host"/>
+<taskbegin task="NSE" time="1521392626"/>
+<taskprogress task="NSE" time="1521392657" percent="99.50" remaining="1" etc="1521392657"/>
+<taskprogress task="NSE" time="1521392687" percent="99.75" remaining="1" etc="1521392687"/>
+<taskprogress task="NSE" time="1521392717" percent="99.81" remaining="1" etc="1521392717"/>
+<taskprogress task="NSE" time="1521392747" percent="99.94" remaining="1" etc="1521392747"/>
+<taskprogress task="NSE" time="1521392777" percent="99.94" remaining="1" etc="1521392777"/>
+<taskprogress task="NSE" time="1521392807" percent="99.94" remaining="1" etc="1521392807"/>
+<taskprogress task="NSE" time="1521392837" percent="99.94" remaining="1" etc="1521392837"/>
+<taskprogress task="NSE" time="1521392867" percent="99.94" remaining="1" etc="1521392867"/>
+<taskend task="NSE" time="1521392879"/>
+<taskbegin task="NSE" time="1521392879"/>
+<taskend task="NSE" time="1521392880"/>
+<host starttime="1521391712" endtime="1521392880"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.22" addrtype="ipv4"/>
+<address addr="00:50:56:89:1E:50" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65398">
+<extrareasons reason="resets" count="65398"/>
+</extraports>
+<extraports state="filtered" count="125">
+<extrareasons reason="no-responses" count="125"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="3.1p1" extrainfo="protocol 1.99" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:3.1p1</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 4a:e3:f8:07:d5:d6:b1:b5:bf:54:ac:e7:17:36:7e:e8 (RSA1)&#xa;1024 35 158024031730453311694945425651710866694539243733141124848477553470768919913354236584791061833801033743119988890479285306809814711623902633890306598566557665145121550035695813450437760509479929974007415829491821787149369214314439099107671480716712322534353002462963692459200779561497741328455191217993087307621&#xa;  1024 77:67:f2:2c:3d:7c:45:24:fe:5e:0f:de:07:65:b3:57 (DSA)&#xa;ssh-dss AAAAB3NzaC1kc3MAAACBAMi53wEyZunWxwUAJ9meBlH1psMJvRb2Ib59F5DmeemIEGH2b/8wCop428C+qa2ENvQxVYDx0XYX39use5GOnDZoMSLquPytS1E/+4pRWHf6yRhF9VIbnPVsVDB02wwGNd917H4wDk56mzN5CGLSDHrGEoV4zM8jB5edkQQaKFZrAAAAFQCWO2hMkNJq8G3/7zDwfzLQzblx9QAAAIA+RZSfKPjwuAvNx3/uh0w2r4mClRzKqtsnXTKcgSWDLKlCCYqMzgSeZ7sbwR3eSO4TiY8VaQ711h8Jiakv1gvwNvWhWEbjj/tq1cTwbgAN0nFYBB3/PkW+PlQQmQcGcEOksmEFLmwVRQoaZc7aezcTlw7Y8Tlc9jMKqPhKyIb1rAAAAIEAvTNWaCQ4Em1exNwDSMQ4ns+rDCRw7uTjLlEpYoF10xsva7PUuNNTxjZ6kZQwJ3qLefiEt3xC/H50jGO91Y1sQSxYLuy3vL4xKd/YL7RpMYWUrL2/T8n5I8fQB9rNNMOZueil3FT4Y54rGM0jgWbqT0sqFmMseulGvJend271Co0=&#xa;  1024 42:b1:48:0b:41:f8:a9:12:cc:9b:c4:ed:26:74:64:2c (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAIEAyTHcnHjN1XtoaHl9uTw+YrXkktWupM2TatPzOGHh02gNR049jrMsd7coNkMeNc0x67+j+IqiFAAunCuT7jfmDD/c54nzhEFnH3j/NmoCLu9zVhXfCF4OhkXPvfo0Df9Fo2s3MF3ncJGnLuH25KkedtzlSQKZnHHKpJnJLCGAf0k="><table>
+<elem key="type">rsa1</elem>
+<elem key="key">35 158024031730453311694945425651710866694539243733141124848477553470768919913354236584791061833801033743119988890479285306809814711623902633890306598566557665145121550035695813450437760509479929974007415829491821787149369214314439099107671480716712322534353002462963692459200779561497741328455191217993087307621</elem>
+<elem key="bits">1024</elem>
+<elem key="fingerprint">4ae3f807d5d6b1b5bf54ace717367ee8</elem>
+</table>
+<table>
+<elem key="type">ssh-dss</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAMi53wEyZunWxwUAJ9meBlH1psMJvRb2Ib59F5DmeemIEGH2b/8wCop428C+qa2ENvQxVYDx0XYX39use5GOnDZoMSLquPytS1E/+4pRWHf6yRhF9VIbnPVsVDB02wwGNd917H4wDk56mzN5CGLSDHrGEoV4zM8jB5edkQQaKFZrAAAAFQCWO2hMkNJq8G3/7zDwfzLQzblx9QAAAIA+RZSfKPjwuAvNx3/uh0w2r4mClRzKqtsnXTKcgSWDLKlCCYqMzgSeZ7sbwR3eSO4TiY8VaQ711h8Jiakv1gvwNvWhWEbjj/tq1cTwbgAN0nFYBB3/PkW+PlQQmQcGcEOksmEFLmwVRQoaZc7aezcTlw7Y8Tlc9jMKqPhKyIb1rAAAAIEAvTNWaCQ4Em1exNwDSMQ4ns+rDCRw7uTjLlEpYoF10xsva7PUuNNTxjZ6kZQwJ3qLefiEt3xC/H50jGO91Y1sQSxYLuy3vL4xKd/YL7RpMYWUrL2/T8n5I8fQB9rNNMOZueil3FT4Y54rGM0jgWbqT0sqFmMseulGvJend271Co0=</elem>
+<elem key="bits">1024.0</elem>
+<elem key="fingerprint">7767f22c3d7c4524fe5e0fde0765b357</elem>
+</table>
+<table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAIEAyTHcnHjN1XtoaHl9uTw+YrXkktWupM2TatPzOGHh02gNR049jrMsd7coNkMeNc0x67+j+IqiFAAunCuT7jfmDD/c54nzhEFnH3j/NmoCLu9zVhXfCF4OhkXPvfo0Df9Fo2s3MF3ncJGnLuH25KkedtzlSQKZnHHKpJnJLCGAf0k=</elem>
+<elem key="bits">1024.0</elem>
+<elem key="fingerprint">42b1480b41f8a912cc9bc4ed2674642c</elem>
+</table>
+</script><script id="sshv1" output="Server supports SSHv1">true</script></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="Couldn&apos;t establish connection on port 25"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="1.3.23" extrainfo="(Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8.7 OpenSSL/0.9.6b DAV/1.0.3 PHP/4.1.2 mod_perl/1.26 mod_throttle/3.1.2" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:1.3.23</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST PUT DELETE CONNECT OPTIONS PATCH PROPFIND PROPPATCH MKCOL COPY MOVE LOCK UNLOCK TRACE&#xa;  Potentially risky methods: PUT DELETE CONNECT PATCH PROPFIND PROPPATCH MKCOL COPY MOVE LOCK UNLOCK TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>PUT</elem>
+<elem>DELETE</elem>
+<elem>CONNECT</elem>
+<elem>OPTIONS</elem>
+<elem>PATCH</elem>
+<elem>PROPFIND</elem>
+<elem>PROPPATCH</elem>
+<elem>MKCOL</elem>
+<elem>COPY</elem>
+<elem>MOVE</elem>
+<elem>LOCK</elem>
+<elem>UNLOCK</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>PUT</elem>
+<elem>DELETE</elem>
+<elem>CONNECT</elem>
+<elem>PATCH</elem>
+<elem>PROPFIND</elem>
+<elem>PROPPATCH</elem>
+<elem>MKCOL</elem>
+<elem>COPY</elem>
+<elem>MOVE</elem>
+<elem>LOCK</elem>
+<elem>UNLOCK</elem>
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Apache/1.3.23 (Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8.7 OpenSSL/0.9.6b DAV/1.0.3 PHP/4.1.2 mod_perl/1.26 mod_throttle/3.1.2"><elem>Apache/1.3.23 (Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8.7 OpenSSL/0.9.6b DAV/1.0.3 PHP/4.1.2 mod_perl/1.26 mod_throttle/3.1.2</elem>
+</script><script id="http-title" output="Test Page for the Apache Web Server on Red Hat Linux"><elem key="title">Test Page for the Apache Web Server on Red Hat Linux</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version   port/proto  service&#xa;  100000  2            111/tcp  rpcbind&#xa;  100000  2            111/udp  rpcbind&#xa;  100024  1          32768/tcp  status&#xa;  100024  1          32768/udp  status&#xa;"><table key="100024">
+<table key="tcp">
+<elem key="port">32768</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+<table key="udp">
+<elem key="port">32768</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+</table>
+</table>
+<table key="100000">
+<table key="udp">
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+</table>
+</table>
+<table key="tcp">
+<elem key="port">111</elem>
+<table key="version">
+<elem>2</elem>
+</table>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" extrainfo="workgroup: MYGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="199"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smux" product="Linux SNMP multiplexer" ostype="Linux" method="probed" conf="10"><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" product="Apache/1.3.23 (Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8." tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+</script><script id="http-server-header" output="Apache/1.3.23 (Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8.7 OpenSSL/0.9.6b DAV/1.0.3 PHP/4.1.2 mod_perl/1.26 mod_throttle/3.1.2"><elem>Apache/1.3.23 (Unix)  (Red-Hat/Linux) mod_python/2.7.6 Python/1.5.2 mod_ssl/2.8.7 OpenSSL/0.9.6b DAV/1.0.3 PHP/4.1.2 mod_perl/1.26 mod_throttle/3.1.2</elem>
+</script><script id="http-title" output="400 Bad Request"><elem key="title">400 Bad Request</elem>
+</script><script id="ssl-date" output="2018-03-18T17:03:46+00:00; -1s from scanner time."><elem key="delta">-1.0</elem>
+<elem key="date">2018-03-18T17:03:46+00:00</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_RC4_64_WITH_MD5&#xa;    SSL2_DES_64_CBC_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_64_WITH_MD5</elem>
+<elem>SSL2_DES_64_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pop3s" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="2018-03-18T17:03:46+00:00; 0s from scanner time."><elem key="delta">0.0</elem>
+<elem key="date">2018-03-18T17:03:46+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="32768"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="45295"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="unknown" servicefp="SF-Port45295-TCP:V=7.60%I=7%D=3/18%Time=5AAE9B53%P=x86_64-pc-linux-gnu%r(GenericLines,3E,&quot;/bin//sh:\x20\r:\x20command\x20not\x20found\n/bin//sh:\x20\r:\x20command\x20not\x20found\n&quot;)%r(GetRequest,2E,&quot;Can&apos;t\x20ignore\x20signal\x20CHLD,\x20forcing\x20to\x20default\.\n&quot;)%r(HTTPOptions,44,&quot;/bin//sh:\x20OPTIONS:\x20command\x20not\x20found\n/bin//sh:\x20\r:\x20command\x20not\x20found\n&quot;)%r(RTSPRequest,44,&quot;/bin//sh:\x20OPTIONS:\x20command\x20not\x20found\n/bin//sh:\x20\r:\x20command\x20not\x20found\n&quot;)%r(Help,23,&quot;/bin//sh:\x20HELP\r:\x20command\x20not\x20found\n&quot;)%r(TLSSessionReq,4F,&quot;/bin//sh:\x20\x16\x03i\x01e\x03\x03U\x1c\xa7\xe4random1random2random3random4\x0c/:\x20No\x20such\x20file\x20or\x20directory\n&quot;)%r(Kerberos,2E,&quot;/bin//sh:\x20qj\x81n0\x81k\xa1\x03\x02\x01\x05\xa2\x03\x02\x01:\x20command\x20not\x20found\n&quot;)%r(FourOhFourRequest,2E,&quot;Can&apos;t\x20ignore\x20signal\x20CHLD,\x20forcing\x20to\x20default\.\n&quot;)%r(LPDString,26,&quot;/bin//sh:\x20\x01default:\x20command\x20not\x20found\n&quot;)%r(LDAPSearchReq,47,&quot;/bin//sh:\x200\x84-\x02\x01\x07c\x84\$\x04:\x20command\x20not\x20found\n/bin//sh:\x20\x01:\x20command\x20not\x20found\n&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, GetRequest: &#xa;    Can&apos;t ignore signal CHLD, forcing to default.&#xa;  GenericLines: &#xa;    /bin//sh: &#xa;    command not found&#xa;    /bin//sh: &#xa;    command not found&#xa;  HTTPOptions, RTSPRequest: &#xa;    /bin//sh: OPTIONS: command not found&#xa;    /bin//sh: &#xa;    command not found&#xa;  Help: &#xa;    /bin//sh: HELP&#xa;    command not found&#xa;  Kerberos: &#xa;    /bin//sh: qj&#xa;    command not found&#xa;  LDAPSearchReq: &#xa;    /bin//sh: 0&#xa;    command not found&#xa;    /bin//sh: &#xa;    command not found&#xa;  LPDString: &#xa;    /bin//sh: &#xa;    default: command not found&#xa;  TLSSessionReq: &#xa;    /bin//sh: &#xa;    random1random2random3random4&#xa;    such file or directory"><elem key="FourOhFourRequest, GetRequest">&#xa;    Can&apos;t ignore signal CHLD, forcing to default.</elem>
+<elem key="GenericLines">&#xa;    /bin//sh: &#xa;    command not found&#xa;    /bin//sh: &#xa;    command not found</elem>
+<elem key="HTTPOptions, RTSPRequest">&#xa;    /bin//sh: OPTIONS: command not found&#xa;    /bin//sh: &#xa;    command not found</elem>
+<elem key="Help">&#xa;    /bin//sh: HELP&#xa;    command not found</elem>
+<elem key="Kerberos">&#xa;    /bin//sh: qj&#xa;    command not found</elem>
+<elem key="LDAPSearchReq">&#xa;    /bin//sh: 0&#xa;    command not found&#xa;    /bin//sh: &#xa;    command not found</elem>
+<elem key="LPDString">&#xa;    /bin//sh: &#xa;    default: command not found</elem>
+<elem key="TLSSessionReq">&#xa;    /bin//sh: &#xa;    random1random2random3random4&#xa;    such file or directory</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="42086"/>
+<osmatch name="Acorp W400G or W422G wireless ADSL modem (MontaVista embedded Linux 2.4.17)" accuracy="95" line="1272">
+<osclass type="WAP" vendor="Acorp" osfamily="embedded" accuracy="95"/>
+</osmatch>
+<osmatch name="MontaVista embedded Linux 2.4.17" accuracy="95" line="43247">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.4.17</cpe></osclass>
+</osmatch>
+<osmatch name="Meru MC1000 wireless LAN controller" accuracy="95" line="65063">
+<osclass type="router" vendor="Meru" osfamily="embedded" accuracy="95"/>
+</osmatch>
+<osmatch name="AVM FRITZ!Box FON WLAN 7170 WAP" accuracy="93" line="8378">
+<osclass type="WAP" vendor="AVM" osfamily="embedded" accuracy="93"><cpe>cpe:/h:avm:fritz%21box_fon_wlan_7170</cpe></osclass>
+</osmatch>
+<osmatch name="Extreme Networks ExtremeXOS 12.5.4" accuracy="93" line="23768">
+<osclass type="switch" vendor="Extreme Networks" osfamily="ExtremeXOS" osgen="12.X" accuracy="93"><cpe>cpe:/o:extremenetworks:extremexos:12.5.4</cpe></osclass>
+</osmatch>
+<osmatch name="Google Mini search appliance" accuracy="93" line="29606">
+<osclass type="specialized" vendor="Google" osfamily="embedded" accuracy="93"/>
+</osmatch>
+<osmatch name="HP Brocade 4Gb SAN switch or" accuracy="93" line="32832">
+<osclass type="switch" vendor="HP" osfamily="embedded" accuracy="93"/>
+<osclass type="media device" vendor="Philips" osfamily="embedded" accuracy="93"/>
+</osmatch>
+<osmatch name="Linux 2.4.20" accuracy="93" line="42555">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.4.20</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.21 (embedded)" accuracy="93" line="43485">
+<osclass type="specialized" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.4.21</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola SURFboard SB6120 or SB6141 cable modem (Linux 2.6.18)" accuracy="93" line="44331">
+<osclass type="broadband router" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+<osclass type="broadband router" vendor="Motorola" osfamily="embedded" accuracy="93"><cpe>cpe:/h:motorola:surfboard_sb6120</cpe><cpe>cpe:/h:motorola:surfboard_sb6141</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.60%E=4%D=3/18%OT=21%CT=1%CU=42086%PV=Y%DS=1%DC=D%G=Y%M=005056%T&#xa;OS:M=5AAE9CF0%P=x86_64-pc-linux-gnu)SEQ(SP=CA%GCD=1%ISR=C9%TI=Z%II=I%TS=7)S&#xa;OS:EQ(II=I)OPS(O1=M529ST11NW0%O2=M529ST11NW0%O3=M529NNT11NW0%O4=M529ST11NW0&#xa;OS:%O5=M529ST11NW0%O6=M529ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%&#xa;OS:W6=16A0)ECN(R=Y%DF=Y%T=40%W=16D0%O=M529NNSNW0%CC=N%Q=)ECN(R=N)T1(R=Y%DF=&#xa;OS:Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T1(R=N)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=F&#xa;OS:F%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=FF%IPL=164%UN&#xa;OS:=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=FF%CD=S)&#xa;"/>
+</os>
+<distance value="1"/>
+<hostscript><script id="clock-skew" output="mean: 0s, deviation: 0s, median: -1s"><elem key="mean">0</elem>
+<elem key="median">-1</elem>
+<elem key="stddev">0</elem>
+</script><script id="nbstat" output="NetBIOS name: BARRY, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  BARRY&lt;00&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  BARRY&lt;03&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  BARRY&lt;20&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  MYGROUP&lt;00&gt;          Flags: &lt;group&gt;&lt;active&gt;&#xa;  MYGROUP&lt;1d&gt;          Flags: &lt;unique&gt;&lt;active&gt;&#xa;  MYGROUP&lt;1e&gt;          Flags: &lt;group&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00"><elem key="user">&lt;unknown&gt;</elem>
+<table key="names">
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">0</elem>
+<elem key="name">BARRY</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">3</elem>
+<elem key="name">BARRY</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">32</elem>
+<elem key="name">BARRY</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="suffix">1</elem>
+<elem key="name">\x01\x02__MSBROWSE__\x02</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="suffix">0</elem>
+<elem key="name">MYGROUP</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="suffix">29</elem>
+<elem key="name">MYGROUP</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="suffix">30</elem>
+<elem key="name">MYGROUP</elem>
+</table>
+</table>
+<table key="mac">
+<elem key="address">&lt;unknown&gt;</elem>
+<elem key="manuf">unknown</elem>
+</table>
+<elem key="server_name">BARRY</elem>
+<table key="statistics">
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+</table>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 62250/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 40462/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 60094/udp): CLEAN (Failed to receive data)&#xa;  Check 4 (port 25521/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb2-security-mode" output="Couldn&apos;t establish a SMBv2 connection."/><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/></hostscript><trace>
+<hop ttl="1" ipaddr="10.11.1.22" rtt="34.38"/>
+</trace>
+<times srtt="34375" rttvar="375" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1521392880"/>
+<taskend task="NSE" time="1521392880"/>
+<taskbegin task="NSE" time="1521392880"/>
+<taskend task="NSE" time="1521392880"/>
+<runstats><finished time="1521392880" timestr="Sun Mar 18 13:08:00 2018" elapsed="1174.94" summary="Nmap done at Sun Mar 18 13:08:00 2018; 1 IP address (1 host up) scanned in 1174.94 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,65 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.49_dirb_iplanet.txt
+START_TIME: Sun Mar 18 13:45:30 2018
+URL_BASE: http://10.11.1.49:80/
+WORDLIST_FILES: /usr/share/dirb/wordlists/vulns/iplanet.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 35
+
+---- Scanning URL: http://10.11.1.49:80/ ----
++ http://10.11.1.49:80/?Publisher (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/?wp-cs-dump (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/?wp-html-rend (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/?wp-start-ver (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/?wp-stop-ver (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/?wp-uncheckout (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/?wp-usr-prop (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/?wp-ver-diff (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/?wp-ver-info (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/?wp-verify-link (CODE:200|SIZE:5667)
++ http://10.11.1.49:80/index.html (CODE:200|SIZE:5667)
+
+-----------------
+END_TIME: Sun Mar 18 13:45:32 2018
+DOWNLOADED: 35 - FOUND: 11
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.49_dirb_iplanet.txt
+START_TIME: Sun Mar 18 15:29:34 2018
+URL_BASE: http://10.11.1.49:9505/
+WORDLIST_FILES: /usr/share/dirb/wordlists/vulns/iplanet.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 35
+
+---- Scanning URL: http://10.11.1.49:9505/ ----
++ http://10.11.1.49:9505/?Publisher (CODE:200|SIZE:5008)
++ http://10.11.1.49:9505/?wp-cs-dump (CODE:200|SIZE:5015)
++ http://10.11.1.49:9505/?wp-html-rend (CODE:200|SIZE:5029)
++ http://10.11.1.49:9505/?wp-start-ver (CODE:200|SIZE:5029)
++ http://10.11.1.49:9505/?wp-stop-ver (CODE:200|SIZE:5022)
++ http://10.11.1.49:9505/?wp-uncheckout (CODE:200|SIZE:5036)
++ http://10.11.1.49:9505/?wp-usr-prop (CODE:200|SIZE:5022)
++ http://10.11.1.49:9505/?wp-ver-diff (CODE:200|SIZE:5022)
++ http://10.11.1.49:9505/?wp-ver-info (CODE:200|SIZE:5022)
++ http://10.11.1.49:9505/?wp-verify-link (CODE:200|SIZE:5043)
+
+-----------------
+END_TIME: Sun Mar 18 15:29:42 2018
+DOWNLOADED: 35 - FOUND: 10

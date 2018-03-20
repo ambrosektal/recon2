@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Sun Mar  4 21:23:37 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.229.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.229_nmap_scan_import.xml 10.11.1.229 -->
-<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.229.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.229_nmap_scan_import.xml 10.11.1.229" start="1520216617" startstr="Sun Mar  4 21:23:37 2018" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Sun Mar 18 12:39:08 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.229.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.229_nmap_scan_import.xml 10.11.1.229 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.229.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.229_nmap_scan_import.xml 10.11.1.229" start="1521391148" startstr="Sun Mar 18 12:39:08 2018" version="7.60" xmloutputversion="1.04">
 <scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="2"/>
 <debugging level="0"/>
-<taskbegin task="NSE" time="1520216620"/>
-<taskend task="NSE" time="1520216620"/>
-<taskbegin task="NSE" time="1520216620"/>
-<taskend task="NSE" time="1520216620"/>
-<taskbegin task="ARP Ping Scan" time="1520216620"/>
-<taskend task="ARP Ping Scan" time="1520216620" extrainfo="1 total hosts"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1520216620"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1520216620"/>
-<taskbegin task="SYN Stealth Scan" time="1520216620"/>
-<taskprogress task="SYN Stealth Scan" time="1520216651" percent="5.51" remaining="532" etc="1520217182"/>
-<taskprogress task="SYN Stealth Scan" time="1520216681" percent="9.42" remaining="587" etc="1520217268"/>
-<taskprogress task="SYN Stealth Scan" time="1520216711" percent="12.74" remaining="624" etc="1520217334"/>
-<taskprogress task="SYN Stealth Scan" time="1520216741" percent="17.17" remaining="584" etc="1520217325"/>
-<taskprogress task="SYN Stealth Scan" time="1520216771" percent="21.61" remaining="548" etc="1520217319"/>
-<taskprogress task="SYN Stealth Scan" time="1520216813" percent="27.36" remaining="513" etc="1520217325"/>
+<taskbegin task="NSE" time="1521391151"/>
+<taskend task="NSE" time="1521391151"/>
+<taskbegin task="NSE" time="1521391151"/>
+<taskend task="NSE" time="1521391151"/>
+<taskbegin task="ARP Ping Scan" time="1521391151"/>
+<taskend task="ARP Ping Scan" time="1521391151" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1521391151"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1521391151"/>
+<taskbegin task="SYN Stealth Scan" time="1521391151"/>
+<taskprogress task="SYN Stealth Scan" time="1521391182" percent="8.07" remaining="354" etc="1521391535"/>
+<taskprogress task="SYN Stealth Scan" time="1521391212" percent="31.55" remaining="133" etc="1521391344"/>
+<taskprogress task="SYN Stealth Scan" time="1521391242" percent="46.46" remaining="105" etc="1521391347"/>
+<taskprogress task="SYN Stealth Scan" time="1521391272" percent="65.98" remaining="63" etc="1521391334"/>
+<taskend task="SYN Stealth Scan" time="1521391328" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1521391328"/>
+<taskend task="Service scan" time="1521391343" extrainfo="9 services on 1 host"/>
+<taskbegin task="NSE" time="1521391347"/>
+<taskprogress task="NSE" time="1521391378" percent="99.34" remaining="1" etc="1521391378"/>
+<taskprogress task="NSE" time="1521391408" percent="99.75" remaining="1" etc="1521391408"/>
+<taskprogress task="NSE" time="1521391438" percent="99.92" remaining="1" etc="1521391438"/>
+<taskprogress task="NSE" time="1521391468" percent="99.92" remaining="1" etc="1521391468"/>

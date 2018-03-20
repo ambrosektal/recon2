@@ -1,0 +1,47 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.22_dirb_fatwire_pagenames.txt
+START_TIME: Sun Mar 18 13:15:32 2018
+URL_BASE: https://10.11.1.22:443/
+WORDLIST_FILES: /usr/share/dirb/wordlists/vulns/fatwire_pagenames.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 2712
+
+---- Scanning URL: https://10.11.1.22:443/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: SSL CONNECT ERROR)
+
+-----------------
+END_TIME: Sun Mar 18 13:15:32 2018
+DOWNLOADED: 0 - FOUND: 0
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.22_dirb_fatwire_pagenames.txt
+START_TIME: Sun Mar 18 14:05:14 2018
+URL_BASE: http://10.11.1.22:80/
+WORDLIST_FILES: /usr/share/dirb/wordlists/vulns/fatwire_pagenames.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 2712
+
+---- Scanning URL: http://10.11.1.22:80/ ----
+
+-----------------
+END_TIME: Sun Mar 18 14:08:27 2018
+DOWNLOADED: 2712 - FOUND: 0

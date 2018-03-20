@@ -1,0 +1,2 @@
+# Hydra v8.6 run at 2018-03-05 09:44:27 on 10.11.1.220 ftp (hydra -L wordlists/userlist -P wordlists/offsecpass -f -o results/10.11.1.220_ftphydra.txt -u -s 21 10.11.1.220 ftp)
+# Hydra v8.6 run at 2018-03-05 12:04:26 on 10.11.1.220 ftp (hydra -L wordlists/userlist -P wordlists/offsecpass -f -o results/10.11.1.220_ftphydra.txt -u -s 21 10.11.1.220 ftp)

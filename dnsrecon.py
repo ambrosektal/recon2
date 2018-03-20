@@ -16,7 +16,7 @@ if "failed" in ztresults:
     print "INFO: Zone Transfer failed for " + host
 else:
     print "[*] Zone Transfer successful for " + host + "(" + ip_address + ")!!! [see output file]"
-    outfile = "results/lab2018/" + ip_address+ "_zonetransfer.txt"
+    outfile = "/root/scripts/recon/recon_enum/results/lab2018/" + ip_address+ "_zonetransfer.txt"
     dnsf = open(outfile, "w")
     dnsf.write(ztresults)
     dnsf.close

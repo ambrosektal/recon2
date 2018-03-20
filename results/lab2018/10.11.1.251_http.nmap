@@ -1,0 +1,19 @@
+# Nmap 7.60 scan initiated Tue Mar  6 12:24:45 2018 as: nmap -sV -Pn -vv -p 80 --script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.251_http.nmap 10.11.1.251
+Nmap scan report for 10.11.1.251
+Host is up, received arp-response (0.034s latency).
+Scanned at 2018-03-06 12:24:46 EST for 14s
+
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.2.11 ((Ubuntu) PHP/5.2.6-3ubuntu4.4 with Suhosin-Patch)
+|_http-apache-negotiation: mod_negotiation enabled.
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.2.11 (Ubuntu) PHP/5.2.6-3ubuntu4.4 with Suhosin-Patch
+| http-vhosts: 
+|_127 names had status 200
+MAC Address: 00:50:56:89:7A:B2 (VMware)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  6 12:25:00 2018 -- 1 IP address (1 host up) scanned in 14.27 seconds

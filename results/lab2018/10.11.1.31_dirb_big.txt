@@ -1,0 +1,27 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.31_dirb_big.txt
+START_TIME: Sun Mar 18 13:06:26 2018
+URL_BASE: http://10.11.1.31:80/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.11.1.31:80/ ----
+==> DIRECTORY: http://10.11.1.31:80/Images/
+==> DIRECTORY: http://10.11.1.31:80/_private/
+==> DIRECTORY: http://10.11.1.31:80/_vti_log/
+==> DIRECTORY: http://10.11.1.31:80/aspnet_client/
+==> DIRECTORY: http://10.11.1.31:80/images/
+
+-----------------
+END_TIME: Sun Mar 18 13:19:14 2018
+DOWNLOADED: 20458 - FOUND: 0

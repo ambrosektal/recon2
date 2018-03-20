@@ -1,4 +1,78 @@
-# Nmap 7.60 scan initiated Wed Feb 28 09:13:31 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.50.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.50_nmap_scan_import.xml 10.11.1.50
-Nmap scan report for 10.11.1.50 [host down, received no-response]
+# Nmap 7.60 scan initiated Sun Mar 18 12:48:29 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.50.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.50_nmap_scan_import.xml 10.11.1.50
+Increasing send delay for 10.11.1.50 from 0 to 5 due to 11 out of 27 dropped probes since last increase.
+Nmap scan report for 10.11.1.50
+Host is up, received arp-response (0.035s latency).
+Scanned at 2018-03-18 12:48:32 EDT for 790s
+Not shown: 65530 filtered ports
+Reason: 65530 no-responses
+PORT      STATE SERVICE     REASON          VERSION
+80/tcp    open  http        syn-ack ttl 128 Microsoft IIS httpd 8.5
+|_http-favicon: Unknown favicon MD5: B6341DFC213100C61DB4FB8775878CEC
+|_http-generator: Drupal 7 (http://drupal.org)
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+| http-robots.txt: 36 disallowed entries 
+| /includes/ /misc/ /modules/ /profiles/ /scripts/ 
+| /themes/ /CHANGELOG.txt /cron.php /INSTALL.mysql.txt 
+| /INSTALL.pgsql.txt /INSTALL.sqlite.txt /install.php /INSTALL.txt 
+| /LICENSE.txt /MAINTAINERS.txt /update.php /UPGRADE.txt /xmlrpc.php 
+| /admin/ /comment/reply/ /filter/tips/ /node/add/ /search/ 
+| /user/register/ /user/password/ /user/login/ /user/logout/ /?q=admin/ 
+| /?q=comment/reply/ /?q=filter/tips/ /?q=node/add/ /?q=search/ 
+|_/?q=user/password/ /?q=user/register/ /?q=user/login/ /?q=user/logout/
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: Welcome to Bethany&#039;s Page | Bethany&#039;s Page
+135/tcp   open  msrpc       syn-ack ttl 128 Microsoft Windows RPC
+139/tcp   open  netbios-ssn syn-ack ttl 128 Microsoft Windows netbios-ssn
+9505/tcp  open  http        syn-ack ttl 128 HttpFileServer httpd
+|_http-favicon: Unknown favicon MD5: 759792EDD4EF8E6BC2D1877D27153CB1
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-title: /
+49155/tcp open  msrpc       syn-ack ttl 128 Microsoft Windows RPC
+MAC Address: 00:50:56:89:09:5B (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|phone|specialized
+Running (JUST GUESSING): Microsoft Windows 7|Phone|2008|8.1|Vista (96%)
+OS CPE: cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_8.1 cpe:/o:microsoft:windows_8 cpe:/o:microsoft:windows_vista::- cpe:/o:microsoft:windows_vista::sp1
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows 7 (96%), Microsoft Windows Phone 7.5 or 8.0 (92%), Microsoft Windows Server 2008 R2 (91%), Microsoft Windows Server 2008 R2 or Windows 8.1 (91%), Microsoft Windows Server 2008 R2 SP1 or Windows 8 (91%), Microsoft Windows 7 Professional or Windows 8 (91%), Microsoft Windows 7 SP1 or Windows Server 2008 SP2 or 2008 R2 SP1 (91%), Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7 (91%), Microsoft Windows Vista SP2 (91%), Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008 (90%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/18%OT=80%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AAE9B76%P=x86_64-pc-linux-gnu)
+SEQ(SP=101%GCD=1%ISR=10C%TI=I%II=I%SS=S%TS=7)
+OPS(O1=M529NW8ST11%O2=M529NW8ST11%O3=M529NW8NNT11%O4=M529NW8ST11%O5=M529NW8ST11%O6=M529ST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%TG=80%W=2000%O=M529NW8NNS%CC=N%Q=)
+T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=Z)
+
+Uptime guess: 1.579 days (since Fri Mar 16 23:07:56 2018)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 21347/tcp): CLEAN (Timeout)
+|   Check 2 (port 14193/tcp): CLEAN (Timeout)
+|   Check 3 (port 54018/udp): CLEAN (Timeout)
+|   Check 4 (port 44221/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_smb2-security-mode: SMB: Couldn't find a NetBIOS name that works for the server. Sorry!
+|_smb2-time: ERROR: Script execution failed (use -d to debug)
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   35.11 ms 10.11.1.50
+
 Read data files from: /usr/bin/../share/nmap
-# Nmap done at Wed Feb 28 09:15:26 2018 -- 1 IP address (0 hosts up) scanned in 135.45 seconds
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 18 13:01:42 2018 -- 1 IP address (1 host up) scanned in 796.44 seconds

@@ -1,7 +1,7 @@
-# Nmap 7.60 scan initiated Thu Mar  1 08:53:00 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.229U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.229U_nmap_scan_import.xml 10.11.1.229
+# Nmap 7.60 scan initiated Tue Mar  6 12:07:46 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.229U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.229U_nmap_scan_import.xml 10.11.1.229
 Nmap scan report for 10.11.1.229
-Host is up, received arp-response (0.044s latency).
-Scanned at 2018-03-01 08:53:13 EST for 742s
+Host is up, received arp-response (0.036s latency).
+Scanned at 2018-03-06 12:07:46 EST for 734s
 Not shown: 198 open|filtered ports
 Reason: 198 no-responses
 PORT     STATE  SERVICE    REASON               VERSION
@@ -10,7 +10,7 @@ PORT     STATE  SERVICE    REASON               VERSION
 MAC Address: 00:50:56:89:6C:4F (VMware)
 Too many fingerprints match this host to give specific OS details
 TCP/IP fingerprint:
-SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=1900%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A9808AF%P=x86_64-pc-linux-gnu)
+SCAN(V=7.60%E=4%D=3/6%OT=%CT=%CU=1900%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A9ECDC0%P=x86_64-pc-linux-gnu)
 SEQ(II=I)
 U1(R=Y%DF=N%T=80%IPL=B0%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
 IE(R=Y%DFI=S%T=80%CD=Z)
@@ -27,6 +27,8 @@ Host script results:
 |   MAIL<03>             Flags: <unique><active>
 |   MAIL<20>             Flags: <unique><active>
 |   WORKGROUP<1e>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
 | Statistics:
 |   00 50 56 89 6c 4f 00 00 00 00 00 00 00 00 00 00 00
 |   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -34,8 +36,8 @@ Host script results:
 
 TRACEROUTE
 HOP RTT      ADDRESS
-1   44.29 ms 10.11.1.229
+1   35.57 ms 10.11.1.229
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Mar  1 09:05:35 2018 -- 1 IP address (1 host up) scanned in 762.75 seconds
+# Nmap done at Tue Mar  6 12:20:00 2018 -- 1 IP address (1 host up) scanned in 733.98 seconds

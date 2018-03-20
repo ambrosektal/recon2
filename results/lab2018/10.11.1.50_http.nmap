@@ -1,0 +1,38 @@
+# Nmap 7.60 scan initiated Sun Mar 18 13:14:04 2018 as: nmap -sV -Pn -vv -p 9505 --script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.50_http.nmap 10.11.1.5NmNmap scan report for 10.11.1.50
+Host is up, received arp-response (0.029s latency).
+Scanned at 2018-03-18 13:14:04 EDT for 62s
+
+PORT     STATE SERVICE REASON          VERSION
+9505/tcp open  http    syn-ack ttl 128 HttpFileServer httpd
+| http-method-tamper: 
+|   VULNERABLE:
+|   Authentication bypass by HTTP verb tampering
+|     State: VULNERABLE (Exploitable)
+|       This web server contains password protected resources vulnerable to authentication bypass
+|       vulnerabilities via HTTP verb tampering. This is often found in web servers that only limit access to the
+|        common HTTP methods and in misconfigured .htaccess files.
+|              
+|     Extra information:
+|       
+|   URIs suspected to be vulnerable to HTTP verb tampering:
+|     /~login [GENERIC]
+|     /~Public/ [GENERIC]
+|   
+|     References:
+|       http://www.imperva.com/resources/glossary/http_verb_tampering.html
+|       http://capec.mitre.org/data/definitions/274.html
+|       https://www.owasp.org/index.php/Testing_for_HTTP_Methods_and_XST_%28OWASP-CM-008%29
+|_      http://www.mkit.com.ar/labs/htexploit/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+| http-vhosts: 
+| ns1
+| web2test
+| ntp
+|_124 names had status 200
+MAC Address: 00:50:56:89:09:5B (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 18 13:15:06 2018 -- 1 IP address (1 host up) scanned in 62.20 seconds

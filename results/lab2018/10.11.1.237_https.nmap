@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Tue Mar  6 12:18:39 2018 as: nmap -sV -Pn -vv -p 443 -&#45;script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oX /root/scripts/recon/recon_enum/results/lab2018/10.11.1.237_https.nmap 10.11.1.237 -->
+<nmaprun scanner="nmap" args="nmap -sV -Pn -vv -p 443 -&#45;script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oX /root/scripts/recon/recon_enum/results/lab2018/10.11.1.237_https.nmap 10.11.1.237" start="1520356719" startstr="Tue Mar  6 12:18:39 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1520356720"/>
+<taskend task="NSE" time="1520356720"/>
+<taskbegin task="NSE" time="1520356720"/>
+<taskend task="NSE" time="1520356720"/>
+<taskbegin task="ARP Ping Scan" time="1520356720"/>
+<taskend task="ARP Ping Scan" time="1520356720" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1520356720"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1520356720"/>
+<taskbegin task="SYN Stealth Scan" time="1520356720"/>
+<taskend task="SYN Stealth Scan" time="1520356720" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1520356720"/>
+<taskend task="Service scan" time="1520356732" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1520356732"/>
+<taskend task="NSE" time="1520356748"/>
+<taskbegin task="NSE" time="1520356748"/>
+<taskend task="NSE" time="1520356748"/>
+<host starttime="1520356720" endtime="1520356748"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.237" addrtype="ipv4"/>
+<address addr="00:50:56:89:78:BF" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Debian)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service><script id="http-apache-negotiation" output="mod_negotiation enabled."/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.2.22 (Debian)"><elem>Apache/2.2.22 (Debian)</elem>
+</script><script id="http-vhosts" output="&#xa;127 names had status 200"/></port>
+</ports>
+<times srtt="35731" rttvar="26984" to="143667"/>
+</host>
+<taskbegin task="NSE" time="1520356748"/>
+<taskend task="NSE" time="1520356748"/>
+<taskbegin task="NSE" time="1520356748"/>
+<taskend task="NSE" time="1520356748"/>
+<runstats><finished time="1520356748" timestr="Tue Mar  6 12:19:08 2018" elapsed="29.20" summary="Nmap done at Tue Mar  6 12:19:08 2018; 1 IP address (1 host up) scanned in 29.20 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

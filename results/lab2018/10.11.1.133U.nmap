@@ -1,33 +1,4 @@
-# Nmap 7.60 scan initiated Wed Feb 28 20:36:48 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.133U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.133U_nmap_scan_import.xml 10.11.1.133
-Increasing send delay for 10.11.1.133 from 0 to 50 due to 11 out of 17 dropped probes since last increase.
-Increasing send delay for 10.11.1.133 from 50 to 100 due to 11 out of 11 dropped probes since last increase.
-Increasing send delay for 10.11.1.133 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
-Increasing send delay for 10.11.1.133 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
-Increasing send delay for 10.11.1.133 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
-Increasing send delay for 10.11.1.133 from 800 to 1000 due to 11 out of 16 dropped probes since last increase.
-Got nsock WRITE error #22 (Invalid argument)
-Got nsock WRITE error #22 (Invalid argument)
-Got nsock WRITE error #22 (Invalid argument)
-Got nsock WRITE error #22 (Invalid argument)
-Got nsock WRITE error #22 (Invalid argument)
-Got nsock WRITE error #22 (Invalid argument)
-Got nsock WRITE error #22 (Invalid argument)
-Nmap scan report for 10.11.1.133
-Host is up, received arp-response (0.067s latency).
-All 200 scanned ports on 10.11.1.133 are open|filtered (127) or closed (73) because of 127 no-responses and 73 port-unreaches
-MAC Address: 00:50:56:89:3B:10 (VMware)
-Too many fingerprints match this host to give specific OS details
-TCP/IP fingerprint:
-SCAN(V=7.60%E=4%D=2/28%OT=%CT=%CU=17%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A975DAE%P=x86_64-pc-linux-gnu)
-U1(R=N)
-IE(R=N)
-
-Network Distance: 1 hop
-
-TRACEROUTE
-HOP RTT      ADDRESS
-1   66.84 ms 10.11.1.133
-
+# Nmap 7.60 scan initiated Mon Mar 19 15:56:07 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.133U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.133U_nmap_scan_import.xml 10.11.1.133
+Nmap scan report for 10.11.1.133 [host down, received no-response]
 Read data files from: /usr/bin/../share/nmap
-OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Wed Feb 28 20:55:58 2018 -- 1 IP address (1 host up) scanned in 1156.25 seconds
+# Nmap done at Mon Mar 19 15:56:08 2018 -- 1 IP address (0 hosts up) scanned in 1.67 seconds

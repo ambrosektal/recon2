@@ -1,0 +1,24 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.10_dirb_domino.txt
+START_TIME: Sun Mar 18 13:39:32 2018
+URL_BASE: http://10.11.1.10:80/
+WORDLIST_FILES: /usr/share/dirb/wordlists/vulns/domino.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 291
+
+---- Scanning URL: http://10.11.1.10:80/ ----
++ http://10.11.1.10:80/?Open (CODE:200|SIZE:1433)
++ http://10.11.1.10:80/?OpenServer (CODE:200|SIZE:1433)
+
+-----------------
+END_TIME: Sun Mar 18 13:39:45 2018
+DOWNLOADED: 291 - FOUND: 2

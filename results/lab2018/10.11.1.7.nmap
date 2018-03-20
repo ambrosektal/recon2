@@ -1,1 +1,41 @@
-# Nmap 7.60 scan initiated Wed Feb 28 09:13:33 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.7.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.7_nmap_scan_import.xml 10.11.1.7
+# Nmap 7.60 scan initiated Mon Mar 19 18:40:55 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.7.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.7_nmap_scan_import.xml 10.11.1.7
+Nmap scan report for 10.11.1.7
+Host is up, received arp-response (0.039s latency).
+Scanned at 2018-03-19 18:40:56 EDT for 164s
+Not shown: 65534 filtered ports
+Reason: 65534 no-responses
+PORT     STATE SERVICE       REASON          VERSION
+3389/tcp open  ms-wbt-server syn-ack ttl 128 Microsoft Terminal Service
+MAC Address: 00:50:56:89:59:60 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|general purpose
+Running (JUST GUESSING): Apple embedded (90%), FreeBSD 6.X (85%)
+OS CPE: cpe:/h:apple:airport_extreme cpe:/o:freebsd:freebsd:6.2
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Apple AirPort Extreme WAP (90%), FreeBSD 6.2-RELEASE (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/19%OT=3389%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AB03D1C%P=x86_64-pc-linux-gnu)
+SEQ(SP=106%GCD=1%ISR=109%TI=I%TS=0)
+OPS(O1=M529NW0NNT00NNS%O2=M529NW0NNT00NNS%O3=M529NW0NNT00%O4=M529NW0NNT00NNS%O5=M529NW0NNT00NNS%O6=M529NNT00NNS)
+WIN(W1=FCD9%W2=FCD9%W3=FC80%W4=FB40%W5=FB40%W6=FB8B)
+ECN(R=Y%DF=Y%TG=80%W=FCD9%O=M529NW0NNS%CC=N%Q=)
+T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=N)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   38.93 ms 10.11.1.7
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar 19 18:43:40 2018 -- 1 IP address (1 host up) scanned in 164.90 seconds

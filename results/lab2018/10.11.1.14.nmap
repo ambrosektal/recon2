@@ -1,1 +1,69 @@
-# Nmap 7.60 scan initiated Wed Feb 28 09:13:29 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.14.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.14_nmap_scan_import.xml 10.11.1.14
+# Nmap 7.60 scan initiated Sun Mar 18 12:48:29 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.14.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.14_nmap_scan_import.xml 10.11.1.14
+Increasing send delay for 10.11.1.14 from 0 to 5 due to 11 out of 21 dropped probes since last increase.
+Increasing send delay for 10.11.1.14 from 5 to 10 due to 42 out of 104 dropped probes since last increase.
+Nmap scan report for 10.11.1.14
+Host is up, received arp-response (0.035s latency).
+Scanned at 2018-03-18 12:48:32 EDT for 2042s
+Not shown: 65531 filtered ports
+Reason: 65531 no-responses
+PORT      STATE  SERVICE        REASON          VERSION
+21/tcp    open   ftp            syn-ack ttl 128 Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 01-17-07  06:42PM       <DIR>          AdminScripts
+| 01-17-07  06:43PM       <DIR>          ftproot
+| 01-17-07  06:43PM       <DIR>          iissamples
+| 01-17-07  06:43PM       <DIR>          Scripts
+|_04-16-16  09:42AM       <DIR>          wwwroot
+| ftp-syst: 
+|_  SYST: Windows_NT
+80/tcp    open   http           syn-ack ttl 128 Microsoft IIS httpd 5.1
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT POST
+|_  Potentially risky methods: TRACE DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT
+|_http-title: Site doesn't have a title (text/html).
+| http-webdav-scan: 
+|   Server Type: Microsoft-IIS/5.1
+|   Allowed Methods: OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK
+|   WebDAV type: Unkown
+|   Server Date: Sun, 18 Mar 2018 17:21:44 GMT
+|_  Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH
+3389/tcp  open   ms-wbt-server? reset ttl 128
+13339/tcp closed unknown        reset ttl 128
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.60%I=7%D=3/18%Time=5AAEA035%P=x86_64-pc-linux-gnu%r(Te
+SF:rminalServerCookie,B,"\x03\0\0\x0b\x06\xd0\0\0\x124\0");
+MAC Address: 00:50:56:89:04:81 (VMware)
+Device type: general purpose|WAP|media device
+Running (JUST GUESSING): Microsoft Windows XP|2003|2000|PocketPC/CE (90%), Apple embedded (89%), Motorola embedded (86%)
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/o:microsoft:windows_server_2003::sp2 cpe:/h:apple:airport_extreme cpe:/o:microsoft:windows_2000::sp4 cpe:/o:microsoft:windows_ce:5.0 cpe:/h:motorola:vip1216
+OS fingerprint not ideal because: Didn't receive UDP response. Please try again with -sSU
+Aggressive OS guesses: Microsoft Windows XP (90%), Microsoft Windows Server 2003 SP2 (89%), Apple AirPort Extreme WAP (89%), Microsoft Windows XP SP3 (87%), Microsoft Windows 2000 SP4 (86%), Motorola VIP1216 digital set top box (Windows CE 5.0) (86%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/18%OT=21%CT=13339%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AAEA05A%P=x86_64-pc-linux-gnu)
+SEQ(SP=83%GCD=1%ISR=9C%TI=I%TS=0)
+OPS(O1=M529NW0NNT00NNS%O2=M529NW0NNT00NNS%O3=M529NW0NNT00%O4=M529NW0NNT00NNS%O5=M529NW0NNT00NNS%O6=M529NNT00NNS)
+WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%W5=FAF0%W6=FAF0)
+ECN(R=Y%DF=N%TG=80%W=FAF0%O=M529NW0NNS%CC=N%Q=)
+T1(R=Y%DF=N%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=N%TG=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=N)
+T7(R=N)
+U1(R=N)
+IE(R=N)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=129 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   34.60 ms 10.11.1.14
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 18 13:22:34 2018 -- 1 IP address (1 host up) scanned in 2049.01 seconds

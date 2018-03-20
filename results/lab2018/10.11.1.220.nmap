@@ -1,1 +1,1 @@
-# Nmap 7.60 scan initiated Sun Mar  4 21:23:37 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.220.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.220_nmap_scan_import.xml 10.11.1.220
+# Nmap 7.60 scan initiated Sun Mar 18 12:39:07 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.220.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.220_nmap_scan_import.xml 10.11.1.220

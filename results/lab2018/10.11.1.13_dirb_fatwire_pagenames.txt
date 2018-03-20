@@ -1,0 +1,22 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.13_dirb_fatwire_pagenames.txt
+START_TIME: Sun Mar 18 13:52:48 2018
+URL_BASE: http://10.11.1.13:80/
+WORDLIST_FILES: /usr/share/dirb/wordlists/vulns/fatwire_pagenames.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 2712
+
+---- Scanning URL: http://10.11.1.13:80/ ----
+
+-----------------
+END_TIME: Sun Mar 18 13:56:04 2018
+DOWNLOADED: 2712 - FOUND: 0

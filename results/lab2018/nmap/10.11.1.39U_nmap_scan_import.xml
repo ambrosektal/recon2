@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sun Mar 18 12:59:51 2018 as: nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.39U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.39U_nmap_scan_import.xml 10.11.1.39 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.39U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.39U_nmap_scan_import.xml 10.11.1.39" start="1521392391" startstr="Sun Mar 18 12:59:51 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="200" services="7,9,13,17,19,21-23,37,42,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,192,199,389,407,427,443,445,464,497,500,514-515,517-518,520,593,623,626,631,664,683,800,989-990,996-999,1001,1008,1019,1021-1034,1036,1038-1039,1041,1043-1045,1049,1068,1419,1433-1434,1645-1646,1701,1718-1719,1782,1812-1813,1885,1900,2000,2002,2048-2049,2148,2222-2223,2967,3052,3130,3283,3389,3456,3659,3703,4000,4045,4444,4500,4672,5000-5001,5060,5093,5351,5353,5355,5500,5632,6000-6001,6346,7938,9200,9876,10000,10080,11487,16680,17185,19283,19682,20031,22986,27892,30718,31337,32768-32773,32815,33281,33354,34555,34861-34862,37444,39213,41524,44968,49152-49154,49156,49158-49159,49162-49163,49165-49166,49168,49171-49172,49179-49182,49184-49196,49199-49202,49205,49208-49211,58002,65024"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1521392392"/>
+<taskend task="NSE" time="1521392392"/>
+<taskbegin task="NSE" time="1521392392"/>
+<taskend task="NSE" time="1521392392"/>
+<taskbegin task="ARP Ping Scan" time="1521392392"/>
+<taskend task="ARP Ping Scan" time="1521392392" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1521392392"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1521392392"/>
+<taskbegin task="UDP Scan" time="1521392392"/>
+<taskprogress task="UDP Scan" time="1521392423" percent="28.86" remaining="77" etc="1521392499"/>
+<taskprogress task="UDP Scan" time="1521392492" percent="62.93" remaining="59" etc="1521392551"/>
+<taskprogress task="UDP Scan" time="1521392522" percent="77.00" remaining="39" etc="1521392561"/>
+<taskend task="UDP Scan" time="1521392593" extrainfo="200 total ports"/>
+<taskbegin task="Service scan" time="1521392593"/>
+<taskend task="Service scan" time="1521392608" extrainfo="11 services on 1 host"/>
+<taskbegin task="NSE" time="1521392610"/>
+<taskend task="NSE" time="1521392610"/>
+<taskbegin task="NSE" time="1521392610"/>
+<taskend task="NSE" time="1521392611"/>
+<host starttime="1521392392" endtime="1521392611"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.39" addrtype="ipv4"/>
+<address addr="00:50:56:89:4A:F6" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="189">
+<extrareasons reason="host-prohibiteds" count="189"/>
+</extraports>
+<port protocol="udp" portid="138"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="udp" portid="517"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="talk" method="table" conf="3"/></port>
+<port protocol="udp" portid="1039"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="sbl" method="table" conf="3"/></port>
+<port protocol="udp" portid="1645"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radius" method="table" conf="3"/></port>
+<port protocol="udp" portid="1719"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="h323gatestat" method="table" conf="3"/></port>
+<port protocol="udp" portid="1782"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="hp-hcip" method="table" conf="3"/></port>
+<port protocol="udp" portid="3659"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="apple-sasl" method="table" conf="3"/></port>
+<port protocol="udp" portid="6346"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="gnutella" method="table" conf="3"/></port>
+<port protocol="udp" portid="34862"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49163"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49194"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/18%OT=%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AAE9BE3%P=x86_64-pc-linux-gnu)&#xa;SEQ(II=I)&#xa;U1(R=N)&#xa;IE(R=Y%DFI=N%TG=40%CD=S)&#xa;"/>
+</os>
+<distance value="1"/>
+<trace>
+<hop ttl="1" ipaddr="10.11.1.39" rtt="34.55"/>
+</trace>
+<times srtt="34547" rttvar="1039" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1521392611"/>
+<taskend task="NSE" time="1521392611"/>
+<taskbegin task="NSE" time="1521392611"/>
+<taskend task="NSE" time="1521392611"/>
+<runstats><finished time="1521392611" timestr="Sun Mar 18 13:03:31 2018" elapsed="220.02" summary="Nmap done at Sun Mar 18 13:03:31 2018; 1 IP address (1 host up) scanned in 220.02 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

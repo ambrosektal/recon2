@@ -1,0 +1,39 @@
+# Nmap 7.60 scan initiated Sun Mar 18 12:59:51 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.39U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.39U_nmap_scan_import.xml 10.11.1.39
+Warning: 10.11.1.39 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.11.1.39 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.39 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.39 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.11.1.39
+Host is up, received arp-response (0.035s latency).
+Scanned at 2018-03-18 12:59:52 EDT for 219s
+Not shown: 189 filtered ports
+Reason: 189 host-prohibiteds
+PORT      STATE         SERVICE      REASON      VERSION
+138/udp   open|filtered netbios-dgm  no-response
+517/udp   open|filtered talk         no-response
+1039/udp  open|filtered sbl          no-response
+1645/udp  open|filtered radius       no-response
+1719/udp  open|filtered h323gatestat no-response
+1782/udp  open|filtered hp-hcip      no-response
+3659/udp  open|filtered apple-sasl   no-response
+6346/udp  open|filtered gnutella     no-response
+34862/udp open|filtered unknown      no-response
+49163/udp open|filtered unknown      no-response
+49194/udp open|filtered unknown      no-response
+MAC Address: 00:50:56:89:4A:F6 (VMware)
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/18%OT=%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AAE9BE3%P=x86_64-pc-linux-gnu)
+SEQ(II=I)
+U1(R=N)
+IE(R=Y%DFI=N%TG=40%CD=S)
+
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   34.55 ms 10.11.1.39
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 18 13:03:31 2018 -- 1 IP address (1 host up) scanned in 220.02 seconds

@@ -1,50 +1,177 @@
-# Nmap 7.60 scan initiated Thu Mar  1 09:07:54 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.220U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.220U_nmap_scan_import.xml 10.11.1.220
+# Nmap 7.60 scan initiated Tue Mar  6 12:13:52 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.220U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.220U_nmap_scan_import.xml 10.11.1.220
+Increasing send delay for 10.11.1.220 from 50 to 100 due to 11 out of 12 dropped probes since last increase.
 Warning: 10.11.1.220 giving up on port because retransmission cap hit (6).
-Increasing send delay for 10.11.1.220 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
-Increasing send delay for 10.11.1.220 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
-Increasing send delay for 10.11.1.220 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.11.1.220 from 200 to 400 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 10.11.1.220 from 400 to 800 due to 11 out of 19 dropped probes since last increase.
 Increasing send delay for 10.11.1.220 from 800 to 1000 due to 11 out of 24 dropped probes since last increase.
 Nmap scan report for 10.11.1.220
-Host is up, received arp-response (0.041s latency).
-Scanned at 2018-03-01 09:07:55 EST for 354s
-Not shown: 178 closed ports
-Reason: 178 port-unreaches
-PORT      STATE         SERVICE       REASON               VERSION
-53/udp    open          domain        udp-response ttl 128 Microsoft DNS 6.1.7601 (1DB1446A)
+Host is up, received arp-response (0.039s latency).
+Scanned at 2018-03-06 12:13:52 EST for 500s
+Not shown: 129 closed ports
+Reason: 129 port-unreaches
+PORT      STATE         SERVICE           REASON               VERSION
+22/udp    open|filtered ssh               no-response
+53/udp    open          domain            udp-response ttl 128 Microsoft DNS 6.1.7601 (1DB1446A)
 | dns-nsid: 
 |_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
-88/udp    open          kerberos-sec  udp-response         Microsoft Windows Kerberos (server time: 2013-12-28 07:37:02Z)
-120/udp   open|filtered cfdptkt       no-response
-137/udp   open          netbios-ns    udp-response ttl 128 Microsoft Windows netbios-ns (Domain controller: THINC)
-138/udp   open|filtered netbios-dgm   no-response
-199/udp   open|filtered smux          no-response
-389/udp   open|filtered ldap          no-response
-443/udp   open|filtered https         no-response
-464/udp   open|filtered kpasswd5      no-response
-500/udp   open|filtered isakmp        no-response
-999/udp   open|filtered applix        no-response
-1419/udp  open|filtered timbuktu-srv3 no-response
-2222/udp  open|filtered msantipiracy  no-response
-4500/udp  open|filtered nat-t-ike     no-response
-5355/udp  open|filtered llmnr         no-response
-19283/udp open|filtered keysrvr       no-response
-34555/udp open|filtered unknown       no-response
-41524/udp open|filtered unknown       no-response
-44968/udp open|filtered unknown       no-response
-49172/udp open|filtered unknown       no-response
-49185/udp open|filtered unknown       no-response
-49209/udp open|filtered unknown       no-response
+88/udp    open          kerberos-sec      udp-response         Microsoft Windows Kerberos (server time: 2013-12-28 07:37:39Z)
+137/udp   open          netbios-ns        udp-response ttl 128 Microsoft Windows netbios-ns (Domain controller: THINC)
+138/udp   open|filtered netbios-dgm       no-response
+177/udp   open|filtered xdmcp             no-response
+192/udp   open|filtered osu-nms           no-response
+389/udp   open|filtered ldap              no-response
+464/udp   open|filtered kpasswd5          no-response
+500/udp   open|filtered isakmp            no-response
+520/udp   open|filtered route             no-response
+1028/udp  open|filtered ms-lsa            no-response
+1032/udp  open|filtered iad3              no-response
+1034/udp  open|filtered activesync-notify no-response
+1043/udp  open|filtered boinc             no-response
+1068/udp  open|filtered instl_bootc       no-response
+1718/udp  open|filtered h225gatedisc      no-response
+1782/udp  open|filtered hp-hcip           no-response
+2002/udp  open|filtered globe             no-response
+2222/udp  open|filtered msantipiracy      no-response
+3130/udp  open|filtered squid-ipc         no-response
+3389/udp  open|filtered ms-wbt-server     no-response
+4000/udp  open|filtered icq               no-response
+4500/udp  open|filtered nat-t-ike         no-response
+4672/udp  open|filtered rfa               no-response
+5355/udp  open|filtered llmnr             no-response
+5632/udp  open|filtered pcanywherestat    no-response
+17185/udp open|filtered wdbrpc            no-response
+22986/udp open|filtered unknown           no-response
+32768/udp open|filtered omad              no-response
+34861/udp open|filtered unknown           no-response
+39213/udp open|filtered sygatefw          no-response
+49152/udp open          domain            udp-response         Zoom X5 ADSL modem DNS
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49153/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49154/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49156/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49158/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49159/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49162/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49163/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49165/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49166/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49168/udp open          domain            udp-response         Zoom X5 ADSL modem DNS
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49171/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49172/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49179/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49180/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49181/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49182/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49184/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49185/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49186/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49187/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49188/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49189/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49190/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49191/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49192/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49193/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49194/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49195/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49196/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49199/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49200/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49201/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49202/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49205/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49208/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49209/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49210/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
+49211/udp open          domain            udp-response         Microsoft DNS 6.1.7601 (1DB1446A)
+| dns-nsid: 
+|_  bind.version: Microsoft DNS 6.1.7601 (1DB1446A)
 MAC Address: 00:50:56:89:04:B7 (VMware)
 Too many fingerprints match this host to give specific OS details
 TCP/IP fingerprint:
-SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A980A9D%P=x86_64-pc-linux-gnu)
+SCAN(V=7.60%E=4%D=3/6%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A9ECE44%P=x86_64-pc-linux-gnu)
 SEQ(II=I)
 T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
 U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
 IE(R=Y%DFI=N%T=80%CD=Z)
 
 Network Distance: 1 hop
-Service Info: Host: MASTER; OS: Windows; CPE: cpe:/o:microsoft:windows
+Service Info: Host: MASTER; OS: Windows; Device: broadband router; CPE: cpe:/o:microsoft:windows, cpe:/h:zoom:x5
 
 Host script results:
 | nbstat: NetBIOS name: MASTER, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:89:04:b7 (VMware)
@@ -61,8 +188,8 @@ Host script results:
 
 TRACEROUTE
 HOP RTT      ADDRESS
-1   40.66 ms 10.11.1.220
+1   39.10 ms 10.11.1.220
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Mar  1 09:13:49 2018 -- 1 IP address (1 host up) scanned in 354.33 seconds
+# Nmap done at Tue Mar  6 12:22:12 2018 -- 1 IP address (1 host up) scanned in 500.67 seconds

@@ -1,0 +1,24 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.13_dirb_extensions_common.txt
+START_TIME: Sun Mar 18 13:46:42 2018
+URL_BASE: http://10.11.1.13:80/
+WORDLIST_FILES: /usr/share/dirb/wordlists/extensions_common.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 28
+
+---- Scanning URL: http://10.11.1.13:80/ ----
++ http://10.11.1.13:80/.dll (CODE:500|SIZE:100)
++ http://10.11.1.13:80// (CODE:200|SIZE:7)
+
+-----------------
+END_TIME: Sun Mar 18 13:46:44 2018
+DOWNLOADED: 28 - FOUND: 2

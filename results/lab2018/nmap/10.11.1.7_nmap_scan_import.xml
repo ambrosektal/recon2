@@ -1,34 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Wed Feb 28 09:13:33 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.7.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.7_nmap_scan_import.xml 10.11.1.7 -->
-<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.7.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.7_nmap_scan_import.xml 10.11.1.7" start="1519827213" startstr="Wed Feb 28 09:13:33 2018" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Mon Mar 19 18:40:55 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.7.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.7_nmap_scan_import.xml 10.11.1.7 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.7.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.7_nmap_scan_import.xml 10.11.1.7" start="1521499255" startstr="Mon Mar 19 18:40:55 2018" version="7.60" xmloutputversion="1.04">
 <scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="2"/>
 <debugging level="0"/>
-<taskbegin task="NSE" time="1519827273"/>
-<taskend task="NSE" time="1519827282"/>
-<taskbegin task="NSE" time="1519827282"/>
-<taskend task="NSE" time="1519827282"/>
-<taskbegin task="ARP Ping Scan" time="1519827283"/>
-<taskend task="ARP Ping Scan" time="1519827286" extrainfo="1 total hosts"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1519827290"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1519827290"/>
-<taskbegin task="SYN Stealth Scan" time="1519827290"/>
-<taskprogress task="SYN Stealth Scan" time="1519827342" percent="7.70" remaining="624" etc="1519827966"/>
-<taskprogress task="SYN Stealth Scan" time="1519827372" percent="9.53" remaining="779" etc="1519828151"/>
-<taskprogress task="SYN Stealth Scan" time="1519827402" percent="13.34" remaining="728" etc="1519828130"/>
-<taskprogress task="SYN Stealth Scan" time="1519827457" percent="27.27" remaining="446" etc="1519827902"/>
-<taskprogress task="SYN Stealth Scan" time="1519827487" percent="43.19" remaining="260" etc="1519827746"/>
-<taskprogress task="SYN Stealth Scan" time="1519827517" percent="51.99" remaining="210" etc="1519827727"/>
-<taskprogress task="SYN Stealth Scan" time="1519827550" percent="52.09" remaining="240" etc="1519827789"/>
-<taskprogress task="SYN Stealth Scan" time="1519827580" percent="52.30" remaining="265" etc="1519827845"/>
-<taskprogress task="SYN Stealth Scan" time="1519827616" percent="52.54" remaining="295" etc="1519827910"/>
-<taskprogress task="SYN Stealth Scan" time="1519827655" percent="52.80" remaining="327" etc="1519827981"/>
-<taskprogress task="SYN Stealth Scan" time="1519827702" percent="53.01" remaining="366" etc="1519828067"/>
-<taskprogress task="SYN Stealth Scan" time="1519827750" percent="53.14" remaining="406" etc="1519828156"/>
-<taskprogress task="SYN Stealth Scan" time="1519827810" percent="53.56" remaining="451" etc="1519828261"/>
-<taskprogress task="SYN Stealth Scan" time="1519827879" percent="54.04" remaining="501" etc="1519828380"/>
-<taskprogress task="SYN Stealth Scan" time="1519827960" percent="54.60" remaining="558" etc="1519828517"/>
-<taskprogress task="SYN Stealth Scan" time="1519828053" percent="55.22" remaining="619" etc="1519828672"/>
-<taskprogress task="SYN Stealth Scan" time="1519828159" percent="55.77" remaining="690" etc="1519828848"/>
+<taskbegin task="NSE" time="1521499256"/>
+<taskend task="NSE" time="1521499256"/>
+<taskbegin task="NSE" time="1521499256"/>
+<taskend task="NSE" time="1521499256"/>
+<taskbegin task="ARP Ping Scan" time="1521499256"/>
+<taskend task="ARP Ping Scan" time="1521499256" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1521499256"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1521499256"/>
+<taskbegin task="SYN Stealth Scan" time="1521499256"/>
+<taskprogress task="SYN Stealth Scan" time="1521499287" percent="22.89" remaining="105" etc="1521499391"/>
+<taskprogress task="SYN Stealth Scan" time="1521499317" percent="58.88" remaining="43" etc="1521499360"/>
+<taskend task="SYN Stealth Scan" time="1521499344" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1521499344"/>
+<taskend task="Service scan" time="1521499356" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1521499360"/>
+<taskprogress task="NSE" time="1521499391" percent="99.30" remaining="1" etc="1521499391"/>
+<taskend task="NSE" time="1521499420"/>
+<taskbegin task="NSE" time="1521499420"/>
+<taskend task="NSE" time="1521499420"/>
+<host starttime="1521499256" endtime="1521499420"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.7" addrtype="ipv4"/>
+<address addr="00:50:56:89:59:60" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" product="Microsoft Terminal Service" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="3389"/>
+<osmatch name="Apple AirPort Extreme WAP" accuracy="90" line="3331">
+<osclass type="WAP" vendor="Apple" osfamily="embedded" accuracy="90"><cpe>cpe:/h:apple:airport_extreme</cpe></osclass>
+</osmatch>
+<osmatch name="FreeBSD 6.2-RELEASE" accuracy="85" line="25805">
+<osclass type="general purpose" vendor="FreeBSD" osfamily="FreeBSD" osgen="6.X" accuracy="85"><cpe>cpe:/o:freebsd:freebsd:6.2</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/19%OT=3389%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AB03D1C%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=106%GCD=1%ISR=109%TI=I%TS=0)&#xa;OPS(O1=M529NW0NNT00NNS%O2=M529NW0NNT00NNS%O3=M529NW0NNT00%O4=M529NW0NNT00NNS%O5=M529NW0NNT00NNS%O6=M529NNT00NNS)&#xa;WIN(W1=FCD9%W2=FCD9%W3=FC80%W4=FB40%W5=FB40%W6=FB8B)&#xa;ECN(R=Y%DF=Y%TG=80%W=FCD9%O=M529NW0NNS%CC=N%Q=)&#xa;T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=N)&#xa;U1(R=N)&#xa;IE(R=N)&#xa;"/>
+</os>
+<distance value="1"/>
+<tcpsequence index="262" difficulty="Good luck!" values="FC5CB648,3BD39FE8,6343FDB8,DD3B2465,B3C08A27,B5447934"/>
+<ipidsequence class="Incremental" values="1BFD,1BFE,1BFF,1C00,1C01,1C02"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<trace>
+<hop ttl="1" ipaddr="10.11.1.7" rtt="38.93"/>
+</trace>
+<times srtt="38930" rttvar="8937" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1521499420"/>
+<taskend task="NSE" time="1521499420"/>
+<taskbegin task="NSE" time="1521499420"/>
+<taskend task="NSE" time="1521499420"/>
+<runstats><finished time="1521499420" timestr="Mon Mar 19 18:43:40 2018" elapsed="164.90" summary="Nmap done at Mon Mar 19 18:43:40 2018; 1 IP address (1 host up) scanned in 164.90 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

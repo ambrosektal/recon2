@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Tue Mar  6 12:20:38 2018 as: nmap -sV -Pn -vv -p 443 -&#45;script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oX /root/scripts/recon/recon_enum/results/lab2018/10.11.1.202_https.nmap 10.11.1.202 -->
+<nmaprun scanner="nmap" args="nmap -sV -Pn -vv -p 443 -&#45;script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oX /root/scripts/recon/recon_enum/results/lab2018/10.11.1.202_https.nmap 10.11.1.202" start="1520356838" startstr="Tue Mar  6 12:20:38 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="443"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1520356838"/>
+<taskend task="NSE" time="1520356838"/>
+<taskbegin task="NSE" time="1520356838"/>
+<taskend task="NSE" time="1520356838"/>
+<taskbegin task="ARP Ping Scan" time="1520356838"/>
+<taskend task="ARP Ping Scan" time="1520356838" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1520356838"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1520356838"/>
+<taskbegin task="SYN Stealth Scan" time="1520356838"/>
+<taskend task="SYN Stealth Scan" time="1520356838" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1520356838"/>
+<taskend task="Service scan" time="1520356846" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1520356846"/>
+<taskprogress task="NSE" time="1520356877" percent="99.44" remaining="1" etc="1520356877"/>
+<taskprogress task="NSE" time="1520356907" percent="99.44" remaining="1" etc="1520356907"/>
+<taskprogress task="NSE" time="1520356937" percent="99.44" remaining="1" etc="1520356938"/>
+<taskend task="NSE" time="1520356944"/>
+<taskbegin task="NSE" time="1520356944"/>
+<taskend task="NSE" time="1520356944"/>
+<host starttime="1520356838" endtime="1520356944"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.202" addrtype="ipv4"/>
+<address addr="00:50:56:89:1F:9B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="https" method="table" conf="3"/><script id="http-vhosts" output="&#xa;127 names had status ERROR"/></port>
+</ports>
+<times srtt="36377" rttvar="27869" to="147853"/>
+</host>
+<taskbegin task="NSE" time="1520356944"/>
+<taskend task="NSE" time="1520356944"/>
+<taskbegin task="NSE" time="1520356944"/>
+<taskend task="NSE" time="1520356944"/>
+<runstats><finished time="1520356944" timestr="Tue Mar  6 12:22:24 2018" elapsed="106.91" summary="Nmap done at Tue Mar  6 12:22:24 2018; 1 IP address (1 host up) scanned in 106.91 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

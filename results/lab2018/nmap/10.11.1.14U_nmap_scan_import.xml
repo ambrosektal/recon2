@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sun Mar 18 13:22:35 2018 as: nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.14U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.14U_nmap_scan_import.xml 10.11.1.14 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.14U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.14U_nmap_scan_import.xml 10.11.1.14" start="1521393755" startstr="Sun Mar 18 13:22:35 2018" version="7.60" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="200" services="7,9,13,17,19,21-23,37,42,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,192,199,389,407,427,443,445,464,497,500,514-515,517-518,520,593,623,626,631,664,683,800,989-990,996-999,1001,1008,1019,1021-1034,1036,1038-1039,1041,1043-1045,1049,1068,1419,1433-1434,1645-1646,1701,1718-1719,1782,1812-1813,1885,1900,2000,2002,2048-2049,2148,2222-2223,2967,3052,3130,3283,3389,3456,3659,3703,4000,4045,4444,4500,4672,5000-5001,5060,5093,5351,5353,5355,5500,5632,6000-6001,6346,7938,9200,9876,10000,10080,11487,16680,17185,19283,19682,20031,22986,27892,30718,31337,32768-32773,32815,33281,33354,34555,34861-34862,37444,39213,41524,44968,49152-49154,49156,49158-49159,49162-49163,49165-49166,49168,49171-49172,49179-49182,49184-49196,49199-49202,49205,49208-49211,58002,65024"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1521393755"/>
+<taskend task="NSE" time="1521393755"/>
+<taskbegin task="NSE" time="1521393755"/>
+<taskend task="NSE" time="1521393755"/>
+<taskbegin task="ARP Ping Scan" time="1521393755"/>
+<taskend task="ARP Ping Scan" time="1521393755" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1521393755"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1521393755"/>
+<taskbegin task="UDP Scan" time="1521393755"/>
+<taskend task="UDP Scan" time="1521393763" extrainfo="200 total ports"/>
+<taskbegin task="Service scan" time="1521393763"/>
+<taskprogress task="Service scan" time="1521393861" percent="1.00" remaining="9702" etc="1521403563"/>
+<taskprogress task="Service scan" time="1521393958" percent="16.00" remaining="1024" etc="1521394982"/>
+<taskprogress task="Service scan" time="1521394056" percent="31.00" remaining="653" etc="1521394708"/>
+<taskprogress task="Service scan" time="1521394154" percent="46.00" remaining="460" etc="1521394613"/>
+<taskprogress task="Service scan" time="1521394251" percent="61.00" remaining="312" etc="1521394563"/>
+<taskprogress task="Service scan" time="1521394349" percent="76.00" remaining="186" etc="1521394534"/>
+<taskprogress task="Service scan" time="1521394446" percent="91.00" remaining="68" etc="1521394514"/>
+<taskend task="Service scan" time="1521394451" extrainfo="200 services on 1 host"/>
+<taskbegin task="NSE" time="1521394454"/>
+<taskprogress task="NSE" time="1521394485" percent="99.99" remaining="1" etc="1521394485"/>
+<taskend task="NSE" time="1521394485"/>
+<taskbegin task="NSE" time="1521394485"/>
+<taskend task="NSE" time="1521394495"/>
+<host starttime="1521393755" endtime="1521394495"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.14" addrtype="ipv4"/>
+<address addr="00:50:56:89:04:81" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="199">
+<extrareasons reason="no-responses" count="199"/>
+</extraports>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="0"/><service name="snmp" product="SNMPv1 server" extrainfo="public" hostname="BOB2" method="probed" conf="10"/><script id="snmp-interfaces" output="&#xa;  MS TCP Loopback interface\x00&#xa;    IP address: 127.0.0.1  Netmask: 255.0.0.0&#xa;    Type: softwareLoopback  Speed: 10 Mbps&#xa;    Status: up&#xa;    Traffic stats: 13.88 Mb sent, 13.88 Mb received&#xa;  VMware Accelerated AMD PCNet Adapter\x00&#xa;    IP address: 10.11.1.14  Netmask: 255.255.0.0&#xa;    MAC address: 00:50:56:89:04:81 (VMware)&#xa;    Type: ethernetCsmacd  Speed: 1 Gbps&#xa;    Status: up&#xa;    Traffic stats: 39.05 Mb sent, 163.11 Mb received&#xa;"/><script id="snmp-netstat" output="&#xa;  TCP  0.0.0.0:21           0.0.0.0:59576&#xa;  TCP  0.0.0.0:80           0.0.0.0:18678&#xa;  TCP  0.0.0.0:135          0.0.0.0:35018&#xa;  TCP  0.0.0.0:443          0.0.0.0:18629&#xa;  TCP  0.0.0.0:445          0.0.0.0:30883&#xa;  TCP  0.0.0.0:1025         0.0.0.0:35050&#xa;  TCP  0.0.0.0:1026         0.0.0.0:2101&#xa;  TCP  0.0.0.0:1027         0.0.0.0:49241&#xa;  TCP  0.0.0.0:3014         0.0.0.0:55338&#xa;  TCP  0.0.0.0:3389         0.0.0.0:2128&#xa;  TCP  10.11.1.14:21        10.11.0.170:16913&#xa;  TCP  10.11.1.14:21        10.11.0.170:58318&#xa;  TCP  10.11.1.14:139       0.0.0.0:45284&#xa;  TCP  10.11.1.14:3288      0.0.0.0:22698&#xa;  TCP  10.11.1.14:3288      10.11.1.14:21&#xa;  TCP  10.11.1.14:3415      0.0.0.0:45237&#xa;  TCP  10.11.1.14:3415      10.11.1.14:21&#xa;  TCP  127.0.0.1:3001       0.0.0.0:2096&#xa;  TCP  127.0.0.1:3002       0.0.0.0:2240&#xa;  TCP  127.0.0.1:3003       0.0.0.0:2234&#xa;  TCP  127.0.0.1:3019       0.0.0.0:22632&#xa;  TCP  127.0.0.1:3043       0.0.0.0:14364&#xa;  TCP  127.0.0.1:3044       0.0.0.0:51387&#xa;  TCP  127.0.0.1:3045       0.0.0.0:51234&#xa;  TCP  127.0.0.1:3046       0.0.0.0:8429&#xa;  TCP  127.0.0.1:3063       0.0.0.0:4136&#xa;  TCP  127.0.0.1:3082       0.0.0.0:20646&#xa;  TCP  127.0.0.1:3083       0.0.0.0:41021&#xa;  TCP  127.0.0.1:3242       0.0.0.0:32883&#xa;  TCP  127.0.0.1:3243       0.0.0.0:14412&#xa;  TCP  127.0.0.1:3244       0.0.0.0:63720&#xa;  TCP  127.0.0.1:3245       0.0.0.0:12407&#xa;  TCP  127.0.0.1:3246       0.0.0.0:2059&#xa;  TCP  127.0.0.1:3259       0.0.0.0:43225&#xa;  TCP  127.0.0.1:3275       0.0.0.0:63739&#xa;  TCP  127.0.0.1:3282       0.0.0.0:14408&#xa;  TCP  127.0.0.1:3283       0.0.0.0:43016&#xa;  TCP  127.0.0.1:3284       0.0.0.0:12293&#xa;  TCP  127.0.0.1:3285       0.0.0.0:107&#xa;  TCP  127.0.0.1:3286       0.0.0.0:34850&#xa;  TCP  127.0.0.1:3286       10.11.0.170:58592&#xa;  TCP  127.0.0.1:3309       0.0.0.0:63642&#xa;  TCP  127.0.0.1:3310       0.0.0.0:45294&#xa;  TCP  127.0.0.1:3343       0.0.0.0:34819&#xa;  TCP  127.0.0.1:3393       0.0.0.0:2096&#xa;  TCP  127.0.0.1:3394       0.0.0.0:43204&#xa;  TCP  127.0.0.1:3395       0.0.0.0:2192&#xa;  TCP  127.0.0.1:3396       0.0.0.0:57387&#xa;  TCP  127.0.0.1:3397       0.0.0.0:47223&#xa;  TCP  127.0.0.1:3397       10.11.0.170:34206&#xa;  UDP  0.0.0.0:135          *:*&#xa;  UDP  0.0.0.0:161          *:*&#xa;  UDP  0.0.0.0:445          *:*&#xa;  UDP  0.0.0.0:1028         *:*&#xa;  UDP  0.0.0.0:3036         *:*&#xa;  UDP  0.0.0.0:3456         *:*&#xa;  UDP  10.11.1.14:137       *:*&#xa;  UDP  10.11.1.14:138       *:*&#xa;"/><script id="snmp-sysdescr" output="Hardware: x86 Family 6 Model 12 Stepping 2 AT/AT COMPATIBLE - Software: Windows 2000 Version 5.1 (Build 2600 Uniprocessor Free)&#xa;  System uptime: 265d07h51m55.39s (2292431539 timeticks)"/><script id="snmp-win32-services" output="&#xa;  Application Layer Gateway Service&#xa;  COM+ Event System&#xa;  COM+ System Application&#xa;  Computer Browser&#xa;  Cryptographic Services&#xa;  DNS Client&#xa;  Distributed Link Tracking Client&#xa;  Distributed Transaction Coordinator&#xa;  Event Log&#xa;  FTP Publishing&#xa;  IIS Admin&#xa;  Internet Connection Firewall (ICF) / Internet Connection Sharing (ICS)&#xa;  Logical Disk Manager&#xa;  Messenger&#xa;  Network Connections&#xa;  Network Location Awareness (NLA)&#xa;  Plug and Play&#xa;  Remote Access Connection Manager&#xa;  Remote Procedure Call (RPC)&#xa;  Remote Registry&#xa;  SNMP Service&#xa;  Secondary Logon&#xa;  Security Accounts Manager&#xa;  Server&#xa;  Shell Hardware Detection&#xa;  System Event Notification&#xa;  TCP/IP NetBIOS Helper&#xa;  Task Scheduler&#xa;  Telephony&#xa;  Terminal Services&#xa;  Themes&#xa;  Upload Manager&#xa;  VMTools&#xa;  WebClient&#xa;  Windows Audio&#xa;  Windows Management Instrumentation&#xa;  Workstation&#xa;  World Wide Web Publishing"><elem>Application Layer Gateway Service</elem>
+<elem>COM+ Event System</elem>
+<elem>COM+ System Application</elem>
+<elem>Computer Browser</elem>
+<elem>Cryptographic Services</elem>
+<elem>DNS Client</elem>
+<elem>Distributed Link Tracking Client</elem>
+<elem>Distributed Transaction Coordinator</elem>
+<elem>Event Log</elem>
+<elem>FTP Publishing</elem>
+<elem>IIS Admin</elem>
+<elem>Internet Connection Firewall (ICF) / Internet Connection Sharing (ICS)</elem>
+<elem>Logical Disk Manager</elem>
+<elem>Messenger</elem>
+<elem>Network Connections</elem>
+<elem>Network Location Awareness (NLA)</elem>
+<elem>Plug and Play</elem>
+<elem>Remote Access Connection Manager</elem>
+<elem>Remote Procedure Call (RPC)</elem>
+<elem>Remote Registry</elem>
+<elem>SNMP Service</elem>
+<elem>Secondary Logon</elem>
+<elem>Security Accounts Manager</elem>
+<elem>Server</elem>
+<elem>Shell Hardware Detection</elem>
+<elem>System Event Notification</elem>
+<elem>TCP/IP NetBIOS Helper</elem>
+<elem>Task Scheduler</elem>
+<elem>Telephony</elem>
+<elem>Terminal Services</elem>
+<elem>Themes</elem>
+<elem>Upload Manager</elem>
+<elem>VMTools</elem>
+<elem>WebClient</elem>
+<elem>Windows Audio</elem>
+<elem>Windows Management Instrumentation</elem>
+<elem>Workstation</elem>
+<elem>World Wide Web Publishing</elem>
+</script><script id="snmp-win32-users" output="&#xa;  Administrator&#xa;  Guest&#xa;  HelpAssistant&#xa;  IUSR_BOB&#xa;  IWAM_BOB&#xa;  SUPPORT_388945a0&#xa;  bob"><elem>Administrator</elem>
+<elem>Guest</elem>
+<elem>HelpAssistant</elem>
+<elem>IUSR_BOB</elem>
+<elem>IWAM_BOB</elem>
+<elem>SUPPORT_388945a0</elem>
+<elem>bob</elem>
+</script></port>
+</ports>
+<os><osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/18%OT=%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AAEA33F%P=x86_64-pc-linux-gnu)&#xa;U1(R=N)&#xa;IE(R=N)&#xa;"/>
+</os>
+<distance value="1"/>
+<trace>
+<hop ttl="1" ipaddr="10.11.1.14" rtt="34.27"/>
+</trace>
+<times srtt="34274" rttvar="34274" to="171370"/>
+</host>
+<taskbegin task="NSE" time="1521394495"/>
+<taskend task="NSE" time="1521394495"/>
+<taskbegin task="NSE" time="1521394495"/>
+<taskend task="NSE" time="1521394495"/>
+<runstats><finished time="1521394495" timestr="Sun Mar 18 13:34:55 2018" elapsed="740.67" summary="Nmap done at Sun Mar 18 13:34:55 2018; 1 IP address (1 host up) scanned in 740.67 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

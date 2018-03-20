@@ -1,67 +1,44 @@
-# Nmap 7.60 scan initiated Thu Mar  1 08:53:00 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.234U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.234U_nmap_scan_import.xml 10.11.1.234
-Increasing send delay for 10.11.1.234 from 50 to 100 due to 11 out of 15 dropped probes since last increase.
-Increasing send delay for 10.11.1.234 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+# Nmap 7.60 scan initiated Tue Mar  6 12:15:03 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.234U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.234U_nmap_scan_import.xml 10.11.1.234
+Warning: 10.11.1.234 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.11.1.234 from 100 to 200 due to 11 out of 14 dropped probes since last increase.
 Increasing send delay for 10.11.1.234 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
 Increasing send delay for 10.11.1.234 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
 Nmap scan report for 10.11.1.234
-Host is up, received arp-response (0.038s latency).
-Scanned at 2018-03-01 08:53:13 EST for 336s
-Not shown: 162 closed ports
-Reason: 162 port-unreaches
-PORT      STATE         SERVICE         REASON      VERSION
-13/udp    open|filtered daytime         no-response
-19/udp    open|filtered chargen         no-response
-23/udp    open|filtered telnet          no-response
-42/udp    open|filtered nameserver      no-response
-68/udp    open|filtered dhcpc           no-response
-136/udp   open|filtered profile         no-response
-161/udp   open|filtered snmp            no-response
-683/udp   open|filtered corba-iiop      no-response
-990/udp   open|filtered ftps            no-response
-1019/udp  open|filtered unknown         no-response
-1021/udp  open|filtered exp1            no-response
-1027/udp  open|filtered unknown         no-response
-1028/udp  open|filtered ms-lsa          no-response
-1032/udp  open|filtered iad3            no-response
-1041/udp  open|filtered danf-ak2        no-response
-1434/udp  open|filtered ms-sql-m        no-response
-1701/udp  open|filtered L2TP            no-response
-1812/udp  open|filtered radius          no-response
-2148/udp  open|filtered veritas-ucl     no-response
-5001/udp  open|filtered commplex-link   no-response
-6346/udp  open|filtered gnutella        no-response
-9876/udp  open|filtered sd              no-response
-16680/udp open|filtered unknown         no-response
-32769/udp open|filtered filenet-rpc     no-response
-32772/udp open|filtered sometimes-rpc8  no-response
-32773/udp open|filtered sometimes-rpc10 no-response
-33354/udp open|filtered unknown         no-response
-49158/udp open|filtered unknown         no-response
-49171/udp open|filtered unknown         no-response
-49179/udp open|filtered unknown         no-response
-49184/udp open|filtered unknown         no-response
-49189/udp open|filtered unknown         no-response
-49192/udp open|filtered unknown         no-response
-49194/udp open|filtered unknown         no-response
-49199/udp open|filtered unknown         no-response
-49201/udp open|filtered unknown         no-response
-49210/udp open|filtered unknown         no-response
-65024/udp open|filtered unknown         no-response
+Host is up, received arp-response (0.059s latency).
+Scanned at 2018-03-06 12:15:04 EST for 295s
+Not shown: 183 closed ports
+Reason: 183 port-unreaches
+PORT      STATE         SERVICE        REASON      VERSION
+427/udp   open|filtered svrloc         no-response
+443/udp   open|filtered https          no-response
+683/udp   open|filtered corba-iiop     no-response
+1068/udp  open|filtered instl_bootc    no-response
+2000/udp  open|filtered cisco-sccp     no-response
+2222/udp  open|filtered msantipiracy   no-response
+3130/udp  open|filtered squid-ipc      no-response
+4045/udp  open|filtered lockd          no-response
+4500/udp  open|filtered nat-t-ike      no-response
+5060/udp  open|filtered sip            no-response
+5500/udp  open|filtered securid        no-response
+6346/udp  open|filtered gnutella       no-response
+32768/udp open|filtered omad           no-response
+32771/udp open|filtered sometimes-rpc6 no-response
+32772/udp open|filtered sometimes-rpc8 no-response
+49162/udp open|filtered unknown        no-response
+49165/udp open|filtered unknown        no-response
 MAC Address: 00:50:56:89:6B:A3 (VMware)
 Too many fingerprints match this host to give specific OS details
 TCP/IP fingerprint:
-SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A980719%P=x86_64-pc-linux-gnu)
-SEQ(II=I)
-T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
-U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
-IE(R=Y%DFI=N%T=40%CD=S)
+SCAN(V=7.60%E=4%D=3/6%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A9ECDBF%P=x86_64-pc-linux-gnu)
+U1(R=N)
+IE(R=N)
 
 Network Distance: 1 hop
 
 TRACEROUTE
 HOP RTT      ADDRESS
-1   38.12 ms 10.11.1.234
+1   59.05 ms 10.11.1.234
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Mar  1 08:58:49 2018 -- 1 IP address (1 host up) scanned in 357.03 seconds
+# Nmap done at Tue Mar  6 12:19:59 2018 -- 1 IP address (1 host up) scanned in 296.34 seconds

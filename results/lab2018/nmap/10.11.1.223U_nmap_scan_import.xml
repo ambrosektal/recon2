@@ -1,88 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Thu Mar  1 08:53:01 2018 as: nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.223U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.223U_nmap_scan_import.xml 10.11.1.223 -->
-<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.223U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.223U_nmap_scan_import.xml 10.11.1.223" start="1519912381" startstr="Thu Mar  1 08:53:01 2018" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Tue Mar  6 12:14:43 2018 as: nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.223U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.223U_nmap_scan_import.xml 10.11.1.223 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.223U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.223U_nmap_scan_import.xml 10.11.1.223" start="1520356483" startstr="Tue Mar  6 12:14:43 2018" version="7.60" xmloutputversion="1.04">
 <scaninfo type="udp" protocol="udp" numservices="200" services="7,9,13,17,19,21-23,37,42,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,192,199,389,407,427,443,445,464,497,500,514-515,517-518,520,593,623,626,631,664,683,800,989-990,996-999,1001,1008,1019,1021-1034,1036,1038-1039,1041,1043-1045,1049,1068,1419,1433-1434,1645-1646,1701,1718-1719,1782,1812-1813,1885,1900,2000,2002,2048-2049,2148,2222-2223,2967,3052,3130,3283,3389,3456,3659,3703,4000,4045,4444,4500,4672,5000-5001,5060,5093,5351,5353,5355,5500,5632,6000-6001,6346,7938,9200,9876,10000,10080,11487,16680,17185,19283,19682,20031,22986,27892,30718,31337,32768-32773,32815,33281,33354,34555,34861-34862,37444,39213,41524,44968,49152-49154,49156,49158-49159,49162-49163,49165-49166,49168,49171-49172,49179-49182,49184-49196,49199-49202,49205,49208-49211,58002,65024"/>
 <verbose level="2"/>
 <debugging level="0"/>
-<taskbegin task="NSE" time="1519912392"/>
-<taskend task="NSE" time="1519912392"/>
-<taskbegin task="NSE" time="1519912392"/>
-<taskend task="NSE" time="1519912392"/>
-<taskbegin task="ARP Ping Scan" time="1519912393"/>
-<taskend task="ARP Ping Scan" time="1519912395" extrainfo="1 total hosts"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1519912400"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1519912400"/>
-<taskbegin task="UDP Scan" time="1519912400"/>
-<taskend task="UDP Scan" time="1519912471" extrainfo="200 total ports"/>
-<taskbegin task="Service scan" time="1519912472"/>
-<taskprogress task="Service scan" time="1519912547" percent="1.83" remaining="4013" etc="1519916560"/>
-<taskprogress task="Service scan" time="1519912629" percent="29.36" remaining="378" etc="1519913007"/>
-<taskprogress task="Service scan" time="1519912662" percent="44.04" remaining="242" etc="1519912903"/>
-<taskprogress task="Service scan" time="1519912722" percent="56.88" remaining="190" etc="1519912912"/>
-<taskprogress task="Service scan" time="1519912754" percent="70.64" remaining="118" etc="1519912871"/>
-<taskprogress task="Service scan" time="1519912810" percent="84.40" remaining="63" etc="1519912872"/>
-<taskend task="Service scan" time="1519912842" extrainfo="109 services on 1 host"/>
-<taskbegin task="NSE" time="1519912844"/>
-<taskprogress task="NSE" time="1519912875" percent="99.99" remaining="1" etc="1519912875"/>
-<taskend task="NSE" time="1519912876"/>
-<taskbegin task="NSE" time="1519912876"/>
-<taskend task="NSE" time="1519912882"/>
-<host starttime="1519912393" endtime="1519912882"><status state="up" reason="arp-response" reason_ttl="0"/>
+<taskbegin task="NSE" time="1520356484"/>
+<taskend task="NSE" time="1520356484"/>
+<taskbegin task="NSE" time="1520356484"/>
+<taskend task="NSE" time="1520356484"/>
+<taskbegin task="ARP Ping Scan" time="1520356484"/>
+<taskend task="ARP Ping Scan" time="1520356484" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1520356484"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1520356484"/>
+<taskbegin task="UDP Scan" time="1520356484"/>
+<taskprogress task="UDP Scan" time="1520356515" percent="28.71" remaining="77" etc="1520356592"/>
+<taskprogress task="UDP Scan" time="1520356554" percent="42.57" remaining="95" etc="1520356648"/>
+<taskprogress task="UDP Scan" time="1520356596" percent="59.36" remaining="77" etc="1520356673"/>
+<taskprogress task="UDP Scan" time="1520356629" percent="71.00" remaining="60" etc="1520356688"/>
+<taskprogress task="UDP Scan" time="1520356659" percent="84.14" remaining="33" etc="1520356692"/>
+<taskend task="UDP Scan" time="1520356720" extrainfo="200 total ports"/>
+<taskbegin task="Service scan" time="1520356720"/>
+<taskprogress task="Service scan" time="1520356781" percent="11.76" remaining="458" etc="1520357239"/>
+<taskprogress task="Service scan" time="1520356813" percent="47.06" remaining="105" etc="1520356918"/>
+<taskend task="Service scan" time="1520356823" extrainfo="17 services on 1 host"/>
+<taskbegin task="NSE" time="1520356825"/>
+<taskend task="NSE" time="1520356830"/>
+<taskbegin task="NSE" time="1520356830"/>
+<taskend task="NSE" time="1520356831"/>
+<host starttime="1520356484" endtime="1520356831"><status state="up" reason="arp-response" reason_ttl="0"/>
 <address addr="10.11.1.223" addrtype="ipv4"/>
 <address addr="00:50:56:89:72:AE" addrtype="mac" vendor="VMware"/>
 <hostnames>
 </hostnames>
-<ports><extraports state="open|filtered" count="108">
-<extrareasons reason="no-responses" count="108"/>
-</extraports>
-<extraports state="closed" count="91">
-<extrareasons reason="port-unreaches" count="91"/>
+<ports><extraports state="closed" count="183">
+<extrareasons reason="port-unreaches" count="183"/>
 </extraports>
 <port protocol="udp" portid="137"><state state="open" reason="udp-response" reason_ttl="128"/><service name="netbios-ns" product="Microsoft Windows netbios-ns" extrainfo="workgroup: WORKGROUP" hostname="JEFF" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="udp" portid="138"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-dgm" method="table" conf="3"/></port>
+<port protocol="udp" portid="139"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="990"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ftps" method="table" conf="3"/></port>
+<port protocol="udp" portid="1031"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="iad2" method="table" conf="3"/></port>
+<port protocol="udp" portid="1034"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="activesync-notify" method="table" conf="3"/></port>
+<port protocol="udp" portid="2049"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nfs" method="table" conf="3"/></port>
+<port protocol="udp" portid="3052"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="apc-3052" method="table" conf="3"/></port>
+<port protocol="udp" portid="3283"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netassistant" method="table" conf="3"/></port>
+<port protocol="udp" portid="3389"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="udp" portid="3456"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="IISrpc-or-vat" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="5355"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="llmnr" method="table" conf="3"/></port>
+<port protocol="udp" portid="6346"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="gnutella" method="table" conf="3"/></port>
+<port protocol="udp" portid="44968"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49159"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
 </ports>
-<os><portused state="closed" proto="udp" portid="13"/>
-<osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=13%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A9807B2%P=x86_64-pc-linux-gnu)&#xa;SEQ(II=I)&#xa;T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=80%CD=Z)&#xa;"/>
+<os><portused state="closed" proto="udp" portid="7"/>
+<osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/6%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A9ECDDF%P=x86_64-pc-linux-gnu)&#xa;SEQ(II=I)&#xa;T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=80%CD=Z)&#xa;"/>
 </os>
 <distance value="1"/>
-<hostscript><script id="nbstat" output="NetBIOS name: JEFF, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:50:56:89:72:ae (VMware)&#xa;Names:&#xa;  JEFF&lt;00&gt;             Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  JEFF&lt;20&gt;             Flags: &lt;unique&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00 50 56 89 72 ae 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00"><table key="names">
-<table>
-<elem key="flags">1024</elem>
-<elem key="name">JEFF</elem>
-<elem key="suffix">0</elem>
-</table>
-<table>
-<elem key="flags">33792</elem>
-<elem key="name">WORKGROUP</elem>
-<elem key="suffix">0</elem>
-</table>
-<table>
-<elem key="flags">1024</elem>
-<elem key="name">JEFF</elem>
-<elem key="suffix">32</elem>
-</table>
-</table>
+<hostscript><script id="nbstat" output="NetBIOS name: JEFF, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:50:56:89:72:ae (VMware)&#xa;Names:&#xa;  JEFF&lt;00&gt;             Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  JEFF&lt;20&gt;             Flags: &lt;unique&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00 50 56 89 72 ae 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00"><elem key="server_name">JEFF</elem>
 <table key="mac">
 <elem key="manuf">VMware</elem>
 <elem key="address">00:50:56:89:72:ae</elem>
 </table>
-<elem key="server_name">JEFF</elem>
 <elem key="user">&lt;unknown&gt;</elem>
+<table key="names">
+<table>
+<elem key="name">JEFF</elem>
+<elem key="suffix">0</elem>
+<elem key="flags">1024</elem>
+</table>
+<table>
+<elem key="name">WORKGROUP</elem>
+<elem key="suffix">0</elem>
+<elem key="flags">33792</elem>
+</table>
+<table>
+<elem key="name">JEFF</elem>
+<elem key="suffix">32</elem>
+<elem key="flags">1024</elem>
+</table>
+</table>
 <table key="statistics">
 <elem>00 50 56 89 72 ae 00 00 00 00 00 00 00 00 00 00 00</elem>
 <elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
 <elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
 </table>
 </script></hostscript><trace>
-<hop ttl="1" ipaddr="10.11.1.223" rtt="40.14"/>
+<hop ttl="1" ipaddr="10.11.1.223" rtt="35.07"/>
 </trace>
-<times srtt="40138" rttvar="2030" to="100000"/>
+<times srtt="35067" rttvar="1187" to="100000"/>
 </host>
-<taskbegin task="NSE" time="1519912882"/>
-<taskend task="NSE" time="1519912882"/>
-<taskbegin task="NSE" time="1519912882"/>
-<taskend task="NSE" time="1519912882"/>
-<runstats><finished time="1519912882" timestr="Thu Mar  1 09:01:22 2018" elapsed="505.33" summary="Nmap done at Thu Mar  1 09:01:22 2018; 1 IP address (1 host up) scanned in 505.33 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+<taskbegin task="NSE" time="1520356831"/>
+<taskend task="NSE" time="1520356831"/>
+<taskbegin task="NSE" time="1520356831"/>
+<taskend task="NSE" time="1520356831"/>
+<runstats><finished time="1520356831" timestr="Tue Mar  6 12:20:31 2018" elapsed="347.54" summary="Nmap done at Tue Mar  6 12:20:31 2018; 1 IP address (1 host up) scanned in 347.54 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
 </runstats>
 </nmaprun>

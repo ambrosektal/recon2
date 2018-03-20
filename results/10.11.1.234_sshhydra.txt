@@ -1,0 +1,1 @@
+# Hydra v8.6 run at 2018-03-06 12:19:59 on 10.11.1.234 ssh (hydra -L /root/scripts/recon/recon_enum/wordlists/userlist -P /root/scripts/recon/recon_enum/wordlists/offsecpass -f -o /root/scripts/recon/recon_enum/results/10.11.1.234_sshhydra.txt -u -s 22 10.11.1.234 ssh)

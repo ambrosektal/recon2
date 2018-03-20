@@ -1,36 +1,43 @@
-# Nmap 7.60 scan initiated Thu Mar  1 08:53:00 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.209U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.209U_nmap_scan_import.xml 10.11.1.209
-Increasing send delay for 10.11.1.209 from 0 to 50 due to 11 out of 11 dropped probes since last increase.
-adjust_timeouts2: packet supposedly had rtt of -1452274 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -1452274 microseconds.  Ignoring time.
+# Nmap 7.60 scan initiated Tue Mar  6 12:29:14 2018 as: nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.209U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.209U_nmap_scan_import.xml 10.11.1.209
+Increasing send delay for 10.11.1.209 from 0 to 50 due to 11 out of 21 dropped probes since last increase.
 Nmap scan report for 10.11.1.209
-Host is up, received arp-response (0.043s latency).
-Scanned at 2018-03-01 08:53:13 EST for 136s
-Not shown: 184 closed ports
-Reason: 184 port-unreaches
-PORT      STATE         SERVICE        REASON               VERSION
-111/udp   open          rpcbind        udp-response ttl 255 2-4 (RPC #100000)
-162/udp   open|filtered snmptrap       no-response
-520/udp   open          route?         udp-response ttl 255
-1044/udp  open|filtered dcutility      no-response
-1718/udp  open|filtered h225gatedisc   no-response
-5001/udp  open|filtered commplex-link  no-response
-5351/udp  open|filtered nat-pmp        no-response
-7938/udp  open|filtered unknown        no-response
-9200/udp  open|filtered wap-wsp        no-response
-32771/udp open|filtered sometimes-rpc6 no-response
-34861/udp open|filtered unknown        no-response
-49168/udp open|filtered unknown        no-response
-49172/udp open|filtered unknown        no-response
-49189/udp open|filtered unknown        no-response
-49190/udp open|filtered unknown        no-response
-49205/udp open|filtered unknown        no-response
+Host is up, received arp-response (0.037s latency).
+Scanned at 2018-03-06 12:29:14 EST for 118s
+Not shown: 175 closed ports
+Reason: 175 port-unreaches
+PORT      STATE         SERVICE         REASON               VERSION
+7/udp     open|filtered echo            no-response
+17/udp    open|filtered qotd            no-response
+21/udp    open|filtered ftp             no-response
+111/udp   open          rpcbind         udp-response ttl 255 2-4 (RPC #100000)
+123/udp   open|filtered ntp             no-response
+158/udp   open|filtered pcmail-srv      no-response
+192/udp   open|filtered osu-nms         no-response
+500/udp   open|filtered isakmp          no-response
+520/udp   open          route?          udp-response ttl 255
+1026/udp  open|filtered win-rpc         no-response
+1033/udp  open|filtered netinfo-local   no-response
+2223/udp  open|filtered rockwell-csp2   no-response
+3456/udp  open|filtered IISrpc-or-vat   no-response
+4500/udp  open|filtered nat-t-ike       no-response
+5355/udp  open|filtered llmnr           no-response
+11487/udp open|filtered unknown         no-response
+32770/udp open|filtered sometimes-rpc4  no-response
+32771/udp open|filtered sometimes-rpc6  no-response
+32773/udp open|filtered sometimes-rpc10 no-response
+33354/udp open|filtered unknown         no-response
+49165/udp open|filtered unknown         no-response
+49166/udp open|filtered unknown         no-response
+49185/udp open|filtered unknown         no-response
+49193/udp open|filtered unknown         no-response
+49205/udp open|filtered unknown         no-response
 MAC Address: 00:50:56:89:13:A9 (VMware)
 Device type: storage-misc|general purpose
 Running: Sun embedded, Sun OpenSolaris, Sun Solaris 10|8|9
 OS CPE: cpe:/h:sun:storage_7210 cpe:/o:sun:opensolaris cpe:/o:sun:sunos:5.10 cpe:/o:sun:sunos:5.8 cpe:/o:sun:sunos:5.9
 Too many fingerprints match this host to give specific OS details
 TCP/IP fingerprint:
-SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A98064F%P=x86_64-pc-linux-gnu)
+SCAN(V=7.60%E=4%D=3/6%OT=%CT=%CU=9%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A9ED060%P=x86_64-pc-linux-gnu)
 SEQ(II=I)
 T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
 U1(R=Y%DF=Y%T=FF%IPL=70%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
@@ -40,8 +47,8 @@ Network Distance: 1 hop
 
 TRACEROUTE
 HOP RTT      ADDRESS
-1   42.72 ms 10.11.1.209
+1   37.30 ms 10.11.1.209
 
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Thu Mar  1 08:55:27 2018 -- 1 IP address (1 host up) scanned in 154.85 seconds
+# Nmap done at Tue Mar  6 12:31:12 2018 -- 1 IP address (1 host up) scanned in 118.42 seconds

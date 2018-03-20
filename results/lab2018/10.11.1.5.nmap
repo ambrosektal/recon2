@@ -1,3 +1,76 @@
-# Nmap 7.60 scan initiated Wed Feb 28 09:13:31 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.5.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.5_nmap_scan_import.xml 10.11.1.5
-adjust_timeouts2: packet supposedly had rtt of 22733525 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of 22733525 microseconds.  Ignoring time.
+# Nmap 7.60 scan initiated Mon Mar 19 18:37:12 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.5.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.5_nmap_scan_import.xml 10.11.1.5
+Nmap scan report for 10.11.1.5
+Host is up, received arp-response (0.035s latency).
+Scanned at 2018-03-19 18:37:12 EDT for 117s
+Not shown: 65530 closed ports
+Reason: 65530 resets
+PORT     STATE SERVICE        REASON          VERSION
+135/tcp  open  msrpc          syn-ack ttl 128 Microsoft Windows RPC
+139/tcp  open  netbios-ssn    syn-ack ttl 128 Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds   syn-ack ttl 128 Windows XP microsoft-ds
+1025/tcp open  msrpc          syn-ack ttl 128 Microsoft Windows RPC
+3389/tcp open  ms-wbt-server? syn-ack ttl 128
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3389-TCP:V=7.60%I=7%D=3/19%Time=5AB03BC3%P=x86_64-pc-linux-gnu%r(Te
+SF:rminalServerCookie,B,"\x03\0\0\x0b\x06\xd0\0\0\x124\0");
+MAC Address: 00:50:56:89:7E:0D (VMware)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.60%E=4%D=3/19%OT=135%CT=1%CU=36750%PV=Y%DS=1%DC=D%G=Y%M=005056%
+OS:TM=5AB03C0D%P=x86_64-pc-linux-gnu)SEQ(SP=89%GCD=1%ISR=9A%TI=I%II=I%SS=S%
+OS:TS=0)OPS(O1=M529NW0NNT00NNS%O2=M529NW0NNT00NNS%O3=M529NW0NNT00%O4=M529NW
+OS:0NNT00NNS%O5=M529NW0NNT00NNS%O6=M529NNT00NNS)WIN(W1=FAF0%W2=FAF0%W3=FAF0
+OS:%W4=FAF0%W5=FAF0%W6=FAF0)ECN(R=Y%DF=Y%T=80%W=FAF0%O=M529NW0NNS%CC=N%Q=)T
+OS:1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T
+OS:=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=80%IPL=38%U
+OS:N=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=80%CD=Z)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=135 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_xp
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| nbstat: NetBIOS name: ALICE, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:89:7e:0d (VMware)
+| Names:
+|   ALICE<00>            Flags: <unique><active>
+|   THINC<00>            Flags: <group><active>
+|   ALICE<03>            Flags: <unique><active>
+|   ALICE<20>            Flags: <unique><active>
+|   THINC<1e>            Flags: <group><active>
+| Statistics:
+|   00 50 56 89 7e 0d 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 36286/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 52195/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 61197/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 55739/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows XP (Windows 2000 LAN Manager)
+|   OS CPE: cpe:/o:microsoft:windows_xp::-
+|   Computer name: alice
+|   NetBIOS computer name: ALICE\x00
+|   Domain name: thinc.local
+|   Forest name: thinc.local
+|   FQDN: alice.thinc.local
+|_  System time: 2018-03-19T22:38:10+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   35.03 ms 10.11.1.5
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar 19 18:39:09 2018 -- 1 IP address (1 host up) scanned in 117.90 seconds

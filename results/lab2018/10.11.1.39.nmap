@@ -1,1 +1,56 @@
-# Nmap 7.60 scan initiated Wed Feb 28 09:13:33 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.39.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.39_nmap_scan_import.xml 10.11.1.39
+# Nmap 7.60 scan initiated Sun Mar 18 12:48:29 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.39.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.39_nmap_scan_import.xml 10.11.1.39
+Increasing send delay for 10.11.1.39 from 0 to 5 due to 11 out of 23 dropped probes since last increase.
+Nmap scan report for 10.11.1.39
+Host is up, received arp-response (0.034s latency).
+Scanned at 2018-03-18 12:48:32 EDT for 679s
+Not shown: 65532 filtered ports
+Reason: 64869 no-responses and 663 host-prohibiteds
+PORT     STATE SERVICE REASON         VERSION
+22/tcp   open  ssh     syn-ack ttl 64 OpenSSH 6.6.1 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 5e:c1:7e:d2:f9:20:f9:11:ea:4b:02:68:07:3f:54:f2 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCgrAeio5MX8ee/JR6rhcr8MTqM5SZga8iPjfwjFHc492aKCgXqFxE8Kprutz0NQDvXt0096pft0tiGPJBxZ6WiJvLxIzTSDe261Ly4ZUywtf3Akt/oCtOKwWV76B2gPoGG0jSpnhVgEcBW028QXk8+qDrQI5XLKyczKOdbnD/D76rOfPkJwMGTXPQmB4SSGqflnAF7Gem3Ay1dS7H+LVGgmfLHtNV9zlyx5dSRWihX6hnofYylHeSi7rLVWs5qDLeBqDID32joNqrhKzUUe8idgmU5lNCrGUcAGb+aUF7q5V0eWDD0mRXLay6OIHbXmvY/ylHyqs1jpQWhpXt9ZKTz
+|   256 36:ef:27:31:a2:fd:4a:e3:d2:4e:12:58:1f:7a:03:58 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJaLYCLt5BQwdt158R4quRiBubM4IKNB2d3kHn6jSZwpB0o/j9kQmwg5L5ek6dDc0qd9lOjzWKKSec8n4ULzWU0=
+|   256 2c:70:9c:c9:4c:50:61:d2:51:43:d5:67:d1:d0:39:de (EdDSA)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/4iJuHgKovQDwFWS6ZxgjJYnNu0qqorL0dmHw2ZMJ0
+80/tcp   open  http    syn-ack ttl 64 nginx 1.6.3
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: nginx/1.6.3
+|_http-title: Apache HTTP Server Test Page powered by CentOS
+3306/tcp open  mysql   syn-ack ttl 64 MariaDB (unauthorized)
+MAC Address: 00:50:56:89:4A:F6 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Linux 3.X|4.X|2.6.X (91%)
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4.4 cpe:/o:linux:linux_kernel:2.6
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.10 - 3.12 (91%), Linux 4.4 (91%), Linux 2.6.18 - 2.6.22 (86%), Linux 3.10 (86%), Linux 3.10 - 4.8 (85%), Linux 3.11 - 4.1 (85%), Linux 3.2 - 4.8 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.60%E=4%D=3/18%OT=22%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AAE9B07%P=x86_64-pc-linux-gnu)
+SEQ(SP=101%GCD=1%ISR=10F%TI=Z%II=I%TS=A)
+OPS(O1=M529ST11NW7%O2=M529ST11NW7%O3=M529NNT11NW7%O4=M529ST11NW7%O5=M529ST11NW7%O6=M529ST11)
+WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)
+ECN(R=Y%DF=Y%TG=40%W=7210%O=M529NNSNW7%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=40%CD=S)
+
+Uptime guess: 0.935 days (since Sat Mar 17 14:33:32 2018)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   34.31 ms 10.11.1.39
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 18 12:59:51 2018 -- 1 IP address (1 host up) scanned in 685.72 seconds

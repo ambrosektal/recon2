@@ -1,0 +1,32 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.13_dirb_iplanet.txt
+START_TIME: Sun Mar 18 14:01:59 2018
+URL_BASE: http://10.11.1.13:80/
+WORDLIST_FILES: /usr/share/dirb/wordlists/vulns/iplanet.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 35
+
+---- Scanning URL: http://10.11.1.13:80/ ----
++ http://10.11.1.13:80/?Publisher (CODE:200|SIZE:7)
++ http://10.11.1.13:80/?wp-cs-dump (CODE:200|SIZE:7)
++ http://10.11.1.13:80/?wp-html-rend (CODE:200|SIZE:7)
++ http://10.11.1.13:80/?wp-start-ver (CODE:200|SIZE:7)
++ http://10.11.1.13:80/?wp-stop-ver (CODE:200|SIZE:7)
++ http://10.11.1.13:80/?wp-uncheckout (CODE:200|SIZE:7)
++ http://10.11.1.13:80/?wp-usr-prop (CODE:200|SIZE:7)
++ http://10.11.1.13:80/?wp-ver-diff (CODE:200|SIZE:7)
++ http://10.11.1.13:80/?wp-ver-info (CODE:200|SIZE:7)
++ http://10.11.1.13:80/?wp-verify-link (CODE:200|SIZE:7)
+
+-----------------
+END_TIME: Sun Mar 18 14:02:01 2018
+DOWNLOADED: 35 - FOUND: 10

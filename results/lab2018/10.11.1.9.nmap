@@ -1,4 +1,4 @@
-# Nmap 7.60 scan initiated Wed Feb 28 09:13:31 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.9.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.9_nmap_scan_import.xml 10.11.1.9
+# Nmap 7.60 scan initiated Mon Mar 19 16:00:06 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.9.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.9_nmap_scan_import.xml 10.11.1.9
 Nmap scan report for 10.11.1.9 [host down, received no-response]
 Read data files from: /usr/bin/../share/nmap
-# Nmap done at Wed Feb 28 09:16:05 2018 -- 1 IP address (0 hosts up) scanned in 174.77 seconds
+# Nmap done at Mon Mar 19 16:00:07 2018 -- 1 IP address (0 hosts up) scanned in 1.78 seconds

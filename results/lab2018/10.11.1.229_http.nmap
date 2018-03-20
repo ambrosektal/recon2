@@ -1,0 +1,19 @@
+# Nmap 7.60 scan initiated Tue Mar  6 12:20:00 2018 as: nmap -sV -Pn -vv -p 80 --script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.229_http.nmap 10.11.1.229
+Nmap scan report for 10.11.1.229
+Host is up, received arp-response (0.041s latency).
+Scanned at 2018-03-06 12:20:00 EST for 14s
+
+PORT   STATE SERVICE REASON          VERSION
+80/tcp open  http    syn-ack ttl 128 Microsoft IIS httpd 6.0
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT POST
+|_  Potentially risky methods: TRACE DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT
+|_http-server-header: Microsoft-IIS/6.0
+| http-vhosts: 
+|_127 names had status 200
+MAC Address: 00:50:56:89:6C:4F (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  6 12:20:14 2018 -- 1 IP address (1 host up) scanned in 14.70 seconds

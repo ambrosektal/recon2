@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Thu Mar  1 08:53:00 2018 as: nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.227U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.227U_nmap_scan_import.xml 10.11.1.227 -->
-<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.227U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.227U_nmap_scan_import.xml 10.11.1.227" start="1519912380" startstr="Thu Mar  1 08:53:00 2018" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Tue Mar  6 12:14:22 2018 as: nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.227U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.227U_nmap_scan_import.xml 10.11.1.227 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sU -T 4 -&#45;top-ports 200 -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.227U.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.227U_nmap_scan_import.xml 10.11.1.227" start="1520356462" startstr="Tue Mar  6 12:14:22 2018" version="7.60" xmloutputversion="1.04">
 <scaninfo type="udp" protocol="udp" numservices="200" services="7,9,13,17,19,21-23,37,42,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,192,199,389,407,427,443,445,464,497,500,514-515,517-518,520,593,623,626,631,664,683,800,989-990,996-999,1001,1008,1019,1021-1034,1036,1038-1039,1041,1043-1045,1049,1068,1419,1433-1434,1645-1646,1701,1718-1719,1782,1812-1813,1885,1900,2000,2002,2048-2049,2148,2222-2223,2967,3052,3130,3283,3389,3456,3659,3703,4000,4045,4444,4500,4672,5000-5001,5060,5093,5351,5353,5355,5500,5632,6000-6001,6346,7938,9200,9876,10000,10080,11487,16680,17185,19283,19682,20031,22986,27892,30718,31337,32768-32773,32815,33281,33354,34555,34861-34862,37444,39213,41524,44968,49152-49154,49156,49158-49159,49162-49163,49165-49166,49168,49171-49172,49179-49182,49184-49196,49199-49202,49205,49208-49211,58002,65024"/>
 <verbose level="2"/>
 <debugging level="0"/>
-<taskbegin task="NSE" time="1519912392"/>
-<taskend task="NSE" time="1519912392"/>
-<taskbegin task="NSE" time="1519912392"/>
-<taskend task="NSE" time="1519912392"/>
-<taskbegin task="ARP Ping Scan" time="1519912393"/>
-<taskend task="ARP Ping Scan" time="1519912395" extrainfo="1 total hosts"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1519912402"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1519912402"/>
-<taskbegin task="UDP Scan" time="1519912402"/>
-<taskend task="UDP Scan" time="1519912414" extrainfo="200 total ports"/>
-<taskbegin task="Service scan" time="1519912415"/>
-<taskprogress task="Service scan" time="1519912487" percent="44.44" remaining="90" etc="1519912577"/>
-<taskend task="Service scan" time="1519912517" extrainfo="9 services on 1 host"/>
-<taskbegin task="NSE" time="1519912520"/>
-<taskend task="NSE" time="1519912538"/>
-<taskbegin task="NSE" time="1519912538"/>
-<taskend task="NSE" time="1519912539"/>
-<host starttime="1519912393" endtime="1519912539"><status state="up" reason="arp-response" reason_ttl="0"/>
+<taskbegin task="NSE" time="1520356462"/>
+<taskend task="NSE" time="1520356462"/>
+<taskbegin task="NSE" time="1520356462"/>
+<taskend task="NSE" time="1520356462"/>
+<taskbegin task="ARP Ping Scan" time="1520356462"/>
+<taskend task="ARP Ping Scan" time="1520356462" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1520356462"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1520356462"/>
+<taskbegin task="UDP Scan" time="1520356462"/>
+<taskend task="UDP Scan" time="1520356464" extrainfo="200 total ports"/>
+<taskbegin task="Service scan" time="1520356464"/>
+<taskprogress task="Service scan" time="1520356536" percent="44.44" remaining="90" etc="1520356626"/>
+<taskend task="Service scan" time="1520356566" extrainfo="9 services on 1 host"/>
+<taskbegin task="NSE" time="1520356569"/>
+<taskend task="NSE" time="1520356579"/>
+<taskbegin task="NSE" time="1520356579"/>
+<taskend task="NSE" time="1520356580"/>
+<host starttime="1520356462" endtime="1520356580"><status state="up" reason="arp-response" reason_ttl="0"/>
 <address addr="10.11.1.227" addrtype="ipv4"/>
 <address addr="00:50:56:89:33:B2" addrtype="mac" vendor="VMware"/>
 <hostnames>
@@ -34,408 +34,15 @@
 <port protocol="udp" portid="135"><state state="open" reason="udp-response" reason_ttl="0"/><service name="msrpc" product="Microsoft RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
 <port protocol="udp" portid="137"><state state="open" reason="udp-response" reason_ttl="128"/><service name="netbios-ns" product="Microsoft Windows netbios-ssn" extrainfo="workgroup: WORKGROUP" hostname="JD" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
 <port protocol="udp" portid="138"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-dgm" method="table" conf="3"/></port>
-<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="0"/><service name="snmp" product="SNMPv1 server" extrainfo="public" hostname="JD" method="probed" conf="10"/><script id="snmp-interfaces" output="&#xa;  MS TCP Loopback interface\x00&#xa;    IP address: 127.0.0.1  Netmask: 255.0.0.0&#xa;    Type: softwareLoopback  Speed: 10 Mbps&#xa;    Status: up&#xa;    Traffic stats: 119.36 Kb sent, 119.36 Kb received&#xa;  VMware Accelerated AMD PCNet Adapter\x00&#xa;    IP address: 10.11.1.227  Netmask: 255.255.0.0&#xa;    MAC address: 00:50:56:89:33:b2 (VMware)&#xa;    Type: ethernetCsmacd  Speed: 1 Gbps&#xa;    Status: up&#xa;    Traffic stats: 4.09 Mb sent, 8.12 Mb received&#xa;"/><script id="snmp-netstat" output="&#xa;  TCP  0.0.0.0:21           0.0.0.0:26658&#xa;  TCP  0.0.0.0:25           0.0.0.0:59596&#xa;  TCP  0.0.0.0:80           0.0.0.0:59418&#xa;  TCP  0.0.0.0:135          0.0.0.0:59564&#xa;  TCP  0.0.0.0:443          0.0.0.0:10244&#xa;  TCP  0.0.0.0:445          0.0.0.0:59563&#xa;  TCP  0.0.0.0:1025         0.0.0.0:10313&#xa;  TCP  0.0.0.0:1026         0.0.0.0:2249&#xa;  TCP  0.0.0.0:1028         0.0.0.0:2156&#xa;  TCP  0.0.0.0:1031         0.0.0.0:18494&#xa;  TCP  0.0.0.0:3372         0.0.0.0:34950&#xa;  TCP  0.0.0.0:5800         0.0.0.0:26712&#xa;  TCP  0.0.0.0:5900         0.0.0.0:51368&#xa;  TCP  0.0.0.0:6532         0.0.0.0:2064&#xa;  TCP  10.11.1.227:21       10.11.0.31:44086&#xa;  TCP  10.11.1.227:21       10.11.0.154:738&#xa;  TCP  10.11.1.227:21       10.11.0.154:36854&#xa;  TCP  10.11.1.227:21       10.11.0.154:36946&#xa;  TCP  10.11.1.227:21       10.11.0.154:39254&#xa;  TCP  10.11.1.227:21       10.11.0.154:40582&#xa;  TCP  10.11.1.227:21       10.11.0.154:41892&#xa;  TCP  10.11.1.227:21       10.11.0.154:43226&#xa;  TCP  10.11.1.227:21       10.11.0.154:44544&#xa;  TCP  10.11.1.227:21       10.11.0.154:45840&#xa;  TCP  10.11.1.227:21       10.11.0.154:46934&#xa;  TCP  10.11.1.227:21       10.11.0.154:47622&#xa;  TCP  10.11.1.227:21       10.11.0.154:48186&#xa;  TCP  10.11.1.227:21       10.11.0.154:49186&#xa;  TCP  10.11.1.227:21       10.11.0.154:49708&#xa;  TCP  10.11.1.227:21       10.11.0.154:49984&#xa;  TCP  10.11.1.227:21       10.11.0.154:50898&#xa;  TCP  10.11.1.227:21       10.11.0.154:52100&#xa;  TCP  10.11.1.227:21       10.11.0.154:53294&#xa;  TCP  10.11.1.227:21       10.11.0.154:53666&#xa;  TCP  10.11.1.227:21       10.11.0.154:54386&#xa;  TCP  10.11.1.227:21       10.11.0.154:55074&#xa;  TCP  10.11.1.227:21       10.11.0.154:55924&#xa;  TCP  10.11.1.227:139      0.0.0.0:59577&#xa;  TCP  10.11.1.227:1036     0.0.0.0:43047&#xa;  TCP  10.11.1.227:1036     10.11.0.31:34744&#xa;  TCP  10.11.1.227:1263     10.11.1.229:139&#xa;  TCP  10.11.1.227:27900    0.0.0.0:18599&#xa;  TCP  127.0.0.1:1258       127.0.0.1:445&#xa;  TCP  127.0.0.1:27900      0.0.0.0:34890&#xa;  UDP  0.0.0.0:135          *:*&#xa;  UDP  0.0.0.0:161          *:*&#xa;  UDP  0.0.0.0:445          *:*&#xa;  UDP  0.0.0.0:1029         *:*&#xa;  UDP  0.0.0.0:1434         *:*&#xa;  UDP  0.0.0.0:3456         *:*&#xa;  UDP  10.11.1.227:137      *:*&#xa;  UDP  10.11.1.227:138      *:*&#xa;  UDP  10.11.1.227:500      *:*&#xa;"/><script id="snmp-processes" output="&#xa;  1: &#xa;    Name: System Idle Process&#xa;  8: &#xa;    Name: System&#xa;  152: &#xa;    Name: sqlmangr.exe&#xa;  180: &#xa;    Name: smss.exe&#xa;  200: &#xa;    Name: csrss.exe&#xa;  220: &#xa;    Name: WINLOGON.EXE&#xa;  248: &#xa;    Name: services.exe&#xa;  260: &#xa;    Name: LSASS.EXE&#xa;  380: &#xa;    Name: vmtoolsd.exe&#xa;  452: &#xa;    Name: svchost.exe&#xa;  484: &#xa;    Name: SPOOLSV.EXE&#xa;  516: &#xa;    Name: msdtc.exe&#xa;  620: &#xa;    Name: svchost.exe&#xa;  640: &#xa;    Name: LLSSRV.EXE&#xa;  692: &#xa;    Name: sqlservr.exe&#xa;  760: &#xa;    Name: regsvc.exe&#xa;  788: &#xa;    Name: mstask.exe&#xa;  816: &#xa;    Name: snmp.exe&#xa;  848: &#xa;    Name: vmtoolsd.exe&#xa;  856: &#xa;    Name: CMD.EXE&#xa;  936: &#xa;    Name: winmgmt.exe&#xa;  948: &#xa;    Name: winvnc4.exe&#xa;  960: &#xa;    Name: svchost.exe&#xa;  980: &#xa;    Name: inetinfo.exe&#xa;  1020: &#xa;    Name: mssearch.exe&#xa;  1176: &#xa;    Name: dfssvc.exe&#xa;  1244: &#xa;    Name: netstat.exe&#xa;  1356: &#xa;    Name: sqlagent.exe&#xa;  1584: &#xa;    Name: explorer.exe&#xa;  1592: &#xa;    Name: svchost.exe"><table key="1">
-<elem key="Name">System Idle Process</elem>
-</table>
-<table key="8">
-<elem key="Name">System</elem>
-</table>
-<table key="152">
-<elem key="Name">sqlmangr.exe</elem>
-</table>
-<table key="180">
-<elem key="Name">smss.exe</elem>
-</table>
-<table key="200">
-<elem key="Name">csrss.exe</elem>
-</table>
-<table key="220">
-<elem key="Name">WINLOGON.EXE</elem>
-</table>
-<table key="248">
-<elem key="Name">services.exe</elem>
-</table>
-<table key="260">
-<elem key="Name">LSASS.EXE</elem>
-</table>
-<table key="380">
-<elem key="Name">vmtoolsd.exe</elem>
-</table>
-<table key="452">
-<elem key="Name">svchost.exe</elem>
-</table>
-<table key="484">
-<elem key="Name">SPOOLSV.EXE</elem>
-</table>
-<table key="516">
-<elem key="Name">msdtc.exe</elem>
-</table>
-<table key="620">
-<elem key="Name">svchost.exe</elem>
-</table>
-<table key="640">
-<elem key="Name">LLSSRV.EXE</elem>
-</table>
-<table key="692">
-<elem key="Name">sqlservr.exe</elem>
-</table>
-<table key="760">
-<elem key="Name">regsvc.exe</elem>
-</table>
-<table key="788">
-<elem key="Name">mstask.exe</elem>
-</table>
-<table key="816">
-<elem key="Name">snmp.exe</elem>
-</table>
-<table key="848">
-<elem key="Name">vmtoolsd.exe</elem>
-</table>
-<table key="856">
-<elem key="Name">CMD.EXE</elem>
-</table>
-<table key="936">
-<elem key="Name">winmgmt.exe</elem>
-</table>
-<table key="948">
-<elem key="Name">winvnc4.exe</elem>
-</table>
-<table key="960">
-<elem key="Name">svchost.exe</elem>
-</table>
-<table key="980">
-<elem key="Name">inetinfo.exe</elem>
-</table>
-<table key="1020">
-<elem key="Name">mssearch.exe</elem>
-</table>
-<table key="1176">
-<elem key="Name">dfssvc.exe</elem>
-</table>
-<table key="1244">
-<elem key="Name">netstat.exe</elem>
-</table>
-<table key="1356">
-<elem key="Name">sqlagent.exe</elem>
-</table>
-<table key="1584">
-<elem key="Name">explorer.exe</elem>
-</table>
-<table key="1592">
-<elem key="Name">svchost.exe</elem>
-</table>
-</script><script id="snmp-sysdescr" output="Hardware: x86 Family 6 Model 12 Stepping 2 AT/AT COMPATIBLE - Software: Windows 2000 Version 5.0 (Build 2195 Uniprocessor Free)&#xa;  System uptime: 118d18h26m46.26s (1026160626 timeticks)"/><script id="snmp-win32-services" output="&#xa;  Alerter&#xa;  Automatic Updates&#xa;  COM+ Event System&#xa;  Computer Browser&#xa;  DHCP Client&#xa;  DNS Client&#xa;  Distributed File System&#xa;  Distributed Link Tracking Client&#xa;  Distributed Transaction Coordinator&#xa;  Event Log&#xa;  FTP Publishing Service&#xa;  IIS Admin Service&#xa;  IPSEC Policy Agent&#xa;  License Logging Service&#xa;  Logical Disk Manager&#xa;  MSSQLSERVER&#xa;  Messenger&#xa;  Microsoft Search&#xa;  NT LM Security Support Provider&#xa;  Network Connections&#xa;  Plug and Play&#xa;  Print Spooler&#xa;  Protected Storage&#xa;  Remote Procedure Call (RPC)&#xa;  Remote Registry Service&#xa;  Removable Storage&#xa;  RunAs Service&#xa;  SNMP Service&#xa;  SQLSERVERAGENT&#xa;  Security Accounts Manager&#xa;  Server&#xa;  Simple Mail Transport Protocol (SMTP)&#xa;  System Event Notification&#xa;  TCP/IP NetBIOS Helper Service&#xa;  Task Scheduler&#xa;  Telephony&#xa;  VMTools&#xa;  VNC Server Version 4&#xa;  Windows Management Instrumentation&#xa;  Windows Management Instrumentation Driver Extensions&#xa;  Workstation&#xa;  World Wide Web Publishing Service"><elem>Alerter</elem>
-<elem>Automatic Updates</elem>
-<elem>COM+ Event System</elem>
-<elem>Computer Browser</elem>
-<elem>DHCP Client</elem>
-<elem>DNS Client</elem>
-<elem>Distributed File System</elem>
-<elem>Distributed Link Tracking Client</elem>
-<elem>Distributed Transaction Coordinator</elem>
-<elem>Event Log</elem>
-<elem>FTP Publishing Service</elem>
-<elem>IIS Admin Service</elem>
-<elem>IPSEC Policy Agent</elem>
-<elem>License Logging Service</elem>
-<elem>Logical Disk Manager</elem>
-<elem>MSSQLSERVER</elem>
-<elem>Messenger</elem>
-<elem>Microsoft Search</elem>
-<elem>NT LM Security Support Provider</elem>
-<elem>Network Connections</elem>
-<elem>Plug and Play</elem>
-<elem>Print Spooler</elem>
-<elem>Protected Storage</elem>
-<elem>Remote Procedure Call (RPC)</elem>
-<elem>Remote Registry Service</elem>
-<elem>Removable Storage</elem>
-<elem>RunAs Service</elem>
-<elem>SNMP Service</elem>
-<elem>SQLSERVERAGENT</elem>
-<elem>Security Accounts Manager</elem>
-<elem>Server</elem>
-<elem>Simple Mail Transport Protocol (SMTP)</elem>
-<elem>System Event Notification</elem>
-<elem>TCP/IP NetBIOS Helper Service</elem>
-<elem>Task Scheduler</elem>
-<elem>Telephony</elem>
-<elem>VMTools</elem>
-<elem>VNC Server Version 4</elem>
-<elem>Windows Management Instrumentation</elem>
-<elem>Windows Management Instrumentation Driver Extensions</elem>
-<elem>Workstation</elem>
-<elem>World Wide Web Publishing Service</elem>
-</script><script id="snmp-win32-shares" output="&#xa;  share: C:\share"><elem key="share">C:\share</elem>
-</script><script id="snmp-win32-software" output="&#xa;  ActiveState ActivePython 2.4.3; 2006-12-22T21:02:44&#xa;  Microsoft Data Access Components KB870669; 2007-01-11T12:38:24&#xa;  Microsoft SQL Server 2000; 2003-06-07T12:54:46&#xa;  Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148; 2012-08-08T11:02:20&#xa;  VMware Tools; 2015-02-28T02:30:08&#xa;  VNC Free Edition 4.1.1; 2007-01-11T18:15:58&#xa;  WebFldrs; 2003-06-03T07:19:26&#xa;  WinRAR archiver; 2006-12-22T20:57:38&#xa;  Windows 2000 Hotfix (Pre-SP4) Q329170; 2007-01-11T12:35:16&#xa;  Windows 2000 Hotfix (Pre-SP4) Q810833; 2007-01-11T12:39:24&#xa;  Windows 2000 Hotfix (Pre-SP4) [See Q326830 for more information]; 2007-01-11T12:35:40&#xa;  Windows 2000 Hotfix (Pre-SP4) [See Q326886 for more information]; 2007-01-11T12:36:06&#xa;  Windows 2000 Hotfix (Pre-SP4) [See Q329115 for more information]; 2007-01-11T12:36:00&#xa;  Windows 2000 Hotfix (Pre-SP4) [See Q329834 for more information]; 2007-01-11T12:35:52&#xa;  Windows 2000 Hotfix (Pre-SP4) [See q323172 for more information]; 2007-01-11T12:38:26&#xa;  Windows 2000 Hotfix (SP4) KB810217; 2007-01-11T12:37:20&#xa;  Windows 2000 Hotfix (SP4) KB817606; 2007-01-11T12:35:32&#xa;  Windows 2000 Hotfix (SP4) Q329553; 2007-01-11T12:36:16&#xa;  Windows 2000 Hotfix (SP4) Q811114; 2007-01-11T12:36:20&#xa;  Windows 2000 Hotfix (SP4) Q814033; 2007-01-11T12:36:50&#xa;  Windows 2000 Hotfix - KB819696; 2007-01-11T12:37:36&#xa;  Windows 2000 Hotfix - KB823182; 2007-01-11T12:36:10&#xa;  Windows 2000 Hotfix - KB823559; 2007-01-11T12:38:12&#xa;  Windows 2000 Hotfix - KB824105; 2007-01-11T12:38:50&#xa;  Windows 2000 Hotfix - KB824151; 2007-01-11T12:38:46&#xa;  Windows 2000 Hotfix - KB826232; 2007-01-11T12:37:40&#xa;  Windows 2000 Hotfix - KB828035; 2007-01-11T12:35:36&#xa;  Windows 2000 Hotfix - KB828741; 2007-01-11T12:37:30&#xa;  Windows 2000 Hotfix - KB828749; 2007-01-11T12:38:20&#xa;  Windows 2000 Hotfix - KB835732; 2007-01-11T12:39:14&#xa;  Windows 2000 Hotfix - KB837001; 2007-01-11T12:38:36&#xa;  Windows 2000 Hotfix - KB839643; 2007-01-11T12:39:20&#xa;  Windows 2000 Hotfix - KB839645; 2007-01-11T12:35:42&#xa;  Windows 2000 Hotfix - KB840987; 2007-01-11T12:38:56&#xa;  Windows 2000 Hotfix - KB841356; 2007-01-11T12:37:16&#xa;  Windows 2000 Hotfix - KB841533; 2007-01-11T12:37:54&#xa;  Windows 2000 Hotfix - KB841872; 2007-01-11T12:35:20&#xa;  Windows 2000 Hotfix - KB841873; 2007-01-11T12:39:18&#xa;  Windows 2000 Hotfix - KB842526; 2007-01-11T12:38:16&#xa;  Windows 2000 Hotfix - KB842773; 2007-01-11T03:55:22&#xa;  Windows 2000 Hotfix - KB871250; 2007-01-11T12:35:44&#xa;  Windows 2000 Hotfix - KB873333; 2007-01-11T12:35:26&#xa;  Windows 2000 Hotfix - KB873339; 2007-01-11T12:37:50&#xa;  Windows 2000 Hotfix - KB883939; 2007-01-11T12:36:14&#xa;  Windows 2000 Hotfix - KB885250; 2007-01-11T12:35:24&#xa;  Windows 2000 Hotfix - KB885834; 2007-01-11T12:35:28&#xa;  Windows 2000 Hotfix - KB885835; 2007-01-11T12:39:02&#xa;  Windows 2000 Hotfix - KB885836; 2007-01-11T12:38:52&#xa;  Windows 2000 Hotfix - KB888113; 2007-01-11T12:38:58&#xa;  Windows 2000 Hotfix - KB890046; 2007-01-11T12:35:10&#xa;  Windows 2000 Hotfix - KB890859; 2007-01-11T12:37:08&#xa;  Windows 2000 Hotfix - KB891781; 2007-01-11T12:37:48&#xa;  Windows 2000 Hotfix - KB893066; 2007-01-11T12:37:34&#xa;  Windows 2000 Hotfix - KB893086; 2007-01-11T12:39:28&#xa;  Windows 2000 Hotfix - KB894320; 2007-01-11T12:38:24&#xa;  Windows 2000 Hotfix - KB896358; 2007-01-11T12:38:44&#xa;  Windows 2000 Hotfix - KB896422; 2007-01-11T12:37:46&#xa;  Windows 2000 Hotfix - KB897715; 2007-01-11T12:38:04&#xa;  Windows Installer 3.1 (KB893803); 2007-01-11T03:55:28&#xa;  Windows Media Player Hotfix [See Q828026 for more information]; 2007-01-11T12:38:08"><table>
-<elem key="install_date">2006-12-22T21:02:44</elem>
-<elem key="name">ActiveState ActivePython 2.4.3</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:24</elem>
-<elem key="name">Microsoft Data Access Components KB870669</elem>
-</table>
-<table>
-<elem key="install_date">2003-06-07T12:54:46</elem>
-<elem key="name">Microsoft SQL Server 2000</elem>
-</table>
-<table>
-<elem key="install_date">2012-08-08T11:02:20</elem>
-<elem key="name">Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148</elem>
-</table>
-<table>
-<elem key="install_date">2015-02-28T02:30:08</elem>
-<elem key="name">VMware Tools</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T18:15:58</elem>
-<elem key="name">VNC Free Edition 4.1.1</elem>
-</table>
-<table>
-<elem key="install_date">2003-06-03T07:19:26</elem>
-<elem key="name">WebFldrs</elem>
-</table>
-<table>
-<elem key="install_date">2006-12-22T20:57:38</elem>
-<elem key="name">WinRAR archiver</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:16</elem>
-<elem key="name">Windows 2000 Hotfix (Pre-SP4) Q329170</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:39:24</elem>
-<elem key="name">Windows 2000 Hotfix (Pre-SP4) Q810833</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:40</elem>
-<elem key="name">Windows 2000 Hotfix (Pre-SP4) [See Q326830 for more information]</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:36:06</elem>
-<elem key="name">Windows 2000 Hotfix (Pre-SP4) [See Q326886 for more information]</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:36:00</elem>
-<elem key="name">Windows 2000 Hotfix (Pre-SP4) [See Q329115 for more information]</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:52</elem>
-<elem key="name">Windows 2000 Hotfix (Pre-SP4) [See Q329834 for more information]</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:26</elem>
-<elem key="name">Windows 2000 Hotfix (Pre-SP4) [See q323172 for more information]</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:20</elem>
-<elem key="name">Windows 2000 Hotfix (SP4) KB810217</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:32</elem>
-<elem key="name">Windows 2000 Hotfix (SP4) KB817606</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:36:16</elem>
-<elem key="name">Windows 2000 Hotfix (SP4) Q329553</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:36:20</elem>
-<elem key="name">Windows 2000 Hotfix (SP4) Q811114</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:36:50</elem>
-<elem key="name">Windows 2000 Hotfix (SP4) Q814033</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:36</elem>
-<elem key="name">Windows 2000 Hotfix - KB819696</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:36:10</elem>
-<elem key="name">Windows 2000 Hotfix - KB823182</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:12</elem>
-<elem key="name">Windows 2000 Hotfix - KB823559</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:50</elem>
-<elem key="name">Windows 2000 Hotfix - KB824105</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:46</elem>
-<elem key="name">Windows 2000 Hotfix - KB824151</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:40</elem>
-<elem key="name">Windows 2000 Hotfix - KB826232</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:36</elem>
-<elem key="name">Windows 2000 Hotfix - KB828035</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:30</elem>
-<elem key="name">Windows 2000 Hotfix - KB828741</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:20</elem>
-<elem key="name">Windows 2000 Hotfix - KB828749</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:39:14</elem>
-<elem key="name">Windows 2000 Hotfix - KB835732</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:36</elem>
-<elem key="name">Windows 2000 Hotfix - KB837001</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:39:20</elem>
-<elem key="name">Windows 2000 Hotfix - KB839643</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:42</elem>
-<elem key="name">Windows 2000 Hotfix - KB839645</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:56</elem>
-<elem key="name">Windows 2000 Hotfix - KB840987</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:16</elem>
-<elem key="name">Windows 2000 Hotfix - KB841356</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:54</elem>
-<elem key="name">Windows 2000 Hotfix - KB841533</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:20</elem>
-<elem key="name">Windows 2000 Hotfix - KB841872</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:39:18</elem>
-<elem key="name">Windows 2000 Hotfix - KB841873</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:16</elem>
-<elem key="name">Windows 2000 Hotfix - KB842526</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T03:55:22</elem>
-<elem key="name">Windows 2000 Hotfix - KB842773</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:44</elem>
-<elem key="name">Windows 2000 Hotfix - KB871250</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:26</elem>
-<elem key="name">Windows 2000 Hotfix - KB873333</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:50</elem>
-<elem key="name">Windows 2000 Hotfix - KB873339</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:36:14</elem>
-<elem key="name">Windows 2000 Hotfix - KB883939</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:24</elem>
-<elem key="name">Windows 2000 Hotfix - KB885250</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:28</elem>
-<elem key="name">Windows 2000 Hotfix - KB885834</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:39:02</elem>
-<elem key="name">Windows 2000 Hotfix - KB885835</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:52</elem>
-<elem key="name">Windows 2000 Hotfix - KB885836</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:58</elem>
-<elem key="name">Windows 2000 Hotfix - KB888113</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:35:10</elem>
-<elem key="name">Windows 2000 Hotfix - KB890046</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:08</elem>
-<elem key="name">Windows 2000 Hotfix - KB890859</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:48</elem>
-<elem key="name">Windows 2000 Hotfix - KB891781</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:34</elem>
-<elem key="name">Windows 2000 Hotfix - KB893066</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:39:28</elem>
-<elem key="name">Windows 2000 Hotfix - KB893086</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:24</elem>
-<elem key="name">Windows 2000 Hotfix - KB894320</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:44</elem>
-<elem key="name">Windows 2000 Hotfix - KB896358</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:37:46</elem>
-<elem key="name">Windows 2000 Hotfix - KB896422</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:04</elem>
-<elem key="name">Windows 2000 Hotfix - KB897715</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T03:55:28</elem>
-<elem key="name">Windows Installer 3.1 (KB893803)</elem>
-</table>
-<table>
-<elem key="install_date">2007-01-11T12:38:08</elem>
-<elem key="name">Windows Media Player Hotfix [See Q828026 for more information]</elem>
-</table>
-</script><script id="snmp-win32-users" output="&#xa;  Administrator&#xa;  Guest&#xa;  IUSR_SRV2&#xa;  IWAM_SRV2&#xa;  TsInternetUser&#xa;  admin&#xa;  backup&#xa;  david&#xa;  gary&#xa;  homer&#xa;  john&#xa;  lee&#xa;  lisa&#xa;  mark&#xa;  ned&#xa;  nick&#xa;  simon&#xa;  sqlusr&#xa;  sura&#xa;  todd"><elem>Administrator</elem>
-<elem>Guest</elem>
-<elem>IUSR_SRV2</elem>
-<elem>IWAM_SRV2</elem>
-<elem>TsInternetUser</elem>
-<elem>admin</elem>
-<elem>backup</elem>
-<elem>david</elem>
-<elem>gary</elem>
-<elem>homer</elem>
-<elem>john</elem>
-<elem>lee</elem>
-<elem>lisa</elem>
-<elem>mark</elem>
-<elem>ned</elem>
-<elem>nick</elem>
-<elem>simon</elem>
-<elem>sqlusr</elem>
-<elem>sura</elem>
-<elem>todd</elem>
-</script></port>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="0"/><service name="snmp" product="SNMPv1 server" extrainfo="public" hostname="JD" method="probed" conf="10"/></port>
 <port protocol="udp" portid="445"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
 <port protocol="udp" portid="500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="isakmp" method="table" conf="3"/></port>
-<port protocol="udp" portid="1029"><state state="open" reason="udp-response" reason_ttl="0"/><service name="msrpc" product="Microsoft RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="udp" portid="1039"><state state="open" reason="udp-response" reason_ttl="0"/><service name="msrpc" product="Microsoft RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
 <port protocol="udp" portid="1434"><state state="open" reason="udp-response" reason_ttl="0"/><service name="ms-sql-m" product="Microsoft SQL Server" version="8.00.194" extrainfo="ServerName: JD; TCPPort: 27900" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:sql_server:8.00.194</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
 <port protocol="udp" portid="3456"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="IISrpc-or-vat" method="table" conf="3"/></port>
 </ports>
 <os><portused state="closed" proto="udp" portid="7"/>
-<osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/1%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A98065B%P=x86_64-pc-linux-gnu)&#xa;SEQ(II=I)&#xa;T5(R=Y%DF=N%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=S%T=80%CD=Z)&#xa;"/>
+<osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/6%OT=%CT=%CU=7%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5A9ECCE4%P=x86_64-pc-linux-gnu)&#xa;SEQ(II=I)&#xa;T5(R=Y%DF=N%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=S%T=80%CD=Z)&#xa;"/>
 </os>
 <distance value="1"/>
 <hostscript><script id="ms-sql-info" output="&#xa;  Windows server name: JD&#xa;  10.11.1.227\MSSQLSERVER: &#xa;    Instance name: MSSQLSERVER&#xa;    Version: &#xa;      name: Microsoft SQL Server 2000 RTM&#xa;      number: 8.00.194.00&#xa;      Product: Microsoft SQL Server 2000&#xa;      Service pack level: RTM&#xa;      Post-SP patches applied: false&#xa;    TCP port: 27900&#xa;    Named pipe: \\10.11.1.227\pipe\sql\query&#xa;    Clustered: false"><elem key="Windows server name">JD</elem>
@@ -452,63 +59,15 @@
 <elem key="Named pipe">\\10.11.1.227\pipe\sql\query</elem>
 <elem key="Clustered">false</elem>
 </table>
-</script><script id="nbstat" output="NetBIOS name: JD, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:50:56:89:33:b2 (VMware)&#xa;Names:&#xa;  JD&lt;00&gt;               Flags: &lt;unique&gt;&lt;active&gt;&#xa;  JD&lt;20&gt;               Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  INet~Services&lt;1c&gt;    Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  JD&lt;03&gt;               Flags: &lt;unique&gt;&lt;active&gt;&#xa;  IS~JD\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00&lt;00&gt;  Flags: &lt;unique&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00 50 56 89 33 b2 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00"><elem key="server_name">JD</elem>
-<table key="names">
-<table>
-<elem key="suffix">0</elem>
-<elem key="flags">17408</elem>
-<elem key="name">JD</elem>
-</table>
-<table>
-<elem key="suffix">32</elem>
-<elem key="flags">17408</elem>
-<elem key="name">JD</elem>
-</table>
-<table>
-<elem key="suffix">0</elem>
-<elem key="flags">50176</elem>
-<elem key="name">WORKGROUP</elem>
-</table>
-<table>
-<elem key="suffix">28</elem>
-<elem key="flags">50176</elem>
-<elem key="name">INet~Services</elem>
-</table>
-<table>
-<elem key="suffix">30</elem>
-<elem key="flags">50176</elem>
-<elem key="name">WORKGROUP</elem>
-</table>
-<table>
-<elem key="suffix">3</elem>
-<elem key="flags">17408</elem>
-<elem key="name">JD</elem>
-</table>
-<table>
-<elem key="suffix">0</elem>
-<elem key="flags">17408</elem>
-<elem key="name">IS~JD\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00</elem>
-</table>
-</table>
-<table key="statistics">
-<elem>00 50 56 89 33 b2 00 00 00 00 00 00 00 00 00 00 00</elem>
-<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
-<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
-</table>
-<table key="mac">
-<elem key="address">00:50:56:89:33:b2</elem>
-<elem key="manuf">VMware</elem>
-</table>
-<elem key="user">&lt;unknown&gt;</elem>
 </script></hostscript><trace>
-<hop ttl="1" ipaddr="10.11.1.227" rtt="54.95"/>
+<hop ttl="1" ipaddr="10.11.1.227" rtt="36.62"/>
 </trace>
-<times srtt="54946" rttvar="18646" to="129530"/>
+<times srtt="36625" rttvar="2328" to="100000"/>
 </host>
-<taskbegin task="NSE" time="1519912539"/>
-<taskend task="NSE" time="1519912539"/>
-<taskbegin task="NSE" time="1519912539"/>
-<taskend task="NSE" time="1519912539"/>
-<runstats><finished time="1519912539" timestr="Thu Mar  1 08:55:39 2018" elapsed="166.68" summary="Nmap done at Thu Mar  1 08:55:39 2018; 1 IP address (1 host up) scanned in 166.68 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+<taskbegin task="NSE" time="1520356580"/>
+<taskend task="NSE" time="1520356580"/>
+<taskbegin task="NSE" time="1520356580"/>
+<taskend task="NSE" time="1520356580"/>
+<runstats><finished time="1520356580" timestr="Tue Mar  6 12:16:20 2018" elapsed="118.56" summary="Nmap done at Tue Mar  6 12:16:20 2018; 1 IP address (1 host up) scanned in 118.56 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
 </runstats>
 </nmaprun>

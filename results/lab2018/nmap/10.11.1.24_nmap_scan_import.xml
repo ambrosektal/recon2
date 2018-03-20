@@ -1,37 +1,359 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Wed Feb 28 09:13:24 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.24.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.24_nmap_scan_import.xml 10.11.1.24 -->
-<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.24.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.24_nmap_scan_import.xml 10.11.1.24" start="1519827204" startstr="Wed Feb 28 09:13:24 2018" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Sun Mar 18 12:48:29 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.24.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.24_nmap_scan_import.xml 10.11.1.24 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.24.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.24_nmap_scan_import.xml 10.11.1.24" start="1521391709" startstr="Sun Mar 18 12:48:29 2018" version="7.60" xmloutputversion="1.04">
 <scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="2"/>
 <debugging level="0"/>
-<taskbegin task="NSE" time="1519827282"/>
-<taskend task="NSE" time="1519827283"/>
-<taskbegin task="NSE" time="1519827283"/>
-<taskend task="NSE" time="1519827283"/>
-<taskbegin task="ARP Ping Scan" time="1519827284"/>
-<taskend task="ARP Ping Scan" time="1519827286" extrainfo="1 total hosts"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1519827291"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1519827291"/>
-<taskbegin task="SYN Stealth Scan" time="1519827291"/>
-<taskprogress task="SYN Stealth Scan" time="1519827367" percent="27.04" remaining="206" etc="1519827572"/>
-<taskprogress task="SYN Stealth Scan" time="1519827406" percent="34.11" remaining="223" etc="1519827628"/>
-<taskprogress task="SYN Stealth Scan" time="1519827436" percent="37.09" remaining="246" etc="1519827682"/>
-<taskprogress task="SYN Stealth Scan" time="1519827469" percent="39.32" remaining="275" etc="1519827744"/>
-<taskprogress task="SYN Stealth Scan" time="1519827514" percent="42.65" remaining="300" etc="1519827814"/>
-<taskprogress task="SYN Stealth Scan" time="1519827544" percent="42.70" remaining="340" etc="1519827883"/>
-<taskprogress task="SYN Stealth Scan" time="1519827574" percent="42.75" remaining="379" etc="1519827953"/>
-<taskprogress task="SYN Stealth Scan" time="1519827604" percent="42.81" remaining="419" etc="1519828022"/>
-<taskprogress task="SYN Stealth Scan" time="1519827634" percent="42.87" remaining="458" etc="1519828091"/>
-<taskprogress task="SYN Stealth Scan" time="1519827665" percent="42.87" remaining="499" etc="1519828163"/>
-<taskprogress task="SYN Stealth Scan" time="1519827702" percent="42.91" remaining="547" etc="1519828249"/>
-<taskprogress task="SYN Stealth Scan" time="1519827741" percent="42.92" remaining="599" etc="1519828339"/>
-<taskprogress task="SYN Stealth Scan" time="1519827783" percent="42.98" remaining="653" etc="1519828436"/>
-<taskprogress task="SYN Stealth Scan" time="1519827831" percent="43.07" remaining="714" etc="1519828545"/>
-<taskprogress task="SYN Stealth Scan" time="1519827882" percent="43.14" remaining="780" etc="1519828661"/>
-<taskprogress task="SYN Stealth Scan" time="1519827939" percent="43.25" remaining="851" etc="1519828789"/>
-<taskprogress task="SYN Stealth Scan" time="1519827999" percent="43.36" remaining="925" etc="1519828924"/>
-<taskprogress task="SYN Stealth Scan" time="1519828065" percent="43.46" remaining="1007" etc="1519829072"/>
-<taskprogress task="SYN Stealth Scan" time="1519828140" percent="43.58" remaining="1099" etc="1519829239"/>
-<taskprogress task="SYN Stealth Scan" time="1519828222" percent="43.74" remaining="1198" etc="1519829420"/>
+<taskbegin task="NSE" time="1521391712"/>
+<taskend task="NSE" time="1521391712"/>
+<taskbegin task="NSE" time="1521391712"/>
+<taskend task="NSE" time="1521391712"/>
+<taskbegin task="ARP Ping Scan" time="1521391712"/>
+<taskend task="ARP Ping Scan" time="1521391712" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1521391712"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1521391712"/>
+<taskbegin task="SYN Stealth Scan" time="1521391712"/>
+<taskprogress task="SYN Stealth Scan" time="1521391743" percent="15.98" remaining="164" etc="1521391906"/>
+<taskprogress task="SYN Stealth Scan" time="1521391773" percent="19.50" remaining="252" etc="1521392025"/>
+<taskprogress task="SYN Stealth Scan" time="1521391803" percent="21.44" remaining="334" etc="1521392136"/>
+<taskprogress task="SYN Stealth Scan" time="1521391833" percent="23.43" remaining="396" etc="1521392228"/>
+<taskprogress task="SYN Stealth Scan" time="1521391866" percent="26.44" remaining="429" etc="1521392294"/>
+<taskprogress task="SYN Stealth Scan" time="1521391956" percent="38.02" remaining="398" etc="1521392354"/>
+<taskprogress task="SYN Stealth Scan" time="1521391992" percent="43.38" remaining="366" etc="1521392358"/>
+<taskprogress task="SYN Stealth Scan" time="1521392028" percent="48.74" remaining="333" etc="1521392360"/>
+<taskprogress task="SYN Stealth Scan" time="1521392064" percent="54.10" remaining="299" etc="1521392363"/>
+<taskprogress task="SYN Stealth Scan" time="1521392100" percent="59.43" remaining="265" etc="1521392365"/>
+<taskprogress task="SYN Stealth Scan" time="1521392136" percent="64.78" remaining="231" etc="1521392366"/>
+<taskprogress task="SYN Stealth Scan" time="1521392172" percent="70.21" remaining="196" etc="1521392367"/>
+<taskprogress task="SYN Stealth Scan" time="1521392208" percent="75.64" remaining="160" etc="1521392368"/>
+<taskprogress task="SYN Stealth Scan" time="1521392244" percent="81.06" remaining="125" etc="1521392368"/>
+<taskprogress task="SYN Stealth Scan" time="1521392280" percent="86.49" remaining="89" etc="1521392369"/>
+<taskprogress task="SYN Stealth Scan" time="1521392313" percent="91.47" remaining="57" etc="1521392369"/>
+<taskend task="SYN Stealth Scan" time="1521392371" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1521392371"/>
+<taskend task="Service scan" time="1521392382" extrainfo="8 services on 1 host"/>
+<taskbegin task="NSE" time="1521392395"/>
+<taskend task="NSE" time="1521392398"/>
+<taskbegin task="NSE" time="1521392398"/>
+<taskend task="NSE" time="1521392398"/>
+<host starttime="1521391712" endtime="1521392398"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.24" addrtype="ipv4"/>
+<address addr="00:50:56:89:37:58" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65347">
+<extrareasons reason="resets" count="65347"/>
+</extraports>
+<extraports state="filtered" count="180">
+<extrareasons reason="no-responses" count="180"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="4.6p1 Debian 5build1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 f3:6e:87:04:ea:2d:b3:60:ff:42:ad:26:67:17:94:d5 (DSA)&#xa;ssh-dss AAAAB3NzaC1kc3MAAACBAJedhI7AqO17xYjoo1RT33T4x4g7b+u71OK2CNJW//eoNBEibTyvqAmBDobETDcAZXHMdEMTvINlM7ZjGV4EAhfE57Fkkhae8LvML3Ae0OVsa/l4pWizwGEEkHVujayyHZlwqXnK1ePV9rKnc6VJUYL4yHPMEwhNDme92hxlEWBbAAAAFQCyn5tJyWy2EZXJLQgS/xpiBH36uQAAAIBcUdaW5kLYjbgbalp1Z3cMQuuiG/YhaLxNBMh75vM/SrrsATeqEIUlBNBgDel+fUSPbr2iCQ+I8xrk6CNvcXtugMfJSF78pH42VN5GrLKzNZeoyGzywEhcFKHAqcRMntyEZJ/BiLWRunRcnKznMMa00/d3xRLvTFKUmUjdW1IebAAAAIBRhyvDlRI873HIhNd8GiXY/kZyL+jDQle8ULF1Lk+H+EzKXMSPt0gMv8z2bpSD1XIB565rcFWlO+7q0BZFY+NLJAhMWAWxBE4Ib87uPUqeGvg6D8w6gZur84lpMg7P1KjyihIfY5tMCwfKkkaS418IPzhKtDUvtI0Vr6h3Wv0luA==&#xa;  2048 bb:03:ce:ed:13:f1:9a:9e:36:03:e2:af:ca:b2:35:04 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzGacK6NGRpMIVjkA/xYbfKDgeJeQzkJl25og4nQl+FV4ZbvXv6h0vCU+E8SPHKPL/WJAIqmL6hdQaTQiTDmhcKjecWBq9fX1Esb8cvlOPEzphl+wESfJx/lWYvLPBXz0ZdKfy2/O+0an9ua6jl3tDEFzeosHwIF8zDbaBL6/RzBV+0gkzA67OowtcaxoioYYPzsEaOAkAFjlaRMviUA3nzCvffG61KyqmAdwodl+rXyI4KHjQqinPYk5qmj9rO8LcLE/gWVRoRw4va6hbJ2V7e74Tt1HQ4V/FzhG1zrWdkI/qA65RMCw/0270w1PjYkfYl2ENJL6YHHosf4NCkfdbw=="><table>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAJedhI7AqO17xYjoo1RT33T4x4g7b+u71OK2CNJW//eoNBEibTyvqAmBDobETDcAZXHMdEMTvINlM7ZjGV4EAhfE57Fkkhae8LvML3Ae0OVsa/l4pWizwGEEkHVujayyHZlwqXnK1ePV9rKnc6VJUYL4yHPMEwhNDme92hxlEWBbAAAAFQCyn5tJyWy2EZXJLQgS/xpiBH36uQAAAIBcUdaW5kLYjbgbalp1Z3cMQuuiG/YhaLxNBMh75vM/SrrsATeqEIUlBNBgDel+fUSPbr2iCQ+I8xrk6CNvcXtugMfJSF78pH42VN5GrLKzNZeoyGzywEhcFKHAqcRMntyEZJ/BiLWRunRcnKznMMa00/d3xRLvTFKUmUjdW1IebAAAAIBRhyvDlRI873HIhNd8GiXY/kZyL+jDQle8ULF1Lk+H+EzKXMSPt0gMv8z2bpSD1XIB565rcFWlO+7q0BZFY+NLJAhMWAWxBE4Ib87uPUqeGvg6D8w6gZur84lpMg7P1KjyihIfY5tMCwfKkkaS418IPzhKtDUvtI0Vr6h3Wv0luA==</elem>
+<elem key="bits">1024.0</elem>
+<elem key="fingerprint">f36e8704ea2db360ff42ad26671794d5</elem>
+<elem key="type">ssh-dss</elem>
+</table>
+<table>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEAzGacK6NGRpMIVjkA/xYbfKDgeJeQzkJl25og4nQl+FV4ZbvXv6h0vCU+E8SPHKPL/WJAIqmL6hdQaTQiTDmhcKjecWBq9fX1Esb8cvlOPEzphl+wESfJx/lWYvLPBXz0ZdKfy2/O+0an9ua6jl3tDEFzeosHwIF8zDbaBL6/RzBV+0gkzA67OowtcaxoioYYPzsEaOAkAFjlaRMviUA3nzCvffG61KyqmAdwodl+rXyI4KHjQqinPYk5qmj9rO8LcLE/gWVRoRw4va6hbJ2V7e74Tt1HQ4V/FzhG1zrWdkI/qA65RMCw/0270w1PjYkfYl2ENJL6YHHosf4NCkfdbw==</elem>
+<elem key="bits">2048.0</elem>
+<elem key="fingerprint">bb03ceed13f19a9e3603e2afcab23504</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.2.4" extrainfo="(Ubuntu) PHP/5.2.3-1ubuntu6" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.4</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.2.4 (Ubuntu) PHP/5.2.3-1ubuntu6"><elem>Apache/2.2.4 (Ubuntu) PHP/5.2.3-1ubuntu6</elem>
+</script><script id="http-title" output="CS-Cart. Powerful PHP shopping cart software"><elem key="title">CS-Cart. Powerful PHP shopping cart software</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pop3" product="Dovecot pop3d" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="CAPA SASL UIDL STLS PIPELINING RESP-CODES TOP"/><script id="ssl-cert" output="Subject: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX/emailAddress=root@ubuntu01/localityName=Everywhere/organizationalUnitName=Office for Complication of Otherwise Simple Affairs&#xa;Issuer: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX/emailAddress=root@ubuntu01/localityName=Everywhere/organizationalUnitName=Office for Complication of Otherwise Simple Affairs&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2008-04-25T02:02:48&#xa;Not valid after:  2008-05-25T02:02:48&#xa;MD5:   90db 2a9a 2d86 29dc f047 d19d c636 9c8e&#xa;SHA-1: 1bde 08b6 86fc 9892 33c9 7bd4 0125 c572 5b32 d829&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDEzCCAnwCCQCZRVLhl4lWWjANBgkqhkiG9w0BAQUFADCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwHhcNMDgwNDI1MDIwMjQ4WhcNMDgwNTI1MDIwMjQ4WjCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMU3nxwLcuZqpwkOS9z97lvT&#xa;yR3ByDzjPSVW/FDorKebyGqttioV9xUsO0ws+v8OfNrJbPaJZwZIF8tiRBIbMTJf&#xa;TkSpCbmstakQmJFfI3HG9Hgp4AnmJbTPRla1HzYuRArDog/1zZZu/rk9bttIPU3K&#xa;eDZWaNQE/5QSszIEv0pXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAof/wZAH33zX6&#xa;+sV9LEX3DBhRyyEHYBP1/zEG/gL4MONuNv1+thRYnkpKYc4BbUyO821YdWsUXLM1&#xa;gVXXFxJdzZec+L+ouwXxhLOLCvS9xu+sNsqa+jfFmdHWikDpJ8EPf+tNh/jb2MbS&#xa;tXYFup7cGHV+SdI/s5ho9Vdbr68NbW0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="countryName">XX</elem>
+<elem key="commonName">ubuntu01</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="emailAddress">root@ubuntu01</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">XX</elem>
+<elem key="commonName">ubuntu01</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="emailAddress">root@ubuntu01</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">1024</elem>
+<elem key="exponent">userdata: 0x562691a5c8e8</elem>
+<elem key="type">rsa</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2008-05-25T02:02:48</elem>
+<elem key="notBefore">2008-04-25T02:02:48</elem>
+</table>
+<elem key="md5">90db2a9a2d8629dcf047d19dc6369c8e</elem>
+<elem key="sha1">1bde08b686fc989233c97bd40125c5725b32d829</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDEzCCAnwCCQCZRVLhl4lWWjANBgkqhkiG9w0BAQUFADCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwHhcNMDgwNDI1MDIwMjQ4WhcNMDgwNTI1MDIwMjQ4WjCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMU3nxwLcuZqpwkOS9z97lvT&#xa;yR3ByDzjPSVW/FDorKebyGqttioV9xUsO0ws+v8OfNrJbPaJZwZIF8tiRBIbMTJf&#xa;TkSpCbmstakQmJFfI3HG9Hgp4AnmJbTPRla1HzYuRArDog/1zZZu/rk9bttIPU3K&#xa;eDZWaNQE/5QSszIEv0pXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAof/wZAH33zX6&#xa;+sV9LEX3DBhRyyEHYBP1/zEG/gL4MONuNv1+thRYnkpKYc4BbUyO821YdWsUXLM1&#xa;gVXXFxJdzZec+L+ouwXxhLOLCvS9xu+sNsqa+jfFmdHWikDpJ8EPf+tNh/jb2MbS&#xa;tXYFup7cGHV+SdI/s5ho9Vdbr68NbW0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2018-03-18T17:00:00+00:00; +4s from scanner time."><elem key="date">2018-03-18T17:00:00+00:00</elem>
+<elem key="delta">4.0</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: MSHOME" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="imap" product="Dovecot imapd" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="IMAP4rev1 LOGIN-REFERRALS SORT Capability OK LOGINDISABLEDA0001 LITERAL+ THREAD=REFERENCES MULTIAPPEND IDLE CHILDREN NAMESPACE STARTTLS SASL-IR completed UNSELECT"/><script id="ssl-cert" output="Subject: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX/emailAddress=root@ubuntu01/localityName=Everywhere/organizationalUnitName=Office for Complication of Otherwise Simple Affairs&#xa;Issuer: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX/emailAddress=root@ubuntu01/localityName=Everywhere/organizationalUnitName=Office for Complication of Otherwise Simple Affairs&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2008-04-25T02:02:48&#xa;Not valid after:  2008-05-25T02:02:48&#xa;MD5:   90db 2a9a 2d86 29dc f047 d19d c636 9c8e&#xa;SHA-1: 1bde 08b6 86fc 9892 33c9 7bd4 0125 c572 5b32 d829&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDEzCCAnwCCQCZRVLhl4lWWjANBgkqhkiG9w0BAQUFADCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwHhcNMDgwNDI1MDIwMjQ4WhcNMDgwNTI1MDIwMjQ4WjCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMU3nxwLcuZqpwkOS9z97lvT&#xa;yR3ByDzjPSVW/FDorKebyGqttioV9xUsO0ws+v8OfNrJbPaJZwZIF8tiRBIbMTJf&#xa;TkSpCbmstakQmJFfI3HG9Hgp4AnmJbTPRla1HzYuRArDog/1zZZu/rk9bttIPU3K&#xa;eDZWaNQE/5QSszIEv0pXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAof/wZAH33zX6&#xa;+sV9LEX3DBhRyyEHYBP1/zEG/gL4MONuNv1+thRYnkpKYc4BbUyO821YdWsUXLM1&#xa;gVXXFxJdzZec+L+ouwXxhLOLCvS9xu+sNsqa+jfFmdHWikDpJ8EPf+tNh/jb2MbS&#xa;tXYFup7cGHV+SdI/s5ho9Vdbr68NbW0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="countryName">XX</elem>
+<elem key="commonName">ubuntu01</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="emailAddress">root@ubuntu01</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">XX</elem>
+<elem key="commonName">ubuntu01</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="emailAddress">root@ubuntu01</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">1024</elem>
+<elem key="exponent">userdata: 0x56268f98e388</elem>
+<elem key="type">rsa</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2008-05-25T02:02:48</elem>
+<elem key="notBefore">2008-04-25T02:02:48</elem>
+</table>
+<elem key="md5">90db2a9a2d8629dcf047d19dc6369c8e</elem>
+<elem key="sha1">1bde08b686fc989233c97bd40125c5725b32d829</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDEzCCAnwCCQCZRVLhl4lWWjANBgkqhkiG9w0BAQUFADCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwHhcNMDgwNDI1MDIwMjQ4WhcNMDgwNTI1MDIwMjQ4WjCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMU3nxwLcuZqpwkOS9z97lvT&#xa;yR3ByDzjPSVW/FDorKebyGqttioV9xUsO0ws+v8OfNrJbPaJZwZIF8tiRBIbMTJf&#xa;TkSpCbmstakQmJFfI3HG9Hgp4AnmJbTPRla1HzYuRArDog/1zZZu/rk9bttIPU3K&#xa;eDZWaNQE/5QSszIEv0pXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAof/wZAH33zX6&#xa;+sV9LEX3DBhRyyEHYBP1/zEG/gL4MONuNv1+thRYnkpKYc4BbUyO821YdWsUXLM1&#xa;gVXXFxJdzZec+L+ouwXxhLOLCvS9xu+sNsqa+jfFmdHWikDpJ8EPf+tNh/jb2MbS&#xa;tXYFup7cGHV+SdI/s5ho9Vdbr68NbW0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2018-03-18T17:00:00+00:00; +4s from scanner time."><elem key="date">2018-03-18T17:00:00+00:00</elem>
+<elem key="delta">4.0</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="3.0.26a" extrainfo="workgroup: MSHOME" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="imap" product="Dovecot imapd" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="imap-capabilities" output="LOGIN-REFERRALS SORT IMAP4rev1 Capability OK AUTH=PLAINA0001 THREAD=REFERENCES MULTIAPPEND IDLE CHILDREN NAMESPACE LITERAL+ SASL-IR completed UNSELECT"/><script id="ssl-cert" output="Subject: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX/emailAddress=root@ubuntu01/localityName=Everywhere/organizationalUnitName=Office for Complication of Otherwise Simple Affairs&#xa;Issuer: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX/emailAddress=root@ubuntu01/localityName=Everywhere/organizationalUnitName=Office for Complication of Otherwise Simple Affairs&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2008-04-25T02:02:48&#xa;Not valid after:  2008-05-25T02:02:48&#xa;MD5:   90db 2a9a 2d86 29dc f047 d19d c636 9c8e&#xa;SHA-1: 1bde 08b6 86fc 9892 33c9 7bd4 0125 c572 5b32 d829&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDEzCCAnwCCQCZRVLhl4lWWjANBgkqhkiG9w0BAQUFADCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwHhcNMDgwNDI1MDIwMjQ4WhcNMDgwNTI1MDIwMjQ4WjCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMU3nxwLcuZqpwkOS9z97lvT&#xa;yR3ByDzjPSVW/FDorKebyGqttioV9xUsO0ws+v8OfNrJbPaJZwZIF8tiRBIbMTJf&#xa;TkSpCbmstakQmJFfI3HG9Hgp4AnmJbTPRla1HzYuRArDog/1zZZu/rk9bttIPU3K&#xa;eDZWaNQE/5QSszIEv0pXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAof/wZAH33zX6&#xa;+sV9LEX3DBhRyyEHYBP1/zEG/gL4MONuNv1+thRYnkpKYc4BbUyO821YdWsUXLM1&#xa;gVXXFxJdzZec+L+ouwXxhLOLCvS9xu+sNsqa+jfFmdHWikDpJ8EPf+tNh/jb2MbS&#xa;tXYFup7cGHV+SdI/s5ho9Vdbr68NbW0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="countryName">XX</elem>
+<elem key="commonName">ubuntu01</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="emailAddress">root@ubuntu01</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">XX</elem>
+<elem key="commonName">ubuntu01</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="emailAddress">root@ubuntu01</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">1024</elem>
+<elem key="exponent">userdata: 0x562691852b48</elem>
+<elem key="type">rsa</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2008-05-25T02:02:48</elem>
+<elem key="notBefore">2008-04-25T02:02:48</elem>
+</table>
+<elem key="md5">90db2a9a2d8629dcf047d19dc6369c8e</elem>
+<elem key="sha1">1bde08b686fc989233c97bd40125c5725b32d829</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDEzCCAnwCCQCZRVLhl4lWWjANBgkqhkiG9w0BAQUFADCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwHhcNMDgwNDI1MDIwMjQ4WhcNMDgwNTI1MDIwMjQ4WjCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMU3nxwLcuZqpwkOS9z97lvT&#xa;yR3ByDzjPSVW/FDorKebyGqttioV9xUsO0ws+v8OfNrJbPaJZwZIF8tiRBIbMTJf&#xa;TkSpCbmstakQmJFfI3HG9Hgp4AnmJbTPRla1HzYuRArDog/1zZZu/rk9bttIPU3K&#xa;eDZWaNQE/5QSszIEv0pXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAof/wZAH33zX6&#xa;+sV9LEX3DBhRyyEHYBP1/zEG/gL4MONuNv1+thRYnkpKYc4BbUyO821YdWsUXLM1&#xa;gVXXFxJdzZec+L+ouwXxhLOLCvS9xu+sNsqa+jfFmdHWikDpJ8EPf+tNh/jb2MbS&#xa;tXYFup7cGHV+SdI/s5ho9Vdbr68NbW0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2018-03-18T17:00:00+00:00; +4s from scanner time."><elem key="date">2018-03-18T17:00:00+00:00</elem>
+<elem key="delta">4.0</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="pop3" product="Dovecot pop3d" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:dovecot:dovecot</cpe></service><script id="pop3-capabilities" output="USER CAPA UIDL SASL(PLAIN) PIPELINING RESP-CODES TOP"/><script id="ssl-cert" output="Subject: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX/emailAddress=root@ubuntu01/localityName=Everywhere/organizationalUnitName=Office for Complication of Otherwise Simple Affairs&#xa;Issuer: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX/emailAddress=root@ubuntu01/localityName=Everywhere/organizationalUnitName=Office for Complication of Otherwise Simple Affairs&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2008-04-25T02:02:48&#xa;Not valid after:  2008-05-25T02:02:48&#xa;MD5:   90db 2a9a 2d86 29dc f047 d19d c636 9c8e&#xa;SHA-1: 1bde 08b6 86fc 9892 33c9 7bd4 0125 c572 5b32 d829&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDEzCCAnwCCQCZRVLhl4lWWjANBgkqhkiG9w0BAQUFADCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwHhcNMDgwNDI1MDIwMjQ4WhcNMDgwNTI1MDIwMjQ4WjCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMU3nxwLcuZqpwkOS9z97lvT&#xa;yR3ByDzjPSVW/FDorKebyGqttioV9xUsO0ws+v8OfNrJbPaJZwZIF8tiRBIbMTJf&#xa;TkSpCbmstakQmJFfI3HG9Hgp4AnmJbTPRla1HzYuRArDog/1zZZu/rk9bttIPU3K&#xa;eDZWaNQE/5QSszIEv0pXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAof/wZAH33zX6&#xa;+sV9LEX3DBhRyyEHYBP1/zEG/gL4MONuNv1+thRYnkpKYc4BbUyO821YdWsUXLM1&#xa;gVXXFxJdzZec+L+ouwXxhLOLCvS9xu+sNsqa+jfFmdHWikDpJ8EPf+tNh/jb2MbS&#xa;tXYFup7cGHV+SdI/s5ho9Vdbr68NbW0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="countryName">XX</elem>
+<elem key="commonName">ubuntu01</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="emailAddress">root@ubuntu01</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">XX</elem>
+<elem key="commonName">ubuntu01</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="emailAddress">root@ubuntu01</elem>
+</table>
+<table key="pubkey">
+<elem key="bits">1024</elem>
+<elem key="exponent">userdata: 0x562690fa5408</elem>
+<elem key="type">rsa</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notAfter">2008-05-25T02:02:48</elem>
+<elem key="notBefore">2008-04-25T02:02:48</elem>
+</table>
+<elem key="md5">90db2a9a2d8629dcf047d19dc6369c8e</elem>
+<elem key="sha1">1bde08b686fc989233c97bd40125c5725b32d829</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDEzCCAnwCCQCZRVLhl4lWWjANBgkqhkiG9w0BAQUFADCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwHhcNMDgwNDI1MDIwMjQ4WhcNMDgwNTI1MDIwMjQ4WjCBzTELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czERMA8GA1UEAxMIdWJ1bnR1MDExHDAaBgkqhkiG9w0BCQEWDXJvb3RAdWJ1bnR1&#xa;MDEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMU3nxwLcuZqpwkOS9z97lvT&#xa;yR3ByDzjPSVW/FDorKebyGqttioV9xUsO0ws+v8OfNrJbPaJZwZIF8tiRBIbMTJf&#xa;TkSpCbmstakQmJFfI3HG9Hgp4AnmJbTPRla1HzYuRArDog/1zZZu/rk9bttIPU3K&#xa;eDZWaNQE/5QSszIEv0pXAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAof/wZAH33zX6&#xa;+sV9LEX3DBhRyyEHYBP1/zEG/gL4MONuNv1+thRYnkpKYc4BbUyO821YdWsUXLM1&#xa;gVXXFxJdzZec+L+ouwXxhLOLCvS9xu+sNsqa+jfFmdHWikDpJ8EPf+tNh/jb2MbS&#xa;tXYFup7cGHV+SdI/s5ho9Vdbr68NbW0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2018-03-18T16:59:59+00:00; +4s from scanner time."><elem key="date">2018-03-18T16:59:59+00:00</elem>
+<elem key="delta">4.0</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+</table>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="41559"/>
+<osmatch name="Linux 2.6.22" accuracy="95" line="48639">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Dell Remote Access Controller (DRAC 6)" accuracy="94" line="21073">
+<osclass type="remote management" vendor="Dell" osfamily="embedded" accuracy="94"><cpe>cpe:/h:dell:remote_access_card:6</cpe></osclass>
+</osmatch>
+<osmatch name="Extreme Networks ExtremeXOS 12.5.4" accuracy="94" line="23768">
+<osclass type="switch" vendor="Extreme Networks" osfamily="ExtremeXOS" osgen="12.X" accuracy="94"><cpe>cpe:/o:extremenetworks:extremexos:12.5.4</cpe></osclass>
+</osmatch>
+<osmatch name="HP Brocade 4Gb SAN switch or" accuracy="94" line="32832">
+<osclass type="switch" vendor="HP" osfamily="embedded" accuracy="94"/>
+<osclass type="media device" vendor="Philips" osfamily="embedded" accuracy="94"/>
+</osmatch>
+<osmatch name="DD-WRT v24-presp2 (Linux 2.6.34)" accuracy="94" line="44818">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.34</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.20 - 2.6.24 (Ubuntu 7.04 - 8.04)" accuracy="94" line="47878">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.29 (Gentoo)" accuracy="94" line="50937">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.29</cpe></osclass>
+</osmatch>
+<osmatch name="AVM FRITZ!Box FON WLAN 7170 WAP" accuracy="93" line="8378">
+<osclass type="WAP" vendor="AVM" osfamily="embedded" accuracy="93"><cpe>cpe:/h:avm:fritz%21box_fon_wlan_7170</cpe></osclass>
+</osmatch>
+<osmatch name="Dell Integrated Remote Access Controller (iDRAC)" accuracy="93" line="20843">
+<osclass type="remote management" vendor="Dell" osfamily="embedded" accuracy="93"/>
+</osmatch>
+<osmatch name="Dell Integrated Remote Access Controller (iDRAC9)" accuracy="93" line="21020">
+<osclass type="remote management" vendor="Dell" osfamily="embedded" accuracy="93"/>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.60%E=4%D=3/18%OT=22%CT=1%CU=41559%PV=Y%DS=1%DC=D%G=Y%M=005056%T&#xa;OS:M=5AAE9B0E%P=x86_64-pc-linux-gnu)SEQ(SP=D2%GCD=1%ISR=EF%TI=Z%II=I%TS=7)O&#xa;OS:PS(O1=M529ST11NW5%O2=M529ST11NW5%O3=M529NNT11NW5%O4=M529ST11NW5%O5=M529S&#xa;OS:T11NW5%O6=M529ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)E&#xa;OS:CN(R=Y%DF=Y%T=40%W=16D0%O=M529NNSNW5%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F&#xa;OS:=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%R&#xa;OS:D=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%&#xa;OS:RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="103563" lastboot="Sat Mar 17 08:13:55 2018"/>
+<distance value="1"/>
+<tcpsequence index="210" difficulty="Good luck!" values="7B65C3CF,81611E6E,875A3488,8DDF860D,93CE74FE,99019ABC"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="100HZ" values="9E0488,9E0491,9E049B,9E04A5,9E04AF,9E04B9"/>
+<hostscript><script id="clock-skew" output="mean: 3s, deviation: 0s, median: 3s"><elem key="stddev">0</elem>
+<elem key="mean">3</elem>
+<elem key="median">3</elem>
+</script><script id="nbstat" output="NetBIOS name: PAYDAY, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  PAYDAY&lt;00&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  PAYDAY&lt;03&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  PAYDAY&lt;20&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  MSHOME&lt;1d&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  MSHOME&lt;1e&gt;           Flags: &lt;group&gt;&lt;active&gt;&#xa;  MSHOME&lt;00&gt;           Flags: &lt;group&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00"><elem key="user">&lt;unknown&gt;</elem>
+<table key="statistics">
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+</table>
+<elem key="server_name">PAYDAY</elem>
+<table key="names">
+<table>
+<elem key="name">PAYDAY</elem>
+<elem key="flags">1024</elem>
+<elem key="suffix">0</elem>
+</table>
+<table>
+<elem key="name">PAYDAY</elem>
+<elem key="flags">1024</elem>
+<elem key="suffix">3</elem>
+</table>
+<table>
+<elem key="name">PAYDAY</elem>
+<elem key="flags">1024</elem>
+<elem key="suffix">32</elem>
+</table>
+<table>
+<elem key="name">\x01\x02__MSBROWSE__\x02</elem>
+<elem key="flags">33792</elem>
+<elem key="suffix">1</elem>
+</table>
+<table>
+<elem key="name">MSHOME</elem>
+<elem key="flags">1024</elem>
+<elem key="suffix">29</elem>
+</table>
+<table>
+<elem key="name">MSHOME</elem>
+<elem key="flags">33792</elem>
+<elem key="suffix">30</elem>
+</table>
+<table>
+<elem key="name">MSHOME</elem>
+<elem key="flags">33792</elem>
+<elem key="suffix">0</elem>
+</table>
+</table>
+<table key="mac">
+<elem key="address">&lt;unknown&gt;</elem>
+<elem key="manuf">unknown</elem>
+</table>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 8706/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 50871/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 42483/udp): CLEAN (Failed to receive data)&#xa;  Check 4 (port 20945/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb-os-discovery" output="&#xa;  OS: Unix (Samba 3.0.26a)&#xa;  Computer name: payday&#xa;  NetBIOS computer name: &#xa;  Domain name: &#xa;  FQDN: payday&#xa;  System time: 2018-03-18T12:59:59-04:00&#xa;"><elem key="os">Unix</elem>
+<elem key="lanmanager">Samba 3.0.26a</elem>
+<elem key="server"></elem>
+<elem key="date">2018-03-18T12:59:59-04:00</elem>
+<elem key="fqdn">payday</elem>
+<elem key="domain_dns"></elem>
+<elem key="workgroup">MSHOME\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="Couldn&apos;t establish a SMBv2 connection."/><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/></hostscript><trace>
+<hop ttl="1" ipaddr="10.11.1.24" rtt="35.15"/>
+</trace>
+<times srtt="35146" rttvar="477" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1521392398"/>
+<taskend task="NSE" time="1521392398"/>
+<taskbegin task="NSE" time="1521392398"/>
+<taskend task="NSE" time="1521392398"/>
+<runstats><finished time="1521392398" timestr="Sun Mar 18 12:59:58 2018" elapsed="692.79" summary="Nmap done at Sun Mar 18 12:59:58 2018; 1 IP address (1 host up) scanned in 692.79 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

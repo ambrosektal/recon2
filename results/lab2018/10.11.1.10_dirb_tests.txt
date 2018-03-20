@@ -1,0 +1,22 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: results/lab2018/10.11.1.10_dirb_tests.txt
+START_TIME: Sun Mar 18 13:48:32 2018
+URL_BASE: http://10.11.1.10:80/
+WORDLIST_FILES: /usr/share/dirb/wordlists/vulns/tests.txt
+OPTION: Not Recursive
+OPTION: Silent Mode
+
+-----------------
+
+GENERATED WORDS: 33
+
+---- Scanning URL: http://10.11.1.10:80/ ----
+
+-----------------
+END_TIME: Sun Mar 18 13:48:33 2018
+DOWNLOADED: 33 - FOUND: 0

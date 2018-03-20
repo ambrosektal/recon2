@@ -1,37 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Wed Feb 28 09:13:29 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.14.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.14_nmap_scan_import.xml 10.11.1.14 -->
-<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.14.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.14_nmap_scan_import.xml 10.11.1.14" start="1519827209" startstr="Wed Feb 28 09:13:29 2018" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Sun Mar 18 12:48:29 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.14.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.14_nmap_scan_import.xml 10.11.1.14 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.14.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.14_nmap_scan_import.xml 10.11.1.14" start="1521391709" startstr="Sun Mar 18 12:48:29 2018" version="7.60" xmloutputversion="1.04">
 <scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="2"/>
 <debugging level="0"/>
-<taskbegin task="NSE" time="1519827280"/>
-<taskend task="NSE" time="1519827335"/>
-<taskbegin task="NSE" time="1519827335"/>
-<taskend task="NSE" time="1519827335"/>
-<taskbegin task="ARP Ping Scan" time="1519827345"/>
-<taskend task="ARP Ping Scan" time="1519827368" extrainfo="1 total hosts"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1519827373"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1519827373"/>
-<taskbegin task="SYN Stealth Scan" time="1519827374"/>
-<taskprogress task="SYN Stealth Scan" time="1519827405" percent="5.64" remaining="520" etc="1519827924"/>
-<taskprogress task="SYN Stealth Scan" time="1519827469" percent="20.67" remaining="365" etc="1519827834"/>
-<taskprogress task="SYN Stealth Scan" time="1519827499" percent="37.92" remaining="205" etc="1519827704"/>
-<taskprogress task="SYN Stealth Scan" time="1519827529" percent="38.13" remaining="252" etc="1519827781"/>
-<taskprogress task="SYN Stealth Scan" time="1519827559" percent="38.34" remaining="298" etc="1519827857"/>
-<taskprogress task="SYN Stealth Scan" time="1519827589" percent="38.52" remaining="344" etc="1519827932"/>
-<taskprogress task="SYN Stealth Scan" time="1519827619" percent="38.61" remaining="390" etc="1519828009"/>
-<taskprogress task="SYN Stealth Scan" time="1519827649" percent="38.81" remaining="434" etc="1519828083"/>
-<taskprogress task="SYN Stealth Scan" time="1519827679" percent="38.98" remaining="478" etc="1519828156"/>
-<taskprogress task="SYN Stealth Scan" time="1519827709" percent="38.99" remaining="525" etc="1519828233"/>
-<taskprogress task="SYN Stealth Scan" time="1519827739" percent="39.04" remaining="570" etc="1519828309"/>
-<taskprogress task="SYN Stealth Scan" time="1519827772" percent="39.19" remaining="618" etc="1519828389"/>
-<taskprogress task="SYN Stealth Scan" time="1519827811" percent="39.47" remaining="671" etc="1519828481"/>
-<taskprogress task="SYN Stealth Scan" time="1519827853" percent="39.76" remaining="726" etc="1519828579"/>
-<taskprogress task="SYN Stealth Scan" time="1519827901" percent="40.06" remaining="789" etc="1519828689"/>
-<taskprogress task="SYN Stealth Scan" time="1519827952" percent="40.36" remaining="855" etc="1519828806"/>
-<taskprogress task="SYN Stealth Scan" time="1519828012" percent="40.77" remaining="927" etc="1519828939"/>
-<taskprogress task="SYN Stealth Scan" time="1519828075" percent="41.03" remaining="1008" etc="1519829083"/>
-<taskprogress task="SYN Stealth Scan" time="1519828144" percent="41.25" remaining="1097" etc="1519829241"/>
-<taskprogress task="SYN Stealth Scan" time="1519828220" percent="41.53" remaining="1192" etc="1519829411"/>
+<taskbegin task="NSE" time="1521391711"/>
+<taskend task="NSE" time="1521391711"/>
+<taskbegin task="NSE" time="1521391711"/>
+<taskend task="NSE" time="1521391711"/>
+<taskbegin task="ARP Ping Scan" time="1521391712"/>
+<taskend task="ARP Ping Scan" time="1521391712" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1521391712"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1521391712"/>
+<taskbegin task="SYN Stealth Scan" time="1521391712"/>
+<taskprogress task="SYN Stealth Scan" time="1521391743" percent="1.54" remaining="1981" etc="1521393723"/>
+<taskprogress task="SYN Stealth Scan" time="1521391773" percent="4.23" remaining="1382" etc="1521393154"/>
+<taskprogress task="SYN Stealth Scan" time="1521391803" percent="5.51" remaining="1561" etc="1521393364"/>
+<taskprogress task="SYN Stealth Scan" time="1521391833" percent="6.84" remaining="1649" etc="1521393481"/>
+<taskprogress task="SYN Stealth Scan" time="1521392097" percent="19.82" remaining="1558" etc="1521393655"/>
+<taskprogress task="SYN Stealth Scan" time="1521392208" percent="25.35" remaining="1461" etc="1521393668"/>
+<taskprogress task="SYN Stealth Scan" time="1521392316" percent="30.74" remaining="1361" etc="1521393677"/>
+<taskprogress task="SYN Stealth Scan" time="1521392421" percent="35.98" remaining="1262" etc="1521393682"/>
+<taskprogress task="SYN Stealth Scan" time="1521392526" percent="41.21" remaining="1162" etc="1521393687"/>
+<taskprogress task="SYN Stealth Scan" time="1521392631" percent="46.44" remaining="1060" etc="1521393691"/>
+<taskprogress task="SYN Stealth Scan" time="1521392733" percent="51.53" remaining="961" etc="1521393694"/>
+<taskprogress task="SYN Stealth Scan" time="1521392835" percent="56.61" remaining="861" etc="1521393696"/>
+<taskprogress task="SYN Stealth Scan" time="1521392937" percent="61.68" remaining="761" etc="1521393698"/>
+<taskprogress task="SYN Stealth Scan" time="1521393039" percent="66.76" remaining="661" etc="1521393700"/>
+<taskprogress task="SYN Stealth Scan" time="1521393141" percent="71.84" remaining="561" etc="1521393701"/>
+<taskprogress task="SYN Stealth Scan" time="1521393243" percent="76.92" remaining="460" etc="1521393702"/>
+<taskprogress task="SYN Stealth Scan" time="1521393345" percent="82.00" remaining="359" etc="1521393704"/>
+<taskprogress task="SYN Stealth Scan" time="1521393447" percent="87.08" remaining="258" etc="1521393704"/>
+<taskprogress task="SYN Stealth Scan" time="1521393549" percent="92.16" remaining="157" etc="1521393705"/>
+<taskprogress task="SYN Stealth Scan" time="1521393651" percent="97.24" remaining="56" etc="1521393706"/>
+<taskend task="SYN Stealth Scan" time="1521393706" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1521393706"/>
+<taskend task="Service scan" time="1521393719" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1521393723"/>
+<taskprogress task="NSE" time="1521393754" percent="99.75" remaining="1" etc="1521393754"/>
+<taskend task="NSE" time="1521393754"/>
+<taskbegin task="NSE" time="1521393754"/>
+<taskend task="NSE" time="1521393754"/>
+<host starttime="1521391712" endtime="1521393754"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.14" addrtype="ipv4"/>
+<address addr="00:50:56:89:04:81" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65531">
+<extrareasons reason="no-responses" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ftp" product="Microsoft ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:ftp_service</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;01-17-07  06:42PM       &lt;DIR&gt;          AdminScripts&#xa;01-17-07  06:43PM       &lt;DIR&gt;          ftproot&#xa;01-17-07  06:43PM       &lt;DIR&gt;          iissamples&#xa;01-17-07  06:43PM       &lt;DIR&gt;          Scripts&#xa;04-16-16  09:42AM       &lt;DIR&gt;          wwwroot"/><script id="ftp-syst" output="&#xa;  SYST: Windows_NT"><elem key="SYST">Windows_NT</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft IIS httpd" version="5.1" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:5.1</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT POST&#xa;  Potentially risky methods: TRACE DELETE COPY MOVE PROPFIND PROPPATCH SEARCH MKCOL LOCK UNLOCK PUT"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>DELETE</elem>
+<elem>COPY</elem>
+<elem>MOVE</elem>
+<elem>PROPFIND</elem>
+<elem>PROPPATCH</elem>
+<elem>SEARCH</elem>
+<elem>MKCOL</elem>
+<elem>LOCK</elem>
+<elem>UNLOCK</elem>
+<elem>PUT</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+<elem>DELETE</elem>
+<elem>COPY</elem>
+<elem>MOVE</elem>
+<elem>PROPFIND</elem>
+<elem>PROPPATCH</elem>
+<elem>SEARCH</elem>
+<elem>MKCOL</elem>
+<elem>LOCK</elem>
+<elem>UNLOCK</elem>
+<elem>PUT</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-webdav-scan" output="&#xa;  Server Type: Microsoft-IIS/5.1&#xa;  Allowed Methods: OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK&#xa;  WebDAV type: Unkown&#xa;  Server Date: Sun, 18 Mar 2018 17:21:44 GMT&#xa;  Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH"><elem key="Server Type">Microsoft-IIS/5.1</elem>
+<elem key="Allowed Methods">OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK</elem>
+<elem key="WebDAV type">Unkown</elem>
+<elem key="Server Date">Sun, 18 Mar 2018 17:21:44 GMT</elem>
+<elem key="Public Options">OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="reset" reason_ttl="128"/><service name="ms-wbt-server" servicefp="SF-Port3389-TCP:V=7.60%I=7%D=3/18%Time=5AAEA035%P=x86_64-pc-linux-gnu%r(TerminalServerCookie,B,&quot;\x03\0\0\x0b\x06\xd0\0\0\x124\0&quot;);" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13339"><state state="closed" reason="reset" reason_ttl="128"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="13339"/>
+<osmatch name="Microsoft Windows XP" accuracy="90" line="75690">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="90"><cpe>cpe:/o:microsoft:windows_xp</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP2" accuracy="89" line="69101">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="89"><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Apple AirPort Extreme WAP" accuracy="89" line="3331">
+<osclass type="WAP" vendor="Apple" osfamily="embedded" accuracy="89"><cpe>cpe:/h:apple:airport_extreme</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP3" accuracy="87" line="78488">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="87"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 2000 SP4" accuracy="86" line="67348">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2000" accuracy="86"><cpe>cpe:/o:microsoft:windows_2000::sp4</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola VIP1216 digital set top box (Windows CE 5.0)" accuracy="86" line="74732">
+<osclass type="media device" vendor="Microsoft" osfamily="Windows" osgen="PocketPC/CE" accuracy="86"><cpe>cpe:/o:microsoft:windows_ce:5.0</cpe></osclass>
+<osclass type="media device" vendor="Motorola" osfamily="embedded" accuracy="86"><cpe>cpe:/h:motorola:vip1216</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/18%OT=21%CT=13339%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AAEA05A%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=83%GCD=1%ISR=9C%TI=I%TS=0)&#xa;OPS(O1=M529NW0NNT00NNS%O2=M529NW0NNT00NNS%O3=M529NW0NNT00%O4=M529NW0NNT00NNS%O5=M529NW0NNT00NNS%O6=M529NNT00NNS)&#xa;WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%W5=FAF0%W6=FAF0)&#xa;ECN(R=Y%DF=N%TG=80%W=FAF0%O=M529NW0NNS%CC=N%Q=)&#xa;T1(R=Y%DF=N%TG=80%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=N)&#xa;T5(R=Y%DF=N%TG=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=N)&#xa;T7(R=N)&#xa;U1(R=N)&#xa;IE(R=N)&#xa;"/>
+</os>
+<distance value="1"/>
+<tcpsequence index="129" difficulty="Good luck!" values="32DA8907,32DB8785,32DCB11E,32DDF38D,32DEF2A7,32E009F3"/>
+<ipidsequence class="Incremental" values="8862,8863,8864,8865,8866,8867"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<trace>
+<hop ttl="1" ipaddr="10.11.1.14" rtt="34.60"/>
+</trace>
+<times srtt="34600" rttvar="838" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1521393754"/>
+<taskend task="NSE" time="1521393754"/>
+<taskbegin task="NSE" time="1521393754"/>
+<taskend task="NSE" time="1521393754"/>
+<runstats><finished time="1521393754" timestr="Sun Mar 18 13:22:34 2018" elapsed="2049.01" summary="Nmap done at Sun Mar 18 13:22:34 2018; 1 IP address (1 host up) scanned in 2049.01 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

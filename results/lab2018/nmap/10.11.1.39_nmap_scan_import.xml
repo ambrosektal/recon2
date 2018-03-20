@@ -1,37 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Wed Feb 28 09:13:33 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.39.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.39_nmap_scan_import.xml 10.11.1.39 -->
-<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.39.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.39_nmap_scan_import.xml 10.11.1.39" start="1519827213" startstr="Wed Feb 28 09:13:33 2018" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Sun Mar 18 12:48:29 2018 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.39.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.39_nmap_scan_import.xml 10.11.1.39 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon/recon_enum/results/lab2018/10.11.1.39.nmap -oX /root/scripts/recon/recon_enum/results/lab2018/nmap/10.11.1.39_nmap_scan_import.xml 10.11.1.39" start="1521391709" startstr="Sun Mar 18 12:48:29 2018" version="7.60" xmloutputversion="1.04">
 <scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="2"/>
 <debugging level="0"/>
-<taskbegin task="NSE" time="1519827274"/>
-<taskend task="NSE" time="1519827277"/>
-<taskbegin task="NSE" time="1519827282"/>
-<taskend task="NSE" time="1519827282"/>
-<taskbegin task="ARP Ping Scan" time="1519827283"/>
-<taskend task="ARP Ping Scan" time="1519827286" extrainfo="1 total hosts"/>
-<taskbegin task="Parallel DNS resolution of 1 host." time="1519827290"/>
-<taskend task="Parallel DNS resolution of 1 host." time="1519827290"/>
-<taskbegin task="SYN Stealth Scan" time="1519827290"/>
-<taskprogress task="SYN Stealth Scan" time="1519827368" percent="2.48" remaining="3073" etc="1519830441"/>
-<taskprogress task="SYN Stealth Scan" time="1519827399" percent="6.91" remaining="1470" etc="1519828868"/>
-<taskprogress task="SYN Stealth Scan" time="1519827462" percent="8.76" remaining="1792" etc="1519829254"/>
-<taskprogress task="SYN Stealth Scan" time="1519827497" percent="15.56" remaining="1124" etc="1519828620"/>
-<taskprogress task="SYN Stealth Scan" time="1519827527" percent="15.89" remaining="1255" etc="1519828782"/>
-<taskprogress task="SYN Stealth Scan" time="1519827557" percent="16.09" remaining="1392" etc="1519828949"/>
-<taskprogress task="SYN Stealth Scan" time="1519827587" percent="16.26" remaining="1531" etc="1519829117"/>
-<taskprogress task="SYN Stealth Scan" time="1519827617" percent="16.35" remaining="1673" etc="1519829290"/>
-<taskprogress task="SYN Stealth Scan" time="1519827647" percent="16.56" remaining="1799" etc="1519829446"/>
-<taskprogress task="SYN Stealth Scan" time="1519827708" percent="16.56" remaining="2106" etc="1519829814"/>
-<taskprogress task="SYN Stealth Scan" time="1519827738" percent="16.61" remaining="2250" etc="1519829988"/>
-<taskprogress task="SYN Stealth Scan" time="1519827768" percent="16.69" remaining="2387" etc="1519830154"/>
-<taskprogress task="SYN Stealth Scan" time="1519827807" percent="16.95" remaining="2533" etc="1519830340"/>
-<taskprogress task="SYN Stealth Scan" time="1519827852" percent="17.26" remaining="2695" etc="1519830547"/>
-<taskprogress task="SYN Stealth Scan" time="1519827888" percent="17.30" remaining="2860" etc="1519830747"/>
-<taskprogress task="SYN Stealth Scan" time="1519827927" percent="17.36" remaining="3033" etc="1519830960"/>
-<taskprogress task="SYN Stealth Scan" time="1519827984" percent="17.74" remaining="3218" etc="1519831202"/>
-<taskprogress task="SYN Stealth Scan" time="1519828035" percent="17.91" remaining="3416" etc="1519831450"/>
-<taskprogress task="SYN Stealth Scan" time="1519828104" percent="18.32" remaining="3630" etc="1519831733"/>
-<taskprogress task="SYN Stealth Scan" time="1519828186" percent="18.85" remaining="3858" etc="1519832043"/>
+<taskbegin task="NSE" time="1521391711"/>
+<taskend task="NSE" time="1521391711"/>
+<taskbegin task="NSE" time="1521391711"/>
+<taskend task="NSE" time="1521391711"/>
+<taskbegin task="ARP Ping Scan" time="1521391712"/>
+<taskend task="ARP Ping Scan" time="1521391712" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1521391712"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1521391712"/>
+<taskbegin task="SYN Stealth Scan" time="1521391712"/>
+<taskprogress task="SYN Stealth Scan" time="1521391743" percent="5.74" remaining="509" etc="1521392252"/>
+<taskprogress task="SYN Stealth Scan" time="1521391869" percent="24.57" remaining="482" etc="1521392351"/>
+<taskprogress task="SYN Stealth Scan" time="1521391908" percent="30.40" remaining="449" etc="1521392357"/>
+<taskprogress task="SYN Stealth Scan" time="1521391944" percent="35.77" remaining="417" etc="1521392361"/>
+<taskprogress task="SYN Stealth Scan" time="1521391980" percent="41.15" remaining="384" etc="1521392363"/>
+<taskprogress task="SYN Stealth Scan" time="1521392016" percent="46.53" remaining="350" etc="1521392365"/>
+<taskprogress task="SYN Stealth Scan" time="1521392052" percent="51.91" remaining="316" etc="1521392367"/>
+<taskprogress task="SYN Stealth Scan" time="1521392088" percent="57.29" remaining="281" etc="1521392368"/>
+<taskprogress task="SYN Stealth Scan" time="1521392124" percent="62.67" remaining="246" etc="1521392369"/>
+<taskprogress task="SYN Stealth Scan" time="1521392160" percent="68.05" remaining="211" etc="1521392370"/>
+<taskprogress task="SYN Stealth Scan" time="1521392196" percent="73.42" remaining="176" etc="1521392371"/>
+<taskprogress task="SYN Stealth Scan" time="1521392232" percent="78.81" remaining="140" etc="1521392372"/>
+<taskprogress task="SYN Stealth Scan" time="1521392268" percent="84.19" remaining="105" etc="1521392372"/>
+<taskprogress task="SYN Stealth Scan" time="1521392304" percent="89.58" remaining="69" etc="1521392373"/>
+<taskprogress task="SYN Stealth Scan" time="1521392340" percent="94.96" remaining="34" etc="1521392373"/>
+<taskend task="SYN Stealth Scan" time="1521392376" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1521392376"/>
+<taskend task="Service scan" time="1521392386" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1521392390"/>
+<taskend task="NSE" time="1521392391"/>
+<taskbegin task="NSE" time="1521392391"/>
+<taskend task="NSE" time="1521392391"/>
+<host starttime="1521391712" endtime="1521392391"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.11.1.39" addrtype="ipv4"/>
+<address addr="00:50:56:89:4A:F6" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="64869"/>
+<extrareasons reason="host-prohibiteds" count="663"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="6.6.1" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.6.1</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 5e:c1:7e:d2:f9:20:f9:11:ea:4b:02:68:07:3f:54:f2 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCgrAeio5MX8ee/JR6rhcr8MTqM5SZga8iPjfwjFHc492aKCgXqFxE8Kprutz0NQDvXt0096pft0tiGPJBxZ6WiJvLxIzTSDe261Ly4ZUywtf3Akt/oCtOKwWV76B2gPoGG0jSpnhVgEcBW028QXk8+qDrQI5XLKyczKOdbnD/D76rOfPkJwMGTXPQmB4SSGqflnAF7Gem3Ay1dS7H+LVGgmfLHtNV9zlyx5dSRWihX6hnofYylHeSi7rLVWs5qDLeBqDID32joNqrhKzUUe8idgmU5lNCrGUcAGb+aUF7q5V0eWDD0mRXLay6OIHbXmvY/ylHyqs1jpQWhpXt9ZKTz&#xa;  256 36:ef:27:31:a2:fd:4a:e3:d2:4e:12:58:1f:7a:03:58 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJaLYCLt5BQwdt158R4quRiBubM4IKNB2d3kHn6jSZwpB0o/j9kQmwg5L5ek6dDc0qd9lOjzWKKSec8n4ULzWU0=&#xa;  256 2c:70:9c:c9:4c:50:61:d2:51:43:d5:67:d1:d0:39:de (EdDSA)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/4iJuHgKovQDwFWS6ZxgjJYnNu0qqorL0dmHw2ZMJ0"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCgrAeio5MX8ee/JR6rhcr8MTqM5SZga8iPjfwjFHc492aKCgXqFxE8Kprutz0NQDvXt0096pft0tiGPJBxZ6WiJvLxIzTSDe261Ly4ZUywtf3Akt/oCtOKwWV76B2gPoGG0jSpnhVgEcBW028QXk8+qDrQI5XLKyczKOdbnD/D76rOfPkJwMGTXPQmB4SSGqflnAF7Gem3Ay1dS7H+LVGgmfLHtNV9zlyx5dSRWihX6hnofYylHeSi7rLVWs5qDLeBqDID32joNqrhKzUUe8idgmU5lNCrGUcAGb+aUF7q5V0eWDD0mRXLay6OIHbXmvY/ylHyqs1jpQWhpXt9ZKTz</elem>
+<elem key="fingerprint">5ec17ed2f920f911ea4b0268073f54f2</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048.0</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJaLYCLt5BQwdt158R4quRiBubM4IKNB2d3kHn6jSZwpB0o/j9kQmwg5L5ek6dDc0qd9lOjzWKKSec8n4ULzWU0=</elem>
+<elem key="fingerprint">36ef2731a2fd4ae3d24e12581f7a0358</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIK/4iJuHgKovQDwFWS6ZxgjJYnNu0qqorL0dmHw2ZMJ0</elem>
+<elem key="fingerprint">2c709cc94c5061d25143d567d1d039de</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="nginx" version="1.6.3" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.6.3</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS TRACE&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.6.3"><elem>nginx/1.6.3</elem>
+</script><script id="http-title" output="Apache HTTP Server Test Page powered by CentOS"><elem key="title">Apache HTTP Server Test Page powered by CentOS</elem>
+</script></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" product="MariaDB" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:mariadb:mariadb</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<osmatch name="Linux 3.10 - 3.12" accuracy="91" line="60412">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="91" line="64145">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.22" accuracy="86" line="47178">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10" accuracy="86" line="60357">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="86"><cpe>cpe:/o:linux:linux_kernel:3.10</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.10 - 4.8" accuracy="85" line="60500">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.11 - 4.1" accuracy="85" line="60658">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.8" accuracy="85" line="62168">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="85"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="SCAN(V=7.60%E=4%D=3/18%OT=22%CT=%CU=%PV=Y%DS=1%DC=D%G=N%M=005056%TM=5AAE9B07%P=x86_64-pc-linux-gnu)&#xa;SEQ(SP=101%GCD=1%ISR=10F%TI=Z%II=I%TS=A)&#xa;OPS(O1=M529ST11NW7%O2=M529ST11NW7%O3=M529NNT11NW7%O4=M529ST11NW7%O5=M529ST11NW7%O6=M529ST11)&#xa;WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)&#xa;ECN(R=Y%DF=Y%TG=40%W=7210%O=M529NNSNW7%CC=Y%Q=)&#xa;T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)&#xa;T2(R=N)&#xa;T3(R=N)&#xa;T4(R=N)&#xa;U1(R=N)&#xa;IE(R=Y%DFI=N%TG=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="80779" lastboot="Sat Mar 17 14:33:32 2018"/>
+<distance value="1"/>
+<tcpsequence index="257" difficulty="Good luck!" values="CC8855A2,41FCB469,597B57B,6DA3E4D2,BBAA260A,39A47AE9"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="4D08DEA,4D08E4E,4D08EB2,4D08F16,4D08F7A,4D08FDE"/>
+<trace>
+<hop ttl="1" ipaddr="10.11.1.39" rtt="34.31"/>
+</trace>
+<times srtt="34305" rttvar="357" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1521392391"/>
+<taskend task="NSE" time="1521392391"/>
+<taskbegin task="NSE" time="1521392391"/>
+<taskend task="NSE" time="1521392391"/>
+<runstats><finished time="1521392391" timestr="Sun Mar 18 12:59:51 2018" elapsed="685.72" summary="Nmap done at Sun Mar 18 12:59:51 2018; 1 IP address (1 host up) scanned in 685.72 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

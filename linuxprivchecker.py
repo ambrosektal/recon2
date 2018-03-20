@@ -12,7 +12,7 @@
 ## [Warning]:
 ## This script comes as-is with no promise of functionality or accuracy.  I have no plans to maintain updates, 
 ## I did not write it to be efficient and in some cases you may find the functions may not produce the desired 
-## results.  For example, the function that links packages to running processes is based on keywords and will 
+## results.  For lab2018ple, the function that links packages to running processes is based on keywords and will 
 ## not always be accurate.  Also, the exploit list included in this function will need to be updated over time. 
 ## Feel free to change or improve it any way you see fit.
 ##-------------------------------------------------------------------------------------------------------------   
@@ -138,11 +138,11 @@ if "root" in userInfo["ID"]["results"][0]:
 # File/Directory Privs
 print "[*] ENUMERATING FILE AND DIRECTORY PERMISSIONS/CONTENTS...\n"
 
-fdPerms = {"WWDIRSROOT":{"cmd":"find / \( -wholename '/home/homedir*' -prune \) -o \( -type d -perm -0002 \) -exec ls -ld '{}' ';' 2>/dev/null | grep root", "msg":"World Writeable Directories for User/Group 'Root'", "results":results},
-	   "WWDIRS":{"cmd":"find / \( -wholename '/home/homedir*' -prune \) -o \( -type d -perm -0002 \) -exec ls -ld '{}' ';' 2>/dev/null | grep -v root", "msg":"World Writeable Directories for Users other than Root", "results":results},
+fdPerms = {"WWDIRSROOT":{"cmd":"find / \( -wholename '/home/homedir*' -prune \) -o \( -type d -perm -0002 \) -exec ls -ld '{}' ';' 2>/dev/null | grep /root", "msg":"World Writeable Directories for User/Group 'Root'", "results":results},
+	   "WWDIRS":{"cmd":"find / \( -wholename '/home/homedir*' -prune \) -o \( -type d -perm -0002 \) -exec ls -ld '{}' ';' 2>/dev/null | grep -v /root", "msg":"World Writeable Directories for Users other than Root", "results":results},
 	   "WWFILES":{"cmd":"find / \( -wholename '/home/homedir/*' -prune -o -wholename '/proc/*' -prune \) -o \( -type f -perm -0002 \) -exec ls -l '{}' ';' 2>/dev/null", "msg":"World Writable Files", "results":results},
 	   "SUID":{"cmd":"find / \( -perm -2000 -o -perm -4000 \) -exec ls -ld {} \; 2>/dev/null", "msg":"SUID/SGID Files and Directories", "results":results},
-	   "ROOTHOME":{"cmd":"ls -ahlR /root 2>/dev/null", "msg":"Checking if root's home folder is accessible", "results":results}
+	   "ROOTHOME":{"cmd":"ls -ahlR /root 2>/dev/null", "msg":"Checking if/root's home folder is accessible", "results":results}
 	  }
 
 fdPerms = execCmd(fdPerms) 
@@ -182,7 +182,7 @@ printResults(otherApps)
 print "[*] IDENTIFYING PROCESSES AND PACKAGES RUNNING AS ROOT OR OTHER SUPERUSER...\n"
 
 # find the package information for the processes currently running
-# under root or another super user
+# under /root or another super user
 
 procs = getAppProc["PROCS"]["results"]
 pkgs = getAppProc["PKGS"]["results"]
@@ -287,13 +287,13 @@ sploits= {      "2.2.x-2.4.x ptrace kmod local exploit":{"minver":"2.2", "maxver
 		"2.6.18-20 2009 Local Root Exploit":{"minver":"2.6.18", "maxver":"2.6.20", "exploitdb":"10613", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
 		"Apache Spamassassin Milter Plugin Remote Root Command Execution":{"minver":"0", "maxver":"99", "exploitdb":"11662", "lang":"sh", "keywords":{"loc":["proc"], "val":"spamass-milter"}},
 		"<= 2.6.34-rc3 ReiserFS xattr Privilege Escalation":{"minver":"0", "maxver":"2.6.34", "exploitdb":"12130", "lang":"python", "keywords":{"loc":["mnt"], "val":"reiser"}},
-		"Ubuntu PAM MOTD local root":{"minver":"7", "maxver":"10.04", "exploitdb":"14339", "lang":"sh", "keywords":{"loc":["os"], "val":"ubuntu"}},
+		"Ubuntu PAM MOTD local /root":{"minver":"7", "maxver":"10.04", "exploitdb":"14339", "lang":"sh", "keywords":{"loc":["os"], "val":"ubuntu"}},
 		"< 2.6.36-rc1 CAN BCM Privilege Escalation Exploit":{"minver":"0", "maxver":"2.6.36", "exploitdb":"14814", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
 		"Kernel ia32syscall Emulation Privilege Escalation":{"minver":"0", "maxver":"99", "exploitdb":"15023", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
 		"Linux RDS Protocol Local Privilege Escalation":{"minver":"0", "maxver":"2.6.36", "exploitdb":"15285", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
 		"<= 2.6.37 Local Privilege Escalation":{"minver":"0", "maxver":"2.6.37", "exploitdb":"15704", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
 		"< 2.6.37-rc2 ACPI custom_method Privilege Escalation":{"minver":"0", "maxver":"2.6.37", "exploitdb":"15774", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
-		"CAP_SYS_ADMIN to root Exploit":{"minver":"0", "maxver":"99", "exploitdb":"15916", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
+		"CAP_SYS_ADMIN to /root Exploit":{"minver":"0", "maxver":"99", "exploitdb":"15916", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
 		"CAP_SYS_ADMIN to Root Exploit 2 (32 and 64-bit)":{"minver":"0", "maxver":"99", "exploitdb":"15944", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
 		"< 2.6.36.2 Econet Privilege Escalation Exploit":{"minver":"0", "maxver":"2.6.36.2", "exploitdb":"17787", "lang":"c", "keywords":{"loc":["kernel"], "val":"kernel"}},
 		"Sendpage Local Privilege Escalation":{"minver":"0", "maxver":"99", "exploitdb":"19933", "lang":"ruby", "keywords":{"loc":["kernel"], "val":"kernel"}},
