@@ -10,7 +10,7 @@ ip_address = sys.argv[1].strip()
 port = sys.argv[2].strip()
 
 print "INFO: Performing hydra ssh scan against " + ip_address 
-HYDRA = "hydra -L /root/scripts/recon/recon_enum/wordlists/userlist -P /root/scripts/recon/recon_enum/wordlists/offsecpass -f -o /root/scripts/recon/recon_enum/results/%s_sshhydra.txt -u %s -s %s ssh" % (ip_address, ip_address, port)
+HYDRA = "hydra -L /root/scripts/recon/recon2/wordlists/userlist -P /root/scripts/recon/recon_enum/wordlists/offsecpass -f -o /root/scripts/recon/recon_enum/results/%s_sshhydra.txt -u %s -s %s ssh" % (ip_address, ip_address, port)
 try:
     results = subprocess.check_output(HYDRA, shell=True)
     resultarr = results.split("\n")
