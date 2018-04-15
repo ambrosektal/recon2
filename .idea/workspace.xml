@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b0621a7e-3d90-4083-b497-4fc54770ab1c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/reconscanWOdirb.py" afterPath="$PROJECT_DIR$/reconscanWOdirb.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/reconscanWOdirb.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="565">
-              <caret line="208" column="50" lean-forward="true" selection-start-line="208" selection-start-column="50" selection-end-line="208" selection-end-column="50" />
+              <caret line="209" column="50" lean-forward="true" selection-start-line="209" selection-start-column="50" selection-end-line="209" selection-end-column="50" />
               <folding>
                 <element signature="e#1613#1635#0" expanded="true" />
               </folding>
@@ -271,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521640614429</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated the reconscanWOdirb to be threaded.  Forgot to do this in an earlier version.">
+      <created>1523803678458</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523803678458</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -303,7 +309,8 @@
     <MESSAGE value="updated WOdirb scan to be threaded as well... probably need to test prior to commit... oh well." />
     <MESSAGE value="updated code and found possible better method of using threading.  Or at least easier.  With threaded decorator.  Added it  to the new file test_threading." />
     <MESSAGE value="updated code and found possible better method of using threading.  Or at least easier.  With threaded decorator.  Added it  to the new file test_threading.&#10;Also added proper dir path...  Need to make this into a variable." />
-    <option name="LAST_COMMIT_MESSAGE" value="updated code and found possible better method of using threading.  Or at least easier.  With threaded decorator.  Added it  to the new file test_threading.&#10;Also added proper dir path...  Need to make this into a variable." />
+    <MESSAGE value="Updated the reconscanWOdirb to be threaded.  Forgot to do this in an earlier version." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the reconscanWOdirb to be threaded.  Forgot to do this in an earlier version." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -605,7 +612,7 @@
     <entry file="file://$PROJECT_DIR$/reconscanWOdirb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="565">
-          <caret line="208" column="50" lean-forward="true" selection-start-line="208" selection-start-column="50" selection-end-line="208" selection-end-column="50" />
+          <caret line="209" column="50" lean-forward="true" selection-start-line="209" selection-start-column="50" selection-end-line="209" selection-end-column="50" />
           <folding>
             <element signature="e#1613#1635#0" expanded="true" />
           </folding>
