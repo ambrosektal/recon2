@@ -24,6 +24,8 @@ import multiprocessing
 import subprocess
 import time
 
+from resources import threaded
+
 
 def multProc(targetin, scanip, port):
     jobs = []
@@ -182,7 +184,7 @@ def scanning_job():
     with print_lock:
         print(threading.current_thread().name, worker)  # prevents the print from printing until unlocked
 
-
+@threaded
 def threader():  # Actually performing the threading operation
     while True:
         worker = q.get()  # getting the worker from the queue and putting the worker to work.
@@ -206,9 +208,10 @@ if __name__ == '__main__':
     target_file()
 
     for x in range(20): # Number of worker threads
-        t = threading.Thread(target=threader)
-        t.daemon = True  # will die when the main thread dies
-        t.start()
+        threader()
+#        t = threading.Thread(target=threader)
+#        t.daemon = True  # will die when the main thread dies
+#        t.start()
 
     start = time.time()
 
