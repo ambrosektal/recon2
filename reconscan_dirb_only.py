@@ -40,8 +40,8 @@ def multProc(targetin, scanip, port):
 #    return
 
 def httpEnum(ip_address, port):
-    print "INFO: Detected http on " + ip_address + ":" + port
-    print "INFO: Performing nmap web script scan for " + ip_address + ":" + port    
+    print ("INFO: Detected http on " + ip_address + ":" + port)
+    print ("INFO: Performing nmap web script scan for " + ip_address + ":" + port )    
     HTTPSCAN = "nmap -sV -Pn -vv -p %s --script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oN /root/scripts/recon/recon2/results/lab2018/%s_http.nmap %s" % (port, ip_address, ip_address)
     results = subprocess.check_output(HTTPSCAN, shell=True)
     DIRBUST = "./dirbust.py http://%s:%s %s" % (ip_address, port, ip_address) # execute the python script
@@ -50,8 +50,8 @@ def httpEnum(ip_address, port):
     return
 
 def httpsEnum(ip_address, port):
-    print "INFO: Detected https on " + ip_address + ":" + port
-    print "INFO: Performing nmap web script scan for " + ip_address + ":" + port    
+    print ("INFO: Detected https on " + ip_address + ":" + port)
+    print ("INFO: Performing nmap web script scan for " + ip_address + ":" + port)    
     HTTPSCANS = "nmap -sV -Pn -vv -p %s --script=http-vhosts,http-userdir-enum,http-apache-negotiation,http-backup-finder,http-config-backup,http-default-accounts,http-methods,http-method-tamper,http-passwd,http-robots.txt -oX /root/scripts/recon/recon2/results/lab2018/%s_https.nmap %s" % (port, ip_address, ip_address)
     results = subprocess.check_output(HTTPSCANS, shell=True)
     DIRBUST = "./dirbust.py https://%s:%s %s" % (ip_address, port, ip_address) # execute the python script
@@ -101,7 +101,7 @@ def httpsEnum(ip_address, port):
 
 def nmapScan(ip_address):
    ip_address = ip_address.strip()
-   print "INFO: Running general TCP/UDP nmap scans for " + ip_address
+   print ("INFO: Running general TCP/UDP nmap scans for " + ip_address)
    serv_dict = {}
    TCPSCAN = "nmap -vv -Pn -A -sC -sS -T 4 -p- -oN '/root/scripts/recon/recon2/results/lab2018/%s.nmap' -oX '/root/scripts/recon/recon_enum/results/lab2018/nmap/%s_nmap_scan_import.xml' %s"  % (ip_address, ip_address, ip_address)
    UDPSCAN = "nmap -vv -Pn -A -sC -sU -T 4 --top-ports 200 -oN '/root/scripts/recon/recon2/results/lab2018/%sU.nmap' -oX '/root/scripts/recon/recon_enum/results/lab2018/nmap/%sU_nmap_scan_import.xml' %s" % (ip_address, ip_address, ip_address)
@@ -116,26 +116,25 @@ def nmapScan(ip_address):
             line = line.replace("  ", " ");
          linesplit= line.split(" ")
          service = linesplit[2] # grab the service name
-	 port = line.split(" ")[0] # grab the port/proto
+         port = line.split(" ")[0] # grab the port/proto
          if service in serv_dict:
-	    ports = serv_dict[service] # if the service is already in the dict, grab the port list
+             ports = serv_dict[service] # if the service is already in the dict, grab the port list
 	 
          ports.append(port) 
-	 serv_dict[service] = ports # add service to the dictionary along with the associated port(2)
+         serv_dict[service] = ports # add service to the dictionary along with the associated port(2)
    
    # go through the service dictionary to call additional targeted enumeration functions 
    for serv in serv_dict: 
       ports = serv_dict[serv]	
       if (serv == "http"):
- 	 for port in ports:
-	    port = port.split("/")[0]
-	    multProc(httpEnum, ip_address, port)
+          for port in ports:
+              port = port.split("/")[0]
+              multProc(httpEnum, ip_address, port)
       elif (serv == "ssl/http") or ("https" in serv):
-	 for port in ports:
-	    port = port.split("/")[0]
-	    multProc(httpsEnum, ip_address, port)
-      
-   print "INFO: TCP/UDP Nmap scans completed for " + ip_address 
+          for port in ports:
+              port = port.split("/")[0]
+              multProc(httpsEnum, ip_address, port)
+   print ("INFO: TCP/UDP Nmap scans completed for " + ip_address )
    return
 
 def work():
@@ -148,11 +147,11 @@ def work():
        f.close()
 
 # grab the discover scan results and start scanning up hosts
-print "############################################################"
-print "####                      RECON SCAN                    ####"
-print "####            A multi-process service scanner         ####"
-print "####        http, ftp, dns, ssh, snmp, smtp, ms-sql     ####"
-print "############################################################"
+print ("############################################################")
+print ("####                      RECON SCAN                    ####")
+print ("####            A multi-process service scanner         ####")
+print ("####        http, ftp, dns, ssh, snmp, smtp, ms-sql     ####")
+print ("############################################################")
  
 if __name__=='__main__':
    f = open('/root/scripts/recon/recon2/results/targets.txt', 'r') # CHANGE THIS!! grab the alive hosts from the discovery scan for enum
